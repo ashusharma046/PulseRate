@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C17478114BDF82D002341BA /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C17477F14BDF821002341BA /* libCorePlot-CocoaTouch.a */; };
+		9C4AFCF214B6CDD800FDE4B8 /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4AFCF114B6CDD800FDE4B8 /* GraphViewController.m */; };
+		9C4AFCFC14B6DCD900FDE4B8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4AFCFB14B6DCD900FDE4B8 /* QuartzCore.framework */; };
+		9C4AFD2714B7095F00FDE4B8 /* TUTSimpleScatterPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4AFD2614B7095F00FDE4B8 /* TUTSimpleScatterPlot.m */; };
+		9C4AFD2A14B709A300FDE4B8 /* TUTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4AFD2914B709A300FDE4B8 /* TUTViewController.m */; };
+		9C715E8714BB005800FE7A91 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C715E8614BB005700FE7A91 /* UserInfo.m */; };
+		9C715E8A14BB015B00FE7A91 /* EnterUserDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C715E8914BB015B00FE7A91 /* EnterUserDetailsViewController.m */; };
+		9C9A340314B4597F00A59B5E /* PulseRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A340214B4597F00A59B5E /* PulseRecord.m */; };
+		9C9A341014B46B5B00A59B5E /* ViewRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A340E14B46B5B00A59B5E /* ViewRecordController.m */; };
+		9C9A341414B46D2500A59B5E /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A341314B46D2500A59B5E /* CustomCell.m */; };
+		9C9C646D14B73C3F001CF28C /* CreateGraphcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9C646C14B73C3F001CF28C /* CreateGraphcontroller.m */; };
+		9CABE72F14B57B0300646E75 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CABE72E14B57B0300646E75 /* RootViewController.m */; };
+		9CB83C1014B44B5700D2D4C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB83C0F14B44B5700D2D4C4 /* UIKit.framework */; };
+		9CB83C1214B44B5700D2D4C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB83C1114B44B5700D2D4C4 /* Foundation.framework */; };
+		9CB83C1414B44B5700D2D4C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB83C1314B44B5700D2D4C4 /* CoreGraphics.framework */; };
+		9CB83C1614B44B5700D2D4C4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB83C1514B44B5700D2D4C4 /* CoreData.framework */; };
+		9CB83C1C14B44B5700D2D4C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CB83C1A14B44B5700D2D4C4 /* InfoPlist.strings */; };
+		9CB83C1E14B44B5700D2D4C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB83C1D14B44B5700D2D4C4 /* main.m */; };
+		9CB83C2214B44B5700D2D4C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB83C2114B44B5700D2D4C4 /* AppDelegate.m */; };
+		9CB83C2514B44B5700D2D4C4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB83C2314B44B5700D2D4C4 /* MainStoryboard.storyboard */; };
+		9CB83C2814B44B5700D2D4C4 /* PulseRate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CB83C2614B44B5700D2D4C4 /* PulseRate.xcdatamodeld */; };
+		9CB83C2B14B44B5700D2D4C4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB83C2A14B44B5700D2D4C4 /* MainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C17477E14BDF821002341BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C17477514BDF821002341BA /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C17477514BDF821002341BA /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "../../../Downloads/djw-core-plot-fd681cd 6/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
+		9C4AFCF014B6CDD800FDE4B8 /* GraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphViewController.h; sourceTree = "<group>"; };
+		9C4AFCF114B6CDD800FDE4B8 /* GraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphViewController.m; sourceTree = "<group>"; };
+		9C4AFCFB14B6DCD900FDE4B8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9C4AFD2514B7095300FDE4B8 /* TUTSimpleScatterPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTSimpleScatterPlot.h; sourceTree = "<group>"; };
+		9C4AFD2614B7095F00FDE4B8 /* TUTSimpleScatterPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTSimpleScatterPlot.m; sourceTree = "<group>"; };
+		9C4AFD2814B7099D00FDE4B8 /* TUTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTViewController.h; sourceTree = "<group>"; };
+		9C4AFD2914B709A300FDE4B8 /* TUTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTViewController.m; sourceTree = "<group>"; };
+		9C715E8514BB005700FE7A91 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		9C715E8614BB005700FE7A91 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		9C715E8814BB015A00FE7A91 /* EnterUserDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterUserDetailsViewController.h; sourceTree = "<group>"; };
+		9C715E8914BB015B00FE7A91 /* EnterUserDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterUserDetailsViewController.m; sourceTree = "<group>"; };
+		9C9A340114B4597F00A59B5E /* PulseRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PulseRecord.h; path = ../PulseRecord.h; sourceTree = "<group>"; };
+		9C9A340214B4597F00A59B5E /* PulseRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PulseRecord.m; path = ../PulseRecord.m; sourceTree = "<group>"; };
+		9C9A340D14B46B5B00A59B5E /* ViewRecordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewRecordController.h; sourceTree = "<group>"; };
+		9C9A340E14B46B5B00A59B5E /* ViewRecordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewRecordController.m; sourceTree = "<group>"; };
+		9C9A341214B46D2500A59B5E /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		9C9A341314B46D2500A59B5E /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		9C9C646B14B73C3F001CF28C /* CreateGraphcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGraphcontroller.h; sourceTree = "<group>"; };
+		9C9C646C14B73C3F001CF28C /* CreateGraphcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGraphcontroller.m; sourceTree = "<group>"; };
+		9CABE72D14B57B0300646E75 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		9CABE72E14B57B0300646E75 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		9CB83C0B14B44B5700D2D4C4 /* PulseRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB83C0F14B44B5700D2D4C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9CB83C1114B44B5700D2D4C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9CB83C1314B44B5700D2D4C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9CB83C1514B44B5700D2D4C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9CB83C1914B44B5700D2D4C4 /* PulseRate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PulseRate-Info.plist"; sourceTree = "<group>"; };
+		9CB83C1B14B44B5700D2D4C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CB83C1D14B44B5700D2D4C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CB83C1F14B44B5700D2D4C4 /* PulseRate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PulseRate-Prefix.pch"; sourceTree = "<group>"; };
+		9CB83C2014B44B5700D2D4C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9CB83C2114B44B5700D2D4C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CB83C2414B44B5700D2D4C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		9CB83C2714B44B5700D2D4C4 /* PulseRate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PulseRate.xcdatamodel; sourceTree = "<group>"; };
+		9CB83C2914B44B5700D2D4C4 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9CB83C2A14B44B5700D2D4C4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CB83C0814B44B5700D2D4C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4AFCFC14B6DCD900FDE4B8 /* QuartzCore.framework in Frameworks */,
+				9CB83C1014B44B5700D2D4C4 /* UIKit.framework in Frameworks */,
+				9C17478114BDF82D002341BA /* libCorePlot-CocoaTouch.a in Frameworks */,
+				9CB83C1214B44B5700D2D4C4 /* Foundation.framework in Frameworks */,
+				9CB83C1414B44B5700D2D4C4 /* CoreGraphics.framework in Frameworks */,
+				9CB83C1614B44B5700D2D4C4 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C17477614BDF821002341BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C17477F14BDF821002341BA /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CABE72B14B573CA00646E75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C715E8514BB005700FE7A91 /* UserInfo.h */,
+				9C715E8614BB005700FE7A91 /* UserInfo.m */,
+				9C9A340114B4597F00A59B5E /* PulseRecord.h */,
+				9C9A340214B4597F00A59B5E /* PulseRecord.m */,
+				9C9A341214B46D2500A59B5E /* CustomCell.h */,
+				9C9A341314B46D2500A59B5E /* CustomCell.m */,
+				9C4AFD2514B7095300FDE4B8 /* TUTSimpleScatterPlot.h */,
+				9C4AFD2614B7095F00FDE4B8 /* TUTSimpleScatterPlot.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9CABE72C14B573F000646E75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C9C646B14B73C3F001CF28C /* CreateGraphcontroller.h */,
+				9C9C646C14B73C3F001CF28C /* CreateGraphcontroller.m */,
+				9C4AFD2814B7099D00FDE4B8 /* TUTViewController.h */,
+				9C4AFD2914B709A300FDE4B8 /* TUTViewController.m */,
+				9CB83C2914B44B5700D2D4C4 /* MainViewController.h */,
+				9CB83C2A14B44B5700D2D4C4 /* MainViewController.m */,
+				9C4AFCF014B6CDD800FDE4B8 /* GraphViewController.h */,
+				9C4AFCF114B6CDD800FDE4B8 /* GraphViewController.m */,
+				9C9A340D14B46B5B00A59B5E /* ViewRecordController.h */,
+				9C9A340E14B46B5B00A59B5E /* ViewRecordController.m */,
+				9CABE72D14B57B0300646E75 /* RootViewController.h */,
+				9CABE72E14B57B0300646E75 /* RootViewController.m */,
+				9C715E8814BB015A00FE7A91 /* EnterUserDetailsViewController.h */,
+				9C715E8914BB015B00FE7A91 /* EnterUserDetailsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9CB83C0014B44B5700D2D4C4 = {
+			isa = PBXGroup;
+			children = (
+				9C4AFCFB14B6DCD900FDE4B8 /* QuartzCore.framework */,
+				9CB83C1714B44B5700D2D4C4 /* PulseRate */,
+				9CB83C0E14B44B5700D2D4C4 /* Frameworks */,
+				9CB83C0C14B44B5700D2D4C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CB83C0C14B44B5700D2D4C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CB83C0B14B44B5700D2D4C4 /* PulseRate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CB83C0E14B44B5700D2D4C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CB83C0F14B44B5700D2D4C4 /* UIKit.framework */,
+				9CB83C1114B44B5700D2D4C4 /* Foundation.framework */,
+				9CB83C1314B44B5700D2D4C4 /* CoreGraphics.framework */,
+				9CB83C1514B44B5700D2D4C4 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CB83C1714B44B5700D2D4C4 /* PulseRate */ = {
+			isa = PBXGroup;
+			children = (
+				9CB83C2014B44B5700D2D4C4 /* AppDelegate.h */,
+				9CB83C2114B44B5700D2D4C4 /* AppDelegate.m */,
+				9C17477514BDF821002341BA /* CorePlot-CocoaTouch.xcodeproj */,
+				9CB83C2314B44B5700D2D4C4 /* MainStoryboard.storyboard */,
+				9CB83C2614B44B5700D2D4C4 /* PulseRate.xcdatamodeld */,
+				9CABE72B14B573CA00646E75 /* Model */,
+				9CABE72C14B573F000646E75 /* Controller */,
+				9CB83C1814B44B5700D2D4C4 /* Supporting Files */,
+			);
+			path = PulseRate;
+			sourceTree = "<group>";
+		};
+		9CB83C1814B44B5700D2D4C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CB83C1914B44B5700D2D4C4 /* PulseRate-Info.plist */,
+				9CB83C1A14B44B5700D2D4C4 /* InfoPlist.strings */,
+				9CB83C1D14B44B5700D2D4C4 /* main.m */,
+				9CB83C1F14B44B5700D2D4C4 /* PulseRate-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CB83C0A14B44B5700D2D4C4 /* PulseRate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CB83C3114B44B5700D2D4C4 /* Build configuration list for PBXNativeTarget "PulseRate" */;
+			buildPhases = (
+				9CB83C0714B44B5700D2D4C4 /* Sources */,
+				9CB83C0814B44B5700D2D4C4 /* Frameworks */,
+				9CB83C0914B44B5700D2D4C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PulseRate;
+			productName = PulseRate;
+			productReference = 9CB83C0B14B44B5700D2D4C4 /* PulseRate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CB83C0214B44B5700D2D4C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9CB83C0514B44B5700D2D4C4 /* Build configuration list for PBXProject "PulseRate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9CB83C0014B44B5700D2D4C4;
+			productRefGroup = 9CB83C0C14B44B5700D2D4C4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9C17477614BDF821002341BA /* Products */;
+					ProjectRef = 9C17477514BDF821002341BA /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9CB83C0A14B44B5700D2D4C4 /* PulseRate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9C17477F14BDF821002341BA /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = 9C17477E14BDF821002341BA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CB83C0914B44B5700D2D4C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CB83C1C14B44B5700D2D4C4 /* InfoPlist.strings in Resources */,
+				9CB83C2514B44B5700D2D4C4 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CB83C0714B44B5700D2D4C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CB83C1E14B44B5700D2D4C4 /* main.m in Sources */,
+				9CB83C2214B44B5700D2D4C4 /* AppDelegate.m in Sources */,
+				9CB83C2814B44B5700D2D4C4 /* PulseRate.xcdatamodeld in Sources */,
+				9CB83C2B14B44B5700D2D4C4 /* MainViewController.m in Sources */,
+				9C9A340314B4597F00A59B5E /* PulseRecord.m in Sources */,
+				9C9A341014B46B5B00A59B5E /* ViewRecordController.m in Sources */,
+				9C9A341414B46D2500A59B5E /* CustomCell.m in Sources */,
+				9CABE72F14B57B0300646E75 /* RootViewController.m in Sources */,
+				9C4AFCF214B6CDD800FDE4B8 /* GraphViewController.m in Sources */,
+				9C4AFD2714B7095F00FDE4B8 /* TUTSimpleScatterPlot.m in Sources */,
+				9C4AFD2A14B709A300FDE4B8 /* TUTViewController.m in Sources */,
+				9C9C646D14B73C3F001CF28C /* CreateGraphcontroller.m in Sources */,
+				9C715E8714BB005800FE7A91 /* UserInfo.m in Sources */,
+				9C715E8A14BB015B00FE7A91 /* EnterUserDetailsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9CB83C1A14B44B5700D2D4C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CB83C1B14B44B5700D2D4C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9CB83C2314B44B5700D2D4C4 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CB83C2414B44B5700D2D4C4 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CB83C2F14B44B5700D2D4C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/aneesh/Downloads/djw-core-plot-fd681cd/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CB83C3014B44B5700D2D4C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/aneesh/Downloads/djw-core-plot-fd681cd/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CB83C3214B44B5700D2D4C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PulseRate/PulseRate-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "PulseRate/PulseRate-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9CB83C3314B44B5700D2D4C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PulseRate/PulseRate-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "PulseRate/PulseRate-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CB83C0514B44B5700D2D4C4 /* Build configuration list for PBXProject "PulseRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB83C2F14B44B5700D2D4C4 /* Debug */,
+				9CB83C3014B44B5700D2D4C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CB83C3114B44B5700D2D4C4 /* Build configuration list for PBXNativeTarget "PulseRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB83C3214B44B5700D2D4C4 /* Debug */,
+				9CB83C3314B44B5700D2D4C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9CB83C2614B44B5700D2D4C4 /* PulseRate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9CB83C2714B44B5700D2D4C4 /* PulseRate.xcdatamodel */,
+			);
+			currentVersion = 9CB83C2714B44B5700D2D4C4 /* PulseRate.xcdatamodel */;
+			path = PulseRate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9CB83C0214B44B5700D2D4C4 /* Project object */;
+}
