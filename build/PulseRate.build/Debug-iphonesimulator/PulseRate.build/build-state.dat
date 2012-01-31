@@ -5,6 +5,7 @@ cCheck dependencies
 cProcessInfoPlistFile /Users/aneesh/Documents/PulseRate/build/Debug-iphonesimulator/PulseRate.app/Info.plist PulseRate/PulseRate-Info.plist
 cDataModelVersionCompile /Users/aneesh/Documents/PulseRate/build/Debug-iphonesimulator/PulseRate.app/PulseRate.momd /Users/aneesh/Documents/PulseRate/PulseRate/PulseRate.xcdatamodeld
 cProcessPCH /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-frrnqaxugsdzwtcsrrummayfulrf/PulseRate-Prefix.pch.pth PulseRate/PulseRate-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-normal/i386/UserInfo.o /Users/aneesh/Documents/PulseRate/PulseRate/UserInfo.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-normal/i386/main.o /Users/aneesh/Documents/PulseRate/PulseRate/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-normal/i386/AppDelegate.o /Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-normal/i386/PulseRecord.o /Users/aneesh/Documents/PulseRate/PulseRate/../PulseRecord.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -13,7 +14,6 @@ cCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-no
 cCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-normal/i386/RootViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/RootViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-normal/i386/GraphViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/GraphViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-normal/i386/CreateGraphcontroller.o /Users/aneesh/Documents/PulseRate/PulseRate/CreateGraphcontroller.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-normal/i386/UserInfo.o /Users/aneesh/Documents/PulseRate/PulseRate/UserInfo.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-normal/i386/EnterUserDetailsViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/EnterUserDetailsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-normal/i386/InformationViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/InformationViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-normal/i386/CustomPlot.o /Users/aneesh/Documents/PulseRate/PulseRate/CustomPlot.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -728,7 +728,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies91263e1dcad7b441^ea763e1dcad7b441^---0#1#0#--18"Check dependencies36"E85966EA-BD61-41D8-816C-74067DB9DD00-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies08e38b6fe6d7b441^124c996fe6d7b441^---0#1#0#--18"Check dependencies36"1511EAF7-9EE1-4F02-8CD0-C079A8F2F727-
 
 CCompileC build/PulseRate.build/Debug-iphonesimulator/PulseRate.build/Objects-normal/i386/AppDelegate.o /Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s349610596.395264
