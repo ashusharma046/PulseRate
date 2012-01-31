@@ -35,10 +35,59 @@
 {
     [super viewDidLoad];
     
-    self.title=@"View  Records";
-    UIBarButtonItem *_backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
-    self.navigationController.navigationItem.backBarButtonItem = _backButton;
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(done:)];
+   // self.title=@"View  Records";
+//    UIBarButtonItem *_backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+//    self.navigationController.navigationItem.backBarButtonItem = _backButton;
+//    //self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(done:)];
+    
+    
+    UIToolbar* toolbar = [[UIToolbar alloc]
+                          initWithFrame:CGRectMake(0, 0, 100, 45)];
+   // [toolbar setBarStyle: UIBarStyleBlackOpaque];
+    
+    // create an array for the buttons
+    NSMutableArray* buttons = [[NSMutableArray alloc] initWithCapacity:5];
+    
+    // create a standard save button
+    UIBarButtonItem *backButton =  [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(done:)];
+    
+    
+    [buttons addObject:backButton];
+   
+    
+    // create a standard delete button with the trash icon
+    UIBarButtonItem *monthrecords = [[UIBarButtonItem alloc] initWithTitle:@"Monthly" style:UIBarButtonItemStyleBordered target:self action:@selector(done:)];
+    
+   // monthrecords.style = UIBarButtonItemStyleBordered;
+    [buttons addObject:monthrecords];
+     
+    UIBarButtonItem *weakrecords = [[UIBarButtonItem alloc] initWithTitle:@"Weakly" style:UIBarButtonItemStyleBordered target:self action:@selector(done:)];
+    
+    
+    [buttons addObject:weakrecords];
+
+   
+  
+   
+    
+    UIBarButtonItem *dayReords = [[UIBarButtonItem alloc] initWithTitle:@"Daily" style:UIBarButtonItemStyleBordered  target:self action:@selector(done:)];
+  
+    [buttons addObject:dayReords];
+   
+    
+     
+    
+    // put the buttons in the toolbar and release them
+    [toolbar setItems:buttons animated:NO];
+    
+    
+    // place the toolbar into the navigation bar
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:toolbar];
+  
+    
+    
+    
+    
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
