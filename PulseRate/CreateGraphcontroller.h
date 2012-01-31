@@ -7,20 +7,33 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TUTViewController.h"
+#import "GraphViewController.h"
 @interface CreateGraphcontroller : UIViewController<UITextFieldDelegate,UIPickerViewDelegate,UIPickerViewDataSource>{
     int tag,rownum;
     IBOutlet UITextField *xaxis;
     IBOutlet UITextField *yaxis;
     IBOutlet UITextField *graphtype;
+    IBOutlet UITextField *monthType;
+    IBOutlet UITextField *weakType;
     IBOutlet UIPickerView *pcview;
+    IBOutlet UITextField *selectDate;
     UIToolbar *bar;
+    UIToolbar *bar2;
+    NSArray *montharray;
+    NSArray *weakArray;
+    UIDatePicker *datePicker ;
+    IBOutlet UILabel *lb1;
+    IBOutlet UILabel *lb2;
 }
-@property(strong,nonatomic)IBOutlet UITextField *xaxis;
-@property(strong,nonatomic)IBOutlet UITextField *yaxis;
+@property(strong,nonatomic) IBOutlet UITextField *xaxis;
+@property(strong,nonatomic) IBOutlet UITextField *yaxis;
 @property(strong,nonatomic) IBOutlet UIPickerView *pcview;
 @property(strong,nonatomic) IBOutlet UITextField *graphtype;
-@property(strong,nonatomic) TUTViewController *tUTViewController;
--(IBAction)show;
+@property(strong,nonatomic) IBOutlet UITextField *monthType;
+@property(strong,nonatomic) IBOutlet UITextField *weakType;
+@property(strong,nonatomic) IBOutlet UITextField *selectDate;
+@property(strong,nonatomic) GraphViewController *tUTViewController;
+@property(strong,nonatomic) IBOutlet UILabel *lb1;
+@property(strong,nonatomic) IBOutlet UILabel *lb2;
 -(IBAction)done:(id)sender;
 @end

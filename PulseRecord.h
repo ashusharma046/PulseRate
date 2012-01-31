@@ -16,5 +16,5 @@
 @property (nonatomic) int32_t pulse;
 @property (nonatomic) float temprature;
 @property (nonatomic) float bloodPresssure;
-@property (nonatomic) NSDate * entrytime; 
+@property (nonatomic,assign) NSString * entrytime; 
 @end

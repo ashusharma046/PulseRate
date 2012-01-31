@@ -1,29 +1,64 @@
 //
-//  GraphViewController.h
-//  PulseRate
+//  TUTViewController.h
+//  Core Plot Introduction
 //
-//  Created by Aneesh on 06/01/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by John Wordsworth on 20/10/2011.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "CPTPlot.h"
-#import "CorePlot-CocoaTouch.h"  
-@interface GraphViewController : UIViewController<CPTPlotDataSource>{
+#import "CorePlot-CocoaTouch.h"
+#import "CustomPlot.h"
+#import <MessageUI/MessageUI.h>
+
+@interface GraphViewController : UIViewController<MFMailComposeViewControllerDelegate> {
+    IBOutlet CPTGraphHostingView *_graphHostingView;
+    CustomPlot *_scatterPlot;
+    NSArray *recordsArray;
+    NSMutableArray *data;
     
-//    CPTXYGraph *graph;  
-//    NSArray *points;  
-//    int pointsCountMinusStartingPoint;  
-//    int intYNumberOfCharacters;  
-    NSMutableArray *samples;
+    NSString *xax;
+    NSString *yax;
+    IBOutlet UILabel *lb1;
+    IBOutlet UILabel *lb2;
+    IBOutlet UILabel *lb3;
+    IBOutlet UILabel *lb4;
+    IBOutlet UIView *vw1;
+    IBOutlet UIView *vw2;
+    IBOutlet UIView *vw3;
+    IBOutlet UIView *vw4;
     
-    
-    CPTGraphHostingView *_hostingView;
-    CPTXYGraph *_graph;
-    NSMutableArray *_graphData;
+    //date string for daywise reprting
+    NSString *dateString;
+    BOOL isDayWiseReporting;
+    NSMutableArray *timeStampArray;
 }
-@property (nonatomic, retain) CPTGraphHostingView *hostingView;
-@property (nonatomic, retain) CPTXYGraph *graph;
-@property (nonatomic, retain) NSMutableArray *graphData; 
--(IBAction)done:(id)sender;
+@property (copy)  NSString *xax;
+@property (copy)  NSString *yax;
+@property (copy)  NSString *graphtype;
+@property (assign)  NSInteger monthnum;
+@property (assign)  NSInteger weaknum;
+@property (copy) NSString *dateString;
+@property (assign) BOOL isDayWiseReporting;
+
+@property(nonatomic,retain) IBOutlet UILabel *lb1;
+@property(nonatomic,retain) IBOutlet UILabel *lb2;
+@property(nonatomic,retain) IBOutlet UILabel *lb3;
+@property(nonatomic,retain) IBOutlet UILabel *lb4;
+
+
+@property(nonatomic,retain) IBOutlet UIView *vw1;
+@property(nonatomic,retain) IBOutlet UIView *vw2;
+@property(nonatomic,retain) IBOutlet UIView *vw3;
+@property(nonatomic,retain) IBOutlet UIView *vw4;
+
+@property (nonatomic, retain) CustomPlot *scatterPlot;
+- (IBAction)done:(id)sender;
+- (void)setDatatForDayWiseReporting;
+- (void)plotTempratureBackground;
+- (void)plotpulseBackground;
+- (void)drawPdf;
+- (void)mailReport;
+
+
 @end

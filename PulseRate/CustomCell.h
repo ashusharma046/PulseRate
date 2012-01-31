@@ -12,9 +12,11 @@
     IBOutlet UILabel *pulse;
     IBOutlet UILabel *tmp;
     IBOutlet UILabel *bp;
+    IBOutlet UILabel *date;
 
 }
 @property(nonatomic,strong) IBOutlet UILabel *pulse;
 @property(nonatomic,strong) IBOutlet UILabel *tmp;
 @property(nonatomic,strong) IBOutlet UILabel *bp;
+@property(nonatomic,strong)  IBOutlet UILabel *date;
 @end

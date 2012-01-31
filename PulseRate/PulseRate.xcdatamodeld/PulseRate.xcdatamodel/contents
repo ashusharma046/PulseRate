@@ -2,7 +2,7 @@
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="PulseRecord" representedClassName="PulseRecord" syncable="YES">
         <attribute name="bloodPresssure" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="entrytime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="entrytime" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="pulse" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="temprature" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -13,7 +13,7 @@
         <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PulseRecord" positionX="160" positionY="192" width="128" height="105"/>
-        <element name="UserInfo" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="PulseRecord" positionX="115" positionY="-12" width="128" height="120"/>
+        <element name="UserInfo" positionX="421" positionY="45" width="128" height="90"/>
     </elements>
 </model>

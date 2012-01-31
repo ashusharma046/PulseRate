@@ -9,7 +9,7 @@
 #import "CustomCell.h"
 
 @implementation CustomCell
-@synthesize pulse,bp,tmp;
+@synthesize pulse,bp,tmp,date;
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

@@ -13,11 +13,13 @@
     IBOutlet UITextField *age;
     IBOutlet UITextField *weight;
     IBOutlet UITextField *height;
+    IBOutlet UIScrollView *scView;
 
 }
 @property(strong,nonatomic) IBOutlet UITextField *age;
 @property(strong,nonatomic) IBOutlet UITextField *weight;
 @property(strong,nonatomic) IBOutlet UITextField *height;
+@property(strong,nonatomic) IBOutlet UIScrollView *scView;
 -(IBAction)done:(id)sender;
 -(IBAction)back:(id)sender;
 @end

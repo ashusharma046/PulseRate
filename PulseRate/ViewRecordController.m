@@ -38,7 +38,7 @@
     self.title=@"View  Records";
     UIBarButtonItem *_backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
     self.navigationController.navigationItem.backBarButtonItem = _backButton;
-    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(done:)];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
@@ -52,7 +52,7 @@
    recordsArray = [context executeFetchRequest:request error:&error];
     
     if ([recordsArray count] == 0) {
-        NSLog(@"No matches");
+        
     } 
     else {
         
@@ -60,7 +60,7 @@
     }
 }
 -(IBAction)done:(id)sender{
-    NSLog(@"done pressed");
+  
     [self dismissModalViewControllerAnimated:YES];
 }
 - (void)viewDidUnload
@@ -114,9 +114,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CustomCell";
-    
-     cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
+    cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     PulseRecord *pulseRecord=(PulseRecord *)[recordsArray objectAtIndex:indexPath.row];
   
     
@@ -124,17 +122,64 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
  
-    NSString *str =[dateFormatter stringFromDate:pulseRecord.entrytime];
-   
-    NSArray *datecomps =[str componentsSeparatedByString:@"-"];
-    NSLog(@"date is -------%@",[datecomps objectAtIndex:1]);
+    
+    cell.tmp.text=[NSString stringWithFormat:@"%.02f °F ",[[pulseRecord valueForKey:@"temprature"] floatValue]];
+    cell.bp.text=[NSString stringWithFormat:@"%.02f mmHg",[[pulseRecord valueForKey:@"bloodPresssure"] floatValue]];
+    cell.pulse.text=[NSString stringWithFormat:@"%d BPM",[[pulseRecord valueForKey:@"pulse"] intValue]];
+    cell.date.text= [NSString stringWithString:(NSString *)[pulseRecord valueForKey:@"entrytime"]];
+    
+    float tmp = [[pulseRecord valueForKey:@"temprature"] floatValue];
+    float bp  = [[pulseRecord valueForKey:@"bloodPresssure"] floatValue];
+    int pulse = [[pulseRecord valueForKey:@"pulse"] intValue];
+    int age=[[[NSUserDefaults standardUserDefaults] objectForKey:@"age"]intValue];
+
+    if (tmp > 99.5) {
+        [cell.tmp setBackgroundColor:[UIColor redColor]];
+    }
+    
+    //blood Pressure
+    if(age==1){
+         if(!(bp > 65 || bp < 95)) {
+         [cell.bp setBackgroundColor:[UIColor redColor]];
+         } 
+    }
+    else if(age >1 && age <=10){
+         if(!(bp > 65 || bp < 100)) {
+         [cell.bp setBackgroundColor:[UIColor redColor]];
+         } 
+    }
+    
+    else{
+        if (!(bp>=90  && bp <=140)) {
+        [cell.bp setBackgroundColor:[UIColor redColor]];
+        }  
+    }
     
     
+    //Pulse setting
+    if(age ==1){
+        if (!(pulse>=100  && pulse <=160)) {
+            [cell.pulse setBackgroundColor:[UIColor redColor]];
+        }  
     
+     }
+     else if(age >1 && age <=10){
+        if (!(pulse>=60  && pulse <=140)) {
+            [cell.pulse setBackgroundColor:[UIColor redColor]];
+        }  
+    } 
+     else if(age >=11 && age <=17){
+        if (!(pulse>=60  && pulse <=100)) {
+            [cell.pulse setBackgroundColor:[UIColor redColor]];
+        }  
+    }
     
-    cell.tmp.text=[NSString stringWithFormat:@"%f",[[pulseRecord valueForKey:@"temprature"] floatValue]];
-    cell.bp.text=[NSString stringWithFormat:@"%f",[[pulseRecord valueForKey:@"bloodPresssure"] floatValue]];
-    cell.pulse.text=[NSString stringWithFormat:@"%d",[[pulseRecord valueForKey:@"pulse"] intValue]];
+    else{
+        if (!(pulse>=60  && pulse <=100)) {
+            [cell.pulse setBackgroundColor:[UIColor redColor]];
+        }  
+        
+    }
     return cell;
 }
 

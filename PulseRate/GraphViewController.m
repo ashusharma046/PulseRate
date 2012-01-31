@@ -1,280 +1,435 @@
 //
-//  GraphViewController.m
-//  PulseRate
+//  TUTViewController.m
+//  Core Plot Introduction
 //
-//  Created by Aneesh on 06/01/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by John Wordsworth on 20/10/2011.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import "GraphViewController.h"
-#import "CPTXYGraph.h"
-#import "CPTGraphHostingView.h"
-#import "CPTGraphHostingView.h"
-#define START_POINT -2.0
-#define END_POINT 2.0
-#define NUM_SAMPLES 30
-
-#define X_VAL @"X_VAL"
-#define Y_VAL @"Y_VAL"
-
+#import "AppDelegate.h"
+#import "PulseRecord.h"
 @implementation GraphViewController
-@synthesize hostingView = _hostingView;
-@synthesize graph = _graph;
-@synthesize graphData = _graphData;
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
--(void) generateDataSamples
-{
-	double length = (END_POINT - START_POINT);
-	double delta = length / (NUM_SAMPLES - 1);
-	
-	samples = [[NSMutableArray alloc] initWithCapacity:NUM_SAMPLES];
-	
-	for (int i = 0; i < NUM_SAMPLES; i++){
-		double x = START_POINT + (delta * i);
-		double y = x * x;
-		NSDictionary *sample = [NSDictionary dictionaryWithObjectsAndKeys:
-								[NSNumber numberWithDouble:x],X_VAL,
-								[NSNumber numberWithDouble:y],Y_VAL,
-								nil];
-		[samples addObject:sample];
-	}	
-}
--(NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plot; 
-{
-	return NUM_SAMPLES;
-}
-
--(NSNumber *)numberForPlot:(CPTPlot *)plot field:(NSUInteger)fieldEnum 
-			   recordIndex:(NSUInteger)index;
-{
-	NSDictionary *sample = [samples objectAtIndex:index];
-	
-	if (fieldEnum == CPTScatterPlotFieldX)
-		return [sample valueForKey:X_VAL];
-	else
-		return [sample valueForKey:Y_VAL];
-}
-
-
+@synthesize scatterPlot = _scatterPlot;
+@synthesize xax,yax;
+@synthesize lb1,lb2,lb3,lb4;
+@synthesize vw1,vw2,vw3,vw4;
+@synthesize graphtype;
+@synthesize monthnum;
+@synthesize weaknum;
+@synthesize dateString;
+@synthesize isDayWiseReporting;
 - (void)didReceiveMemoryWarning
 {
-    // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
     // Release any cached data, images, etc that aren't in use.
 }
--(IBAction)done:(id)sender{
-   
-    [self dismissModalViewControllerAnimated:YES];
-}
+
 #pragma mark - View lifecycle
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
-
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    	
-    double xAxisStart = START_POINT;
-	double xAxisLength = END_POINT - START_POINT;
-	
-	double maxY = 20;
-	double yAxisStart = -maxY;
-	double yAxisLength = 2 * maxY;
-//    CPTLayerHostingView *hostingview=[[CPTLayerHostingView alloc] initWithFrame:self.view.bounds];
-//	CPTGraphHostingView *hostingView = [[CPTGraphHostingView alloc] initWithFrame:self.view.bounds];
-//	[self.view addSubview:hostingView];
-//    
-//	graph = [[CPTXYGraph alloc] initWithFrame:self.view.bounds];
-//	hostingView.hostedGraph = graph;
-//    
-//	
-	/*
-	CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)graph.defaultPlotSpace;
-	plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(xAxisStart)
-												   length:CPTDecimalFromDouble(xAxisLength)];
-	
-	plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(yAxisStart)
-												   length:CPTDecimalFromDouble(yAxisLength)];	
+    self.title=@"Graph";
+    UIBarButtonItem *mailPdfButton=[[UIBarButtonItem alloc] initWithTitle:@"Email Report" style:UIBarButtonItemStyleDone target:self action:@selector(mailReport)];
+    
+    //mailPdfButton.title=@"Email Report";
+    
+    self.navigationItem.rightBarButtonItem =  mailPdfButton;
     
     
     
-    NSLog(@"-----------%d----------%d",plotSpace.xRange,plotSpace.yRange);
-	*/
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    data=[[NSMutableArray alloc] init];
+    [request setEntity:entityDesc];
     
-    /*
-	CPTScatterPlot *dataSourceLinePlot = [[CPTScatterPlot alloc] init];
-	dataSourceLinePlot.dataSource = self;
-	
-	[graph addPlot:dataSourceLinePlot];
-    
-    
-    
-    
-    
-    
-    CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)graph.defaultPlotSpace;
-    plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(-6) 
-                                                   length:CPTDecimalFromFloat(12)];
-    plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(-5) 
-                                                   length:CPTDecimalFromFloat(30)];
-    
-    CPTXYAxisSet *axisSet = (CPTXYAxisSet *)graph.axisSet;
-    
-    CPTLineStyle *lineStyle = [CPTLineStyle lineStyle];
- //   lineStyle.lineColor = [CPTColor blackColor];
-   // lineStyle.lineWidth = 2.0f;
-    
-   // axisSet.xAxis.majorIntervalLength = [NSDecimalNumber decimalNumberWithString:@"5"];
-    axisSet.xAxis.minorTicksPerInterval = 4;
-    axisSet.xAxis.majorTickLineStyle = lineStyle;
-    axisSet.xAxis.minorTickLineStyle = lineStyle;
-    axisSet.xAxis.axisLineStyle = lineStyle;
-    axisSet.xAxis.minorTickLength = 5.0f;
-    axisSet.xAxis.majorTickLength = 7.0f;
-    //axisSet.xAxis.axisLabelOffset = 3.0f;
-    
- //   axisSet.yAxis.majorIntervalLength = [NSDecimalNumber decimalNumberWithString:@"5"];
-    axisSet.yAxis.minorTicksPerInterval = 4;
-    axisSet.yAxis.majorTickLineStyle = lineStyle;
-    axisSet.yAxis.minorTickLineStyle = lineStyle;
-    axisSet.yAxis.axisLineStyle = lineStyle;
-    axisSet.yAxis.minorTickLength = 5.0f;
-    axisSet.yAxis.majorTickLength = 7.0f;
-    //axisSet.yAxis.axisLabelOffset = 3.0f;
-    
-    CPTScatterPlot *xSquaredPlot = [[CPTScatterPlot alloc] 
-                                    initWithFrame:self.view.bounds];
-    xSquaredPlot.identifier = @"X Squared Plot";
-     xSquaredPlot.dataLineStyle.lineWidth = 1.0f;
-   xSquaredPlot.dataLineStyle.lineColor = [CPTColor redColor];
-    xSquaredPlot.dataSource = self;
-    [graph addPlot:xSquaredPlot];
-    
-    CPTPlotSymbol *greenCirclePlotSymbol = [CPTPlotSymbol ellipsePlotSymbol];
-    greenCirclePlotSymbol.fill = [CPTFill fillWithColor:[CPTColor greenColor]];
-    greenCirclePlotSymbol.size = CGSizeMake(2.0, 2.0);
-  //  xSquaredPlot.defaultPlotSymbol = greenCirclePlotSymbol;  
-    
-    CPTScatterPlot *xInversePlot = [[CPTScatterPlot alloc] 
-                                    initWithFrame:self.view.bounds];
-    xInversePlot.identifier = @"X Inverse Plot";
-   // xInversePlot.dataLineStyle.lineWidth = 1.0f;
-   // xInversePlot.dataLineStyle.lineColor = [CPTColor blueColor];
-    xInversePlot.dataSource = self;
-    [graph addPlot:xInversePlot];
-*/   
+    NSError *error;
+    NSString *predicatestr;
+    if (monthnum <10) {
+        predicatestr=[NSString stringWithFormat:@"-0%d-",monthnum];
+    }
+    else{
+        predicatestr=[NSString stringWithFormat:@"-%d-",monthnum];
+    }
     
     
-    // Start with some simple sanity checks before we kick off
-      
-  
-    // Create a graph object which we will use to host just one scatter plot.
-    CGRect frame = [self.hostingView bounds];
-    _graph = [[CPTXYGraph alloc] initWithFrame:frame];
     
-    // Add some padding to the graph, with more at the bottom for axis labels.
-    self.graph.plotAreaFrame.paddingTop = 20.0f;
-    self.graph.plotAreaFrame.paddingRight = 20.0f;
-    self.graph.plotAreaFrame.paddingBottom = 50.0f;
-    self.graph.plotAreaFrame.paddingLeft = 20.0f;
+    NSPredicate *myPred;
+    if(!isDayWiseReporting){
+        myPred=[NSPredicate predicateWithFormat:@"entrytime CONTAINS[cd] %@",predicatestr];
+        request.predicate=myPred;    
+        recordsArray = [context executeFetchRequest:request error:&error];   
+        NSLog(@"  number ----");
+    }
     
-    // Tie the graph we've created with the hosting view.
-    self.hostingView.hostedGraph = self.graph;
+    else{
+        myPred=[NSPredicate predicateWithFormat:@"entrytime CONTAINS[cd] %@",[dateString substringToIndex:10]];
+        request.predicate=myPred;    
+        recordsArray = [context executeFetchRequest:request error:&error];
+        [self setDatatForDayWiseReporting];
+        NSLog(@"  number of records are %d",[recordsArray count]);
+        NSLog(@" entrytime CONTAINS[cd] %@",[dateString substringToIndex:10]);
+        
+    }
     
-    // If you want to use one of the default themes - apply that here.
-    //[self.graph applyTheme:[CPTTheme themeNamed:kCPTDarkGradientTheme]];
     
-    // Create a line style that we will apply to the axis and data line.
-    CPTMutableLineStyle *lineStyle = [CPTMutableLineStyle lineStyle];
-    lineStyle.lineColor = [CPTColor whiteColor];
-    lineStyle.lineWidth = 2.0f;
     
-    // Create a text style that we will use for the axis labels.
-    CPTMutableTextStyle *textStyle = [CPTMutableTextStyle textStyle];
-    textStyle.fontName = @"Helvetica";
-    textStyle.fontSize = 14;
-    textStyle.color = [CPTColor whiteColor];
     
-    // Create the plot symbol we're going to use.
-    CPTPlotSymbol *plotSymbol = [CPTPlotSymbol crossPlotSymbol];
-    plotSymbol.lineStyle = lineStyle;
-    plotSymbol.size = CGSizeMake(8.0, 8.0);
     
-    // Setup some floats that represent the min/max values on our axis.
-    float xAxisMin = -10;
-    float xAxisMax = 10;
-    float yAxisMin = 0;
-    float yAxisMax = 100;
+    if ([recordsArray count] == 0) {
+        UIAlertView *al=[[UIAlertView alloc] initWithTitle:nil message:@"No Record Found" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [al show];
+    } 
     
-    // We modify the graph's plot space to setup the axis' min / max values.
-    CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)self.graph.defaultPlotSpace;
-    plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(xAxisMin) length:CPTDecimalFromFloat(xAxisMax - xAxisMin)];
-    plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(yAxisMin) length:CPTDecimalFromFloat(yAxisMax - yAxisMin)];
+    else {
+        
+        if(!isDayWiseReporting){
+            
+            if (weaknum ==6) {
+                
+                //set backgorund
+                if([yax isEqualToString:@"Pulse"]){
+                    [self plotpulseBackground];
+                }
+                else if([yax isEqualToString:@"Temprature"]) {
+                    [self plotTempratureBackground];
+                }  
+                
+                
+                /// Data for monthly graphical report           
+                int i;
+                for(i=0;i < [recordsArray count];i++){
+                    
+                    PulseRecord *pulseRecord=(PulseRecord *)[recordsArray objectAtIndex:i];  
+                    NSArray *datecomps =[pulseRecord.entrytime componentsSeparatedByString:@"-"];
+                    NSInteger k= [[datecomps objectAtIndex:2] intValue];
+                    
+                    if([yax isEqualToString:@"Blood Pressure"])
+                    {
+                        [data addObject:[NSValue valueWithCGPoint:CGPointMake([[NSDecimalNumber numberWithFloat:k*1.15] floatValue], pulseRecord.bloodPresssure)]];
+                        
+                    }
+                    if([yax isEqualToString:@"Pulse"]){
+                        [data addObject:[NSValue valueWithCGPoint:CGPointMake([[NSDecimalNumber numberWithFloat:k*1.15] floatValue], pulseRecord.pulse)]];
+                        
+                        
+                    }
+                    if([yax isEqualToString:@"Temprature"]){
+                        [data addObject:[NSValue valueWithCGPoint:CGPointMake([[NSDecimalNumber numberWithFloat:k*1.15] floatValue], (pulseRecord.temprature-94)*2.50)]];
+                        NSLog(@"y avlue is-------%f",(pulseRecord.temprature-94)*2.50) ;
+                    }
+                    
+                }
+            }          
+            
+            
+            
+            else{
+                int i;
+                //set backgorund
+                if([yax isEqualToString:@"Pulse"]){
+                    [self plotpulseBackground];
+                }
+                else if([yax isEqualToString:@"Temprature"]) {
+                    [self plotTempratureBackground];
+                }  
+                
+                /// Data for weakly graphical report   
+                for(i=0;i < [recordsArray count];i++){
+                    
+                    PulseRecord *pulseRecord=(PulseRecord *)[recordsArray objectAtIndex:i];  
+                    NSArray *datecomps =[pulseRecord.entrytime componentsSeparatedByString:@"-"];
+                    int date =[[datecomps objectAtIndex:2]intValue];
+                    int k=date-(weaknum-1)*7;
+                    
+                    if(date>=((weaknum-1)*7+1) && date<=(weaknum*7) ){
+                        if([yax isEqualToString:@"Blood Pressure"])
+                        {
+                            [data addObject:[NSValue valueWithCGPoint:CGPointMake([[NSDecimalNumber numberWithInt:4*k] floatValue], pulseRecord.bloodPresssure)]];
+                        }
+                        if([yax isEqualToString:@"Pulse"]){
+                            [data addObject:[NSValue valueWithCGPoint:CGPointMake([[NSDecimalNumber numberWithInt:4*k] floatValue], pulseRecord.pulse)]];
+                            
+                            
+                        }
+                        if([yax isEqualToString:@"Temprature"]){
+                            [data addObject:[NSValue valueWithCGPoint:CGPointMake([[NSDecimalNumber numberWithInt:4*k] floatValue], (pulseRecord.temprature-94)*2.50)]];
+                        }
+                        
+                    }
+                }
+                
+            }       
+            
+            
+        }    
+        
+        
+        
+        
+        self.scatterPlot= [[CustomPlot alloc] initWithHostingView:_graphHostingView andData:data andXax:xax andYax :yax andGraphtype:self.graphtype];
+        ///self.scatterPlot.delegate=self;
+        self.scatterPlot.xax=xax;
+        self.scatterPlot.yax=yax;
+        
+        if(weaknum <6){
+            self.scatterPlot.graphPeriod=1;
+            
+        }
+        if (isDayWiseReporting) {
+            self.scatterPlot.graphPeriod=3;
+            self.scatterPlot.timeStamparray=timeStampArray;
+            
+        }
+        [self.scatterPlot initialisePlot];
+        
+        
+        
+        
+    }
+    self.view.backgroundColor=[UIColor yellowColor];
+    [self drawPdf];   
     
-    // Modify the graph's axis with a label, line style, etc.
-    CPTXYAxisSet *axisSet = (CPTXYAxisSet *)self.graph.axisSet;
-    
-    axisSet.xAxis.title = @"Data X";
-    axisSet.xAxis.titleTextStyle = textStyle;
-    axisSet.xAxis.titleOffset = 30.0f;
-    axisSet.xAxis.axisLineStyle = lineStyle;
-    axisSet.xAxis.majorTickLineStyle = lineStyle;
-    axisSet.xAxis.minorTickLineStyle = lineStyle;
-    axisSet.xAxis.labelTextStyle = textStyle;
-    axisSet.xAxis.labelOffset = 3.0f;
-    axisSet.xAxis.majorIntervalLength = CPTDecimalFromFloat(2.0f);
-    axisSet.xAxis.minorTicksPerInterval = 1;
-    axisSet.xAxis.minorTickLength = 5.0f;
-    axisSet.xAxis.majorTickLength = 7.0f;
-    
-    axisSet.yAxis.title = @"Data Y";
-    axisSet.yAxis.titleTextStyle = textStyle;
-    axisSet.yAxis.titleOffset = 40.0f;
-    axisSet.yAxis.axisLineStyle = lineStyle;
-    axisSet.yAxis.majorTickLineStyle = lineStyle;
-    axisSet.yAxis.minorTickLineStyle = lineStyle;
-    axisSet.yAxis.labelTextStyle = textStyle;
-    axisSet.yAxis.labelOffset = 3.0f;
-    axisSet.yAxis.majorIntervalLength = CPTDecimalFromFloat(10.0f);
-    axisSet.yAxis.minorTicksPerInterval = 1;
-    axisSet.yAxis.minorTickLength = 5.0f;
-    axisSet.yAxis.majorTickLength = 7.0f;
-    
-    // Add a plot to our graph and axis. We give it an identifier so that we
-    // could add multiple plots (data lines) to the same graph if necessary.
-    CPTScatterPlot *plot = [[CPTScatterPlot alloc] init] ;
-    plot.dataSource = self;
-    plot.identifier = @"mainplot";
-    plot.dataLineStyle = lineStyle;
-    plot.plotSymbol = plotSymbol;
-    [self.graph addPlot:plot];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    
+}
+
+
+
+- (void)setDatatForDayWiseReporting
+{       
+    //set   background 
+    if([yax isEqualToString:@"Pulse"]){
+        [self plotpulseBackground];    
+    }
+    if([yax isEqualToString:@"Temprature"]){
+        
+        [self plotTempratureBackground];
+    }
+    
+    //data for plotting graph
+    timeStampArray=[[NSMutableArray alloc] init]; 
+    int i;
+    for(i=0;i < [recordsArray count];i++){
+        PulseRecord *pulseRecord=(PulseRecord *)[recordsArray objectAtIndex:i];  
+        NSArray *datecomps =[pulseRecord.entrytime componentsSeparatedByString:@"-"];    
+        NSString *timestamp =[datecomps objectAtIndex:3];
+        [timeStampArray addObject:timestamp];    
+        
+        [timeStampArray addObject:timestamp];        
+        if([yax isEqualToString:@"Blood Pressure"])
+        {
+            [data addObject:[NSValue valueWithCGPoint:CGPointMake([[NSDecimalNumber numberWithInt:(4*(i+1))] floatValue], pulseRecord.bloodPresssure)]];
+        }
+        if([yax isEqualToString:@"Pulse"]){
+            [data addObject:[NSValue valueWithCGPoint:CGPointMake([[NSDecimalNumber numberWithInt:(4*(i+1))] floatValue], pulseRecord.pulse)]];
+            
+            
+        }
+        if([yax isEqualToString:@"Temprature"]){
+            [data addObject:[NSValue valueWithCGPoint:CGPointMake([[NSDecimalNumber numberWithInt:(4*(i+1))] floatValue], (pulseRecord.temprature-94)*2.50)]];
+            
+        }
+        [self drawPdf];    
+        
+        
+    }
+    
+}
+-(void)drawPdf{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString * pdfFilePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithString:@"Report.pdf"]];    UIGraphicsBeginPDFContextToFile(pdfFilePath, CGRectZero, nil);
+    CGContextRef context1 = UIGraphicsGetCurrentContext();
+    UIGraphicsBeginPDFPageWithInfo([[UIScreen mainScreen] bounds], nil);
+    	
+	self.view.autoresizesSubviews = true;
+    [self.view.layer renderInContext:context1];
+    UIGraphicsEndPDFContext();
+}
+-(void)mailReport{
+    // email the PDF File. 
+    MFMailComposeViewController* mailComposer = [[MFMailComposeViewController alloc] init] ;
+    mailComposer.mailComposeDelegate = self;
+    NSString *path=[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0]stringByAppendingPathComponent:@"Report.gif"];
+    [mailComposer addAttachmentData:[NSData dataWithContentsOfFile:path]
+                           mimeType:@"application/pdf" fileName:@"Report.pdf"];
+    [mailComposer setSubject:@"Reports"];
+    
+    [self presentModalViewController:mailComposer animated:YES];  
+    
+    
+}
+
+- (void)plotTempratureBackground
+{
+    
+    lb1.frame=CGRectMake(129, 5, 129,20);
+    lb1.alpha=.35;
+    lb2.alpha=.35;
+    lb3.alpha=.35;
+    lb4.alpha=.35;
+    lb1.text=@"Normal";
+    lb2.frame=CGRectMake(129, 0, 129, 20);
+    lb4.frame=CGRectMake(129, 5, 129,20);
+    lb2.text=@"HypoThermia";
+    lb4.text=@"Fever";
+    //lb3.hidden=YES;
+    //lb4.hidden=YES;
+    vw1.frame=CGRectMake(0, 250, 330,40);
+    vw2.frame=CGRectMake(0, 340, 330,25);
+    vw3.frame=CGRectMake(0, 220, 330,30);
+    vw4.hidden=YES;;
+    
+}
+
+- (void)plotpulseBackground{
+    lb1.alpha=.35;
+    lb2.alpha=.35;
+    lb3.alpha=.35;
+    lb4.alpha=.35;
+    int age=[[[NSUserDefaults standardUserDefaults] objectForKey:@"age"]intValue]; 
+    if(age ==1){
+        lb1.frame=CGRectMake(96, 0, 59, 85);
+        lb1.text=@"High";
+        vw1.frame=CGRectMake(0, 0, 320, 85);
+        
+        
+        lb2.text=@"Normal \n (100-160)";
+        lb2.lineBreakMode=UILineBreakModeWordWrap;
+        lb2.numberOfLines = 0;
+        lb2.frame=CGRectMake(96, 0, 59, 85);// lb2.frame=CGRectMake(86, 85, 59, 85);
+        vw2.frame=CGRectMake(0, 85, 320, 101);   
+        
+        
+        lb3.text=@"Low";
+        lb3.frame=CGRectMake(96, 0, 59, 85);//lb3.frame=CGRectMake(56, 186, 59, 85);
+        vw4.frame=CGRectMake(0, 320, 264, 150);
+        
+        
+        
+        
+        lb4.hidden=YES;
+        vw3.hidden=YES;
+    }
+    
+    
+    else if(age >1 && age <=10){
+        lb1.frame=CGRectMake(96, 0, 59, 120);// lb1.frame=CGRectMake(56, 0, 59, 120);
+        lb1.text=@"High";
+        vw1.frame=CGRectMake(0, 0, 320, 120);
+        
+        
+        lb2.text=@"Normal\n(60-140) ";
+        
+        lb2.lineBreakMode=UILineBreakModeWordWrap;
+        lb2.numberOfLines = 0;
+        lb2.frame=CGRectMake(96, 0, 59, 126);//CGRectMake(56, 120, 59, 126);
+        vw2.frame=CGRectMake(0, 120, 320, 126);   
+        
+        
+        lb3.text=@"Low";
+        lb3.frame=CGRectMake(96, 0, 59, 90);//(56, 246, 59, 90);
+        vw4.frame=CGRectMake(0, 246, 320, 90);
+        
+        
+        
+        
+        lb4.hidden=YES;
+        vw3.hidden=YES;
+    }
+    
+    else if(age >=11 && age <=17){
+        NSLog(@"age 11-17");
+        lb1.frame=CGRectMake(86, 0, 59, 98);//CGRectMake(86, 0, 59, 98);
+        lb1.text=@"High";
+        vw1.frame=CGRectMake(0, 0, 320, 182);
+        
+        
+        lb2.text=@"Normal\n(60-100)";
+        lb2.lineBreakMode=UILineBreakModeWordWrap;
+        lb2.numberOfLines = 0;
+        lb2.frame=CGRectMake(96, 0, 59, 79);//CGRectMake(56, 182, 59, 79);
+        vw2.frame=CGRectMake(0, 182, 320, 79);   
+        NSLog(@"age 11-17");
+        
+        lb3.text=@"Low";
+        lb3.frame=CGRectMake(96, 0, 59, 90);//lb3.frame=CGRectMake(56, 246, 59, 90);
+        vw4.frame=CGRectMake(0, 246, 320, 90);
+        
+        
+        
+        
+        lb4.hidden=YES;
+        vw3.hidden=YES;
+    }
+    
+    
+    
+    
+    
+}
+// Dismisses the email composition interface when users tap Cancel or Send. Proceeds to update the message field with the result of the operation.
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error 
+{	
+    
+	// Notifies users about errors associated with the interface
+	switch (result)
+	{
+		case MFMailComposeResultCancelled:
+			
+			break;
+		case MFMailComposeResultSaved:
+			
+			break;
+		case MFMailComposeResultSent:
+			
+			break;
+		case MFMailComposeResultFailed:
+			
+			break;
+		default:
+			
+			break;
+	}
+	[self dismissModalViewControllerAnimated:YES];
+}
+
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+-(IBAction)done:(id)sender{
+    [self dismissModalViewControllerAnimated:YES];
+}
+- (void)viewWillDisappear:(BOOL)animated
+{
+	[super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+	[super viewDidDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    
+	return YES;
 }
 
 @end

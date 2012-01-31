@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C17478114BDF82D002341BA /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C17477F14BDF821002341BA /* libCorePlot-CocoaTouch.a */; };
 		9C4AFCF214B6CDD800FDE4B8 /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4AFCF114B6CDD800FDE4B8 /* GraphViewController.m */; };
 		9C4AFCFC14B6DCD900FDE4B8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4AFCFB14B6DCD900FDE4B8 /* QuartzCore.framework */; };
-		9C4AFD2714B7095F00FDE4B8 /* TUTSimpleScatterPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4AFD2614B7095F00FDE4B8 /* TUTSimpleScatterPlot.m */; };
-		9C4AFD2A14B709A300FDE4B8 /* TUTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4AFD2914B709A300FDE4B8 /* TUTViewController.m */; };
 		9C715E8714BB005800FE7A91 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C715E8614BB005700FE7A91 /* UserInfo.m */; };
 		9C715E8A14BB015B00FE7A91 /* EnterUserDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C715E8914BB015B00FE7A91 /* EnterUserDetailsViewController.m */; };
+		9C87A31F14C6DA5400F8EB9F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C87A31E14C6DA5400F8EB9F /* MessageUI.framework */; };
+		9C8AC72614C84C5400BA1392 /* EnterRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8AC72514C84C5400BA1392 /* EnterRecordViewController.m */; };
+		9C95718B14C7F5B700312DBF /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C95718A14C7F5B700312DBF /* InformationViewController.m */; };
+		9C9571A214C83C3500312DBF /* CustomPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9571A114C83C3500312DBF /* CustomPlot.m */; };
 		9C9A340314B4597F00A59B5E /* PulseRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A340214B4597F00A59B5E /* PulseRecord.m */; };
 		9C9A341014B46B5B00A59B5E /* ViewRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A340E14B46B5B00A59B5E /* ViewRecordController.m */; };
 		9C9A341414B46D2500A59B5E /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A341314B46D2500A59B5E /* CustomCell.m */; };
@@ -28,13 +29,13 @@
 		9CB83C2214B44B5700D2D4C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB83C2114B44B5700D2D4C4 /* AppDelegate.m */; };
 		9CB83C2514B44B5700D2D4C4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB83C2314B44B5700D2D4C4 /* MainStoryboard.storyboard */; };
 		9CB83C2814B44B5700D2D4C4 /* PulseRate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CB83C2614B44B5700D2D4C4 /* PulseRate.xcdatamodeld */; };
-		9CB83C2B14B44B5700D2D4C4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB83C2A14B44B5700D2D4C4 /* MainViewController.m */; };
+		9CF888D214BEBF670023DD97 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8E763114BEBF32006DD219 /* libCorePlot-CocoaTouch.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9C17477E14BDF821002341BA /* PBXContainerItemProxy */ = {
+		9C8E763014BEBF32006DD219 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9C17477514BDF821002341BA /* CorePlot-CocoaTouch.xcodeproj */;
+			containerPortal = 9C8E762714BEBF32006DD219 /* CorePlot-CocoaTouch.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
 			remoteInfo = "CorePlot-CocoaTouch";
@@ -42,18 +43,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C17477514BDF821002341BA /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "../../../Downloads/djw-core-plot-fd681cd 6/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
 		9C4AFCF014B6CDD800FDE4B8 /* GraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphViewController.h; sourceTree = "<group>"; };
 		9C4AFCF114B6CDD800FDE4B8 /* GraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphViewController.m; sourceTree = "<group>"; };
 		9C4AFCFB14B6DCD900FDE4B8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		9C4AFD2514B7095300FDE4B8 /* TUTSimpleScatterPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTSimpleScatterPlot.h; sourceTree = "<group>"; };
-		9C4AFD2614B7095F00FDE4B8 /* TUTSimpleScatterPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTSimpleScatterPlot.m; sourceTree = "<group>"; };
-		9C4AFD2814B7099D00FDE4B8 /* TUTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTViewController.h; sourceTree = "<group>"; };
-		9C4AFD2914B709A300FDE4B8 /* TUTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTViewController.m; sourceTree = "<group>"; };
 		9C715E8514BB005700FE7A91 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		9C715E8614BB005700FE7A91 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		9C715E8814BB015A00FE7A91 /* EnterUserDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterUserDetailsViewController.h; sourceTree = "<group>"; };
 		9C715E8914BB015B00FE7A91 /* EnterUserDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterUserDetailsViewController.m; sourceTree = "<group>"; };
+		9C87A31E14C6DA5400F8EB9F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9C8AC72414C84C5300BA1392 /* EnterRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterRecordViewController.h; sourceTree = "<group>"; };
+		9C8AC72514C84C5400BA1392 /* EnterRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterRecordViewController.m; sourceTree = "<group>"; };
+		9C8E762714BEBF32006DD219 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
+		9C95718914C7F5AB00312DBF /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
+		9C95718A14C7F5B700312DBF /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
+		9C9571A014C83C3500312DBF /* CustomPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPlot.h; sourceTree = "<group>"; };
+		9C9571A114C83C3500312DBF /* CustomPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPlot.m; sourceTree = "<group>"; };
 		9C9A340114B4597F00A59B5E /* PulseRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PulseRecord.h; path = ../PulseRecord.h; sourceTree = "<group>"; };
 		9C9A340214B4597F00A59B5E /* PulseRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PulseRecord.m; path = ../PulseRecord.m; sourceTree = "<group>"; };
 		9C9A340D14B46B5B00A59B5E /* ViewRecordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewRecordController.h; sourceTree = "<group>"; };
@@ -77,8 +81,6 @@
 		9CB83C2114B44B5700D2D4C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9CB83C2414B44B5700D2D4C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9CB83C2714B44B5700D2D4C4 /* PulseRate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PulseRate.xcdatamodel; sourceTree = "<group>"; };
-		9CB83C2914B44B5700D2D4C4 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		9CB83C2A14B44B5700D2D4C4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +88,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C87A31F14C6DA5400F8EB9F /* MessageUI.framework in Frameworks */,
 				9C4AFCFC14B6DCD900FDE4B8 /* QuartzCore.framework in Frameworks */,
 				9CB83C1014B44B5700D2D4C4 /* UIKit.framework in Frameworks */,
-				9C17478114BDF82D002341BA /* libCorePlot-CocoaTouch.a in Frameworks */,
+				9CF888D214BEBF670023DD97 /* libCorePlot-CocoaTouch.a in Frameworks */,
 				9CB83C1214B44B5700D2D4C4 /* Foundation.framework in Frameworks */,
 				9CB83C1414B44B5700D2D4C4 /* CoreGraphics.framework in Frameworks */,
 				9CB83C1614B44B5700D2D4C4 /* CoreData.framework in Frameworks */,
@@ -98,10 +101,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9C17477614BDF821002341BA /* Products */ = {
+		9C8AC73314C84ED100BA1392 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				9C17477F14BDF821002341BA /* libCorePlot-CocoaTouch.a */,
+				9CB83C2614B44B5700D2D4C4 /* PulseRate.xcdatamodeld */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		9C8AC73414C84EF700BA1392 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9CB83C2314B44B5700D2D4C4 /* MainStoryboard.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		9C8AC73514C84F2A00BA1392 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9CB83C2114B44B5700D2D4C4 /* AppDelegate.m */,
+				9CB83C2014B44B5700D2D4C4 /* AppDelegate.h */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9C8E762814BEBF32006DD219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C8E763114BEBF32006DD219 /* libCorePlot-CocoaTouch.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,8 +143,8 @@
 				9C9A340214B4597F00A59B5E /* PulseRecord.m */,
 				9C9A341214B46D2500A59B5E /* CustomCell.h */,
 				9C9A341314B46D2500A59B5E /* CustomCell.m */,
-				9C4AFD2514B7095300FDE4B8 /* TUTSimpleScatterPlot.h */,
-				9C4AFD2614B7095F00FDE4B8 /* TUTSimpleScatterPlot.m */,
+				9C9571A014C83C3500312DBF /* CustomPlot.h */,
+				9C9571A114C83C3500312DBF /* CustomPlot.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -126,10 +154,10 @@
 			children = (
 				9C9C646B14B73C3F001CF28C /* CreateGraphcontroller.h */,
 				9C9C646C14B73C3F001CF28C /* CreateGraphcontroller.m */,
-				9C4AFD2814B7099D00FDE4B8 /* TUTViewController.h */,
-				9C4AFD2914B709A300FDE4B8 /* TUTViewController.m */,
-				9CB83C2914B44B5700D2D4C4 /* MainViewController.h */,
-				9CB83C2A14B44B5700D2D4C4 /* MainViewController.m */,
+				9C95718914C7F5AB00312DBF /* InformationViewController.h */,
+				9C95718A14C7F5B700312DBF /* InformationViewController.m */,
+				9C8AC72414C84C5300BA1392 /* EnterRecordViewController.h */,
+				9C8AC72514C84C5400BA1392 /* EnterRecordViewController.m */,
 				9C4AFCF014B6CDD800FDE4B8 /* GraphViewController.h */,
 				9C4AFCF114B6CDD800FDE4B8 /* GraphViewController.m */,
 				9C9A340D14B46B5B00A59B5E /* ViewRecordController.h */,
@@ -145,6 +173,7 @@
 		9CB83C0014B44B5700D2D4C4 = {
 			isa = PBXGroup;
 			children = (
+				9C87A31E14C6DA5400F8EB9F /* MessageUI.framework */,
 				9C4AFCFB14B6DCD900FDE4B8 /* QuartzCore.framework */,
 				9CB83C1714B44B5700D2D4C4 /* PulseRate */,
 				9CB83C0E14B44B5700D2D4C4 /* Frameworks */,
@@ -174,11 +203,10 @@
 		9CB83C1714B44B5700D2D4C4 /* PulseRate */ = {
 			isa = PBXGroup;
 			children = (
-				9CB83C2014B44B5700D2D4C4 /* AppDelegate.h */,
-				9CB83C2114B44B5700D2D4C4 /* AppDelegate.m */,
-				9C17477514BDF821002341BA /* CorePlot-CocoaTouch.xcodeproj */,
-				9CB83C2314B44B5700D2D4C4 /* MainStoryboard.storyboard */,
-				9CB83C2614B44B5700D2D4C4 /* PulseRate.xcdatamodeld */,
+				9C8E762714BEBF32006DD219 /* CorePlot-CocoaTouch.xcodeproj */,
+				9C8AC73514C84F2A00BA1392 /* AppDelegate */,
+				9C8AC73414C84EF700BA1392 /* Storyboard */,
+				9C8AC73314C84ED100BA1392 /* DataModel */,
 				9CABE72B14B573CA00646E75 /* Model */,
 				9CABE72C14B573F000646E75 /* Controller */,
 				9CB83C1814B44B5700D2D4C4 /* Supporting Files */,
@@ -237,8 +265,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9C17477614BDF821002341BA /* Products */;
-					ProjectRef = 9C17477514BDF821002341BA /* CorePlot-CocoaTouch.xcodeproj */;
+					ProductGroup = 9C8E762814BEBF32006DD219 /* Products */;
+					ProjectRef = 9C8E762714BEBF32006DD219 /* CorePlot-CocoaTouch.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -249,11 +277,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9C17477F14BDF821002341BA /* libCorePlot-CocoaTouch.a */ = {
+		9C8E763114BEBF32006DD219 /* libCorePlot-CocoaTouch.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libCorePlot-CocoaTouch.a";
-			remoteRef = 9C17477E14BDF821002341BA /* PBXContainerItemProxy */;
+			remoteRef = 9C8E763014BEBF32006DD219 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -278,17 +306,17 @@
 				9CB83C1E14B44B5700D2D4C4 /* main.m in Sources */,
 				9CB83C2214B44B5700D2D4C4 /* AppDelegate.m in Sources */,
 				9CB83C2814B44B5700D2D4C4 /* PulseRate.xcdatamodeld in Sources */,
-				9CB83C2B14B44B5700D2D4C4 /* MainViewController.m in Sources */,
 				9C9A340314B4597F00A59B5E /* PulseRecord.m in Sources */,
 				9C9A341014B46B5B00A59B5E /* ViewRecordController.m in Sources */,
 				9C9A341414B46D2500A59B5E /* CustomCell.m in Sources */,
 				9CABE72F14B57B0300646E75 /* RootViewController.m in Sources */,
 				9C4AFCF214B6CDD800FDE4B8 /* GraphViewController.m in Sources */,
-				9C4AFD2714B7095F00FDE4B8 /* TUTSimpleScatterPlot.m in Sources */,
-				9C4AFD2A14B709A300FDE4B8 /* TUTViewController.m in Sources */,
 				9C9C646D14B73C3F001CF28C /* CreateGraphcontroller.m in Sources */,
 				9C715E8714BB005800FE7A91 /* UserInfo.m in Sources */,
 				9C715E8A14BB015B00FE7A91 /* EnterUserDetailsViewController.m in Sources */,
+				9C95718B14C7F5B700312DBF /* InformationViewController.m in Sources */,
+				9C9571A214C83C3500312DBF /* CustomPlot.m in Sources */,
+				9C8AC72614C84C5400BA1392 /* EnterRecordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +362,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "/Users/aneesh/Downloads/djw-core-plot-fd681cd/**";
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/PulseRate/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -357,7 +385,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "/Users/aneesh/Downloads/djw-core-plot-fd681cd/**";
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/PulseRate/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
