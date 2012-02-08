@@ -1,0 +1,787 @@
+TPulseRate
+v4
+r1
+cCheck dependencies
+cCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/PulseRate.app/ResourceRules.plist
+cProcessInfoPlistFile /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/Info.plist PulseRate/PulseRate-Info.plist
+cDataModelVersionCompile /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate.momd /Users/aneesh/Documents/PulseRate/PulseRate/PulseRate.xcdatamodeld
+cProcessPCH /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch.pth PulseRate/PulseRate-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/main.o /Users/aneesh/Documents/PulseRate/PulseRate/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/AppDelegate.o /Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/PulseRecord.o /Users/aneesh/Documents/PulseRate/PulseRate/../PulseRecord.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/ViewRecordController.o /Users/aneesh/Documents/PulseRate/PulseRate/ViewRecordController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomCell.o /Users/aneesh/Documents/PulseRate/PulseRate/CustomCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RootViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/RootViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/GraphViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/GraphViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CreateGraphcontroller.o /Users/aneesh/Documents/PulseRate/PulseRate/CreateGraphcontroller.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/UserInfo.o /Users/aneesh/Documents/PulseRate/PulseRate/UserInfo.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterUserDetailsViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/EnterUserDetailsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/InformationViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/InformationViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomPlot.o /Users/aneesh/Documents/PulseRate/PulseRate/CustomPlot.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterRecordViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/EnterRecordViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/DayWiseRecordViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RecordsViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/RecordsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate normal armv7
+cGenerateDSYMFile /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app.dSYM /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate
+cCopyStringsFile /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/en.lproj/InfoPlist.strings PulseRate/en.lproj/InfoPlist.strings
+cCompileStoryboard /Users/aneesh/Documents/PulseRate/PulseRate/en.lproj/MainStoryboard.storyboard
+cCopyPNGFile /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/forwardArrowTrans.png PulseRate/forwardArrowTrans.png
+cCpResource "PulseRate/images (1).jpeg" "build/Debug-iphoneos/PulseRate.app/images (1).jpeg"
+cCpResource "PulseRate/download (2).jpeg" "build/Debug-iphoneos/PulseRate.app/download (2).jpeg"
+cCpResource "PulseRate/download (1).jpeg" "build/Debug-iphoneos/PulseRate.app/download (1).jpeg"
+cCpResource "PulseRate/download (3).jpeg" "build/Debug-iphoneos/PulseRate.app/download (3).jpeg"
+cProcessProductPackaging "/Users/aneesh/Library/MobileDevice/Provisioning Profiles/FD1AB82F-C397-4CB9-BDEE-9C906A51B680.mobileprovision" /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/aneesh/Library/MobileDevice/Provisioning Profiles/FD1AB82F-C397-4CB9-BDEE-9C906A51B680.mobileprovision" /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/embedded.mobileprovision
+cTouch /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate.xcent
+cCodeSign /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk
+c000000004E7840290000000000000110
+t1316503593
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist
+c000000004E5C595800000000000001A7
+t1314675032
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
+c000000004E5C595800000000000001E5
+t1314675032
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004E72F3A400000000002566C0
+t1316156324
+s2451136
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004E72F39A000000000000053B
+t1316156314
+s1339
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004E72F28700000000003AB0A0
+t1316156039
+s3846304
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004E72F3440000000000529540
+t1316156228
+s5412160
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004E72F3370000000000001534
+t1316156215
+s5428
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
+c000000004E7809A000000000000AEC60
+t1316489632
+s715872
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004E72F8910000000000173260
+t1316157585
+s1520224
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004E7808770000000000000BCB
+t1316489335
+s3019
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004E7808C7000000000078BE50
+t1316489415
+s7913040
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/usr/include/Availability.h
+c000000004E5C5D5E0000000000001B38
+t1314676062
+s6968
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/../PulseRecord.m
+c000000004F0A8BFF0000000000000127
+t1326091263
+s295
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.m
+c000000004F05464D0000000000001BC3
+t1325745741
+s7107
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/CreateGraphcontroller.m
+c000000004F29438F0000000000001D44
+t1328104335
+s7492
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/CustomCell.m
+c000000004F1567F40000000000000277
+t1326802932
+s631
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/CustomPlot.m
+c000000004F184B110000000000002F64
+t1326992145
+s12132
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m
+c000000004F2945D10000000000000840
+t1328104913
+s2112
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/EnterRecordViewController.m
+c000000004F2E54DA0000000000001381
+t1328436442
+s4993
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/EnterUserDetailsViewController.m
+c000000004F17FFCC0000000000000CD9
+t1326972876
+s3289
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/GraphViewController.m
+c000000004F2F7A710000000000003A5F
+t1328511601
+s14943
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/InformationViewController.m
+c000000004F19012C0000000000000837
+t1327038764
+s2103
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/PulseRate-Prefix.pch
+c000000004F0413D70000000000000163
+t1325667287
+s355
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i<CoreData/CoreData.h>
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/PulseRate.xcdatamodeld
+c000000004F17E9660000000000000088
+t1326967142
+s136
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/RecordsViewController.m
+c000000004F2E558E0000000000003994
+t1328436622
+s14740
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/RootViewController.m
+c000000004F2942FD000000000000057F
+t1328104189
+s1407
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/UserInfo.m
+c000000004F0AC8D600000000000000F0
+t1326106838
+s240
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/ViewRecordController.m
+c000000004F2F74330000000000002197
+t1328510003
+s8599
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/build/Debug-iphoneos/libCorePlot-CocoaTouch.a
+c000000004F2F7C530000000000231E10
+t1328512083
+s2301456
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/download (1).jpeg
+c000000004F2A40A800000000000002E2
+t1328169128
+s738
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/download (2).jpeg
+c000000004F2A40C9000000000000019D
+t1328169161
+s413
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/download (3).jpeg
+c000000004F2A4162000000000000020A
+t1328169314
+s522
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/en.lproj/InfoPlist.strings
+c000000004F0413D7000000000000002D
+t1325667287
+s45
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/en.lproj/MainStoryboard.storyboard
+c000000004F2F7055000000000001462D
+t1328509013
+s83501
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/forwardArrowTrans.png
+c000000004F290E9400000000000002B9
+t1328090772
+s697
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/images (1).jpeg
+c000000004F290F040000000000001950
+t1328090884
+s6480
+
+N/Users/aneesh/Documents/PulseRate/PulseRate/main.m
+c000000004F0413D70000000000000154
+t1325667287
+s340
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app.dSYM
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/Info.plist
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PkgInfo
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate.momd
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/ResourceRules.plist
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/download (1).jpeg
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/download (2).jpeg
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/download (3).jpeg
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/embedded.mobileprovision
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/en.lproj/MainStoryboard.storyboardc
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/forwardArrowTrans.png
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/images (1).jpeg
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/AppDelegate.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CreateGraphcontroller.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomCell.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomPlot.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/DayWiseRecordViewController.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterRecordViewController.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterUserDetailsViewController.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/GraphViewController.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/InformationViewController.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/PulseRate.LinkFileList
+c000000004F2F7C540000000000000785
+t1328512084
+s1925
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/PulseRecord.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RecordsViewController.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RootViewController.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/UserInfo.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/ViewRecordController.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate.xcent
+t2
+s0
+
+N/Users/aneesh/Library/MobileDevice/Provisioning Profiles/FD1AB82F-C397-4CB9-BDEE-9C906A51B680.mobileprovision
+c000000004F2F7C010000000000004699
+t1328512001
+s18073
+
+N/var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch.pth
+t2
+s0
+
+NPulseRate/PulseRate-Info.plist
+c000000004F0413D700000000000004F9
+t1325667287
+s1273
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/../PulseRecord.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/CreateGraphcontroller.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/CustomCell.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/CustomPlot.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/EnterRecordViewController.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/EnterUserDetailsViewController.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/GraphViewController.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/InformationViewController.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/RecordsViewController.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/RootViewController.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/UserInfo.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/ViewRecordController.m
+r0
+
+CBuild AST from /Users/aneesh/Documents/PulseRate/PulseRate/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies2fdb06d4b3dfb441^aca809d4b3dfb441^---0#1#0#--18"Check dependencies36"4EBC5425-23CF-4746-8EDA-97CEEB40951E-
+
+CCodeSign /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app
+s350204889.955221
+e350204890.504137
+r1
+xCodeSign
+x/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"CodeSign build/Debug-iphoneos/PulseRate.app889ef4d9b3dfb441^801081dab3dfb441^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/0000000000000000^688"CodeSign build/Debug-iphoneos/PulseRate.app    cd /Users/aneesh/Documents/PulseRate    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign "iPhone Developer: manish nath (32777266PH)" --resource-rules=/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/ResourceRules.plist --entitlements /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate.xcent /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app36"347A0564-22B3-4816-8A63-0EFDD795E311-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/AppDelegate.o /Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204884.637835
+e350204884.841259
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/AppDelegate.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.me563a3d4b3dfb441^bc5dd7d4b3dfb441^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.m0000000000000000^2730"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/AppDelegate.o PulseRate/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/AppDelegate.d -c /Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/AppDelegate.o36"423C1692-0815-4C41-9914-06386C946C6D-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CreateGraphcontroller.o /Users/aneesh/Documents/PulseRate/PulseRate/CreateGraphcontroller.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204885.176780
+e350204885.365142
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CreateGraphcontroller.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/CreateGraphcontroller.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/aneesh/Documents/PulseRate/PulseRate/CreateGraphcontroller.m465f2dd5b3dfb441^787a5dd5b3dfb441^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/CreateGraphcontroller.m0000000000000000^2780"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CreateGraphcontroller.o PulseRate/CreateGraphcontroller.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CreateGraphcontroller.d -c /Users/aneesh/Documents/PulseRate/PulseRate/CreateGraphcontroller.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CreateGraphcontroller.o36"55F818A4-F9E8-4257-8A14-DFB6D2D5ACE4-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomCell.o /Users/aneesh/Documents/PulseRate/PulseRate/CustomCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204884.842489
+e350204885.064264
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomCell.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/CustomCell.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/aneesh/Documents/PulseRate/PulseRate/CustomCell.mb8ced7d4b3dfb441^607510d5b3dfb441^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/CustomCell.m0000000000000000^2725"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomCell.o PulseRate/CustomCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomCell.d -c /Users/aneesh/Documents/PulseRate/PulseRate/CustomCell.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomCell.o36"C58E07C0-3818-48F5-8B88-5A1C73C1EB32-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomPlot.o /Users/aneesh/Documents/PulseRate/PulseRate/CustomPlot.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204885.585177
+e350204885.885778
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomPlot.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/CustomPlot.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/aneesh/Documents/PulseRate/PulseRate/CustomPlot.mb3ec95d5b3dfb441^9fcde2d5b3dfb441^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/CustomPlot.m0000000000000000^2725"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomPlot.o PulseRate/CustomPlot.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomPlot.d -c /Users/aneesh/Documents/PulseRate/PulseRate/CustomPlot.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/CustomPlot.o36"CEF4D801-198C-4022-BBBA-011631748868-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/DayWiseRecordViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204885.798560
+e350204885.945978
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/DayWiseRecordViewController.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m:53:19: warning: unused variable 'tmp' [-Wunused-variable,12]
+o         NSString *tmp  =[NSString stringWithFormat:@"%.02f °F ",[[pulseRecord valueForKey:@"temprature"] floatValue]];
+o                   ^
+o/Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m:54:19: warning: unused variable 'bp' [-Wunused-variable,12]
+o         NSString *bp =[NSString stringWithFormat:@"%.02f mmHg",[[pulseRecord valueForKey:@"bloodPresssure"] floatValue]];
+o                   ^
+o/Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m:55:19: warning: unused variable 'pulse' [-Wunused-variable,12]
+o         NSString *pulse=[NSString stringWithFormat:@"%d BPM",[[pulseRecord valueForKey:@"pulse"] intValue]];
+o                   ^
+o3 warnings generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m1d90ccd5b3dfb441^a838f2d5b3dfb441^-845"/Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m:53:19: warning: unused variable 'tmp' [-Wunused-variable,12]         NSString *tmp  =[NSString stringWithFormat:@"%.02f °F ",[[pulseRecord valueForKey:@"temprature"] floatValue]];                   ^/Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m:54:19: warning: unused variable 'bp' [-Wunused-variable,12]         NSString *bp =[NSString stringWithFormat:@"%.02f mmHg",[[pulseRecord valueForKey:@"bloodPresssure"] floatValue]];                   ^/Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m:55:19: warning: unused variable 'pulse' [-Wunused-variable,12]         NSString *pulse=[NSString stringWithFormat:@"%d BPM",[[pulseRecord valueForKey:@"pulse"] intValue]];                   ^3 warnings generated.3(21%IDEActivityLogMessage2@21"Unused variable 'tmp'-350204885#0#135#-1#-23%DVTTextDocumentLocation3@89"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m0000000000000000^52#18#52#18#18446744073709551615#0#19"Unused Entity Issue--2@20"Unused variable 'bp'-350204885#276#134#-1#-3@89"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m0000000000000000^53#18#53#18#18446744073709551615#0#19"Unused Entity Issue--2@23"Unused variable 'pulse'-350204885#554#137#-1#-3@89"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m0000000000000000^54#18#54#18#18446744073709551615#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@89"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m0000000000000000^2810"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/DayWiseRecordViewController.o PulseRate/DayWiseRecordViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/DayWiseRecordViewController.d -c /Users/aneesh/Documents/PulseRate/PulseRate/DayWiseRecordViewController.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/DayWiseRecordViewController.o36"92FB52E9-5014-46D2-9294-DF9F78A6CDF8-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterRecordViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/EnterRecordViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204885.585843
+e350204885.797040
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterRecordViewController.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/EnterRecordViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/aneesh/Documents/PulseRate/PulseRate/EnterRecordViewController.m4c8b96d5b3dfb441^780bccd5b3dfb441^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/EnterRecordViewController.m0000000000000000^2800"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterRecordViewController.o PulseRate/EnterRecordViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterRecordViewController.d -c /Users/aneesh/Documents/PulseRate/PulseRate/EnterRecordViewController.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterRecordViewController.o36"CC205189-6963-4A5E-9DAF-3B09FC99FD6F-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterUserDetailsViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/EnterUserDetailsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204885.352827
+e350204885.583913
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterUserDetailsViewController.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/EnterUserDetailsViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/aneesh/Documents/PulseRate/PulseRate/EnterUserDetailsViewController.mef715ad5b3dfb441^b28495d5b3dfb441^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/EnterUserDetailsViewController.m0000000000000000^2825"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterUserDetailsViewController.o PulseRate/EnterUserDetailsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterUserDetailsViewController.d -c /Users/aneesh/Documents/PulseRate/PulseRate/EnterUserDetailsViewController.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/EnterUserDetailsViewController.o36"AE4E1C7B-809E-4539-95A3-B393AA76DC1A-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/GraphViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/GraphViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204885.065558
+e350204885.297986
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/GraphViewController.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/GraphViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/aneesh/Documents/PulseRate/PulseRate/GraphViewController.ma8e410d5b3dfb441^ba494cd5b3dfb441^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/GraphViewController.m0000000000000000^2770"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/GraphViewController.o PulseRate/GraphViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/GraphViewController.d -c /Users/aneesh/Documents/PulseRate/PulseRate/GraphViewController.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/GraphViewController.o36"ED5B0935-5BCE-4251-B961-30C9B15983AD-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/InformationViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/InformationViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204885.366417
+e350204885.584782
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/InformationViewController.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/InformationViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/aneesh/Documents/PulseRate/PulseRate/InformationViewController.meeee5dd5b3dfb441^52b995d5b3dfb441^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/InformationViewController.m0000000000000000^2800"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/InformationViewController.o PulseRate/InformationViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/InformationViewController.d -c /Users/aneesh/Documents/PulseRate/PulseRate/InformationViewController.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/InformationViewController.o36"6784CB1D-57A3-48EE-A1B9-202433FAFCA2-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/PulseRecord.o /Users/aneesh/Documents/PulseRate/PulseRate/../PulseRecord.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204884.695490
+e350204884.782688
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/PulseRecord.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/../PulseRecord.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/aneesh/Documents/PulseRate/PulseRate/../PulseRecord.m8429b2d4b3dfb441^9e5fc8d4b3dfb441^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/../PulseRecord.m0000000000000000^2736"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/PulseRecord.o PulseRate/../PulseRecord.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/PulseRecord.d -c /Users/aneesh/Documents/PulseRate/PulseRate/../PulseRecord.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/PulseRecord.o36"6880907B-D396-4085-B3EB-B6D769BBFA44-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RecordsViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/RecordsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204885.888887
+e350204886.133839
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RecordsViewController.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/RecordsViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/aneesh/Documents/PulseRate/PulseRate/RecordsViewController.mb8afe3d5b3dfb441^3d4522d6b3dfb441^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/RecordsViewController.m0000000000000000^2780"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RecordsViewController.o PulseRate/RecordsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RecordsViewController.d -c /Users/aneesh/Documents/PulseRate/PulseRate/RecordsViewController.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RecordsViewController.o36"937B314B-2F45-4284-818A-45CF553597CB-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RootViewController.o /Users/aneesh/Documents/PulseRate/PulseRate/RootViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204884.940056
+e350204885.175559
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RootViewController.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/RootViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/aneesh/Documents/PulseRate/PulseRate/RootViewController.m92cef0d4b3dfb441^8ffd2cd5b3dfb441^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/RootViewController.m0000000000000000^2765"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RootViewController.o PulseRate/RootViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RootViewController.d -c /Users/aneesh/Documents/PulseRate/PulseRate/RootViewController.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/RootViewController.o36"051BF3DB-F9D4-4DB6-843D-ACDAE1A0F6AE-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/UserInfo.o /Users/aneesh/Documents/PulseRate/PulseRate/UserInfo.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204885.299251
+e350204885.351511
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/UserInfo.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/UserInfo.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/aneesh/Documents/PulseRate/PulseRate/UserInfo.m88b94cd5b3dfb441^ab095ad5b3dfb441^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/UserInfo.m0000000000000000^2715"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/UserInfo.o PulseRate/UserInfo.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/UserInfo.d -c /Users/aneesh/Documents/PulseRate/PulseRate/UserInfo.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/UserInfo.o36"5BAD545F-9723-4C53-9107-E93F2F7D022F-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/ViewRecordController.o /Users/aneesh/Documents/PulseRate/PulseRate/ViewRecordController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204884.783908
+e350204884.938729
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/ViewRecordController.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/ViewRecordController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/aneesh/Documents/PulseRate/PulseRate/ViewRecordController.m14ccc8d4b3dfb441^2b4ff0d4b3dfb441^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/ViewRecordController.m0000000000000000^2775"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/ViewRecordController.o PulseRate/ViewRecordController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/ViewRecordController.d -c /Users/aneesh/Documents/PulseRate/PulseRate/ViewRecordController.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/ViewRecordController.o36"AF5D594C-D1CD-4CBF-9046-D7F0D6AEE62B-
+
+CCompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/main.o /Users/aneesh/Documents/PulseRate/PulseRate/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204884.637514
+e350204884.694266
+r1
+xCompileC
+xbuild/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/main.o
+x/Users/aneesh/Documents/PulseRate/PulseRate/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/aneesh/Documents/PulseRate/PulseRate/main.m7590a3d4b3dfb441^acc7b1d4b3dfb441^---0#0#0#-19%DVTDocumentLocation2@66"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/main.m0000000000000000^2695"CompileC build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/main.o PulseRate/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -include /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch -MMD -MT dependencies -MF /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/main.d -c /Users/aneesh/Documents/PulseRate/PulseRate/main.m -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/main.o36"55F3EC96-8CD1-4447-A394-2EF8D4D3DF3E-
+
+CCompileStoryboard /Users/aneesh/Documents/PulseRate/PulseRate/en.lproj/MainStoryboard.storyboard
+s350204887.700448
+e350204889.907688
+r1
+xCompileStoryboard
+x/Users/aneesh/Documents/PulseRate/PulseRate/en.lproj/MainStoryboard.storyboard
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"CompileStoryboard PulseRate/en.lproj/MainStoryboard.storyboardf65fb3d7b3dfb441^6c5fe8d9b3dfb441^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/en.lproj/MainStoryboard.storyboard0000000000000000^702"CompileStoryboard PulseRate/en.lproj/MainStoryboard.storyboard    cd /Users/aneesh/Documents/PulseRate    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 5.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/en.lproj/MainStoryboard.storyboardc /Users/aneesh/Documents/PulseRate/PulseRate/en.lproj/MainStoryboard.storyboard --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk36"B2F96C1A-08E6-498A-BA5D-813E6008A0B9-
+
+CCopyPNGFile /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/forwardArrowTrans.png PulseRate/forwardArrowTrans.png
+s350204887.803142
+e350204887.861082
+r1
+xCopyPNGFile
+x/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/forwardArrowTrans.png
+xPulseRate/forwardArrowTrans.png
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"CopyPNGFile build/Debug-iphoneos/PulseRate.app/forwardArrowTrans.png PulseRate/forwardArrowTrans.pngfbadcdd7b3dfb441^fc70dcd7b3dfb441^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/forwardArrowTrans.png0000000000000000^586"CopyPNGFile build/Debug-iphoneos/PulseRate.app/forwardArrowTrans.png PulseRate/forwardArrowTrans.png    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/aneesh/Documents/PulseRate/PulseRate/forwardArrowTrans.png /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/forwardArrowTrans.png36"2A7FA20D-0480-41FE-9551-63BFE0BC16CD-
+
+CCopyStringsFile /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/en.lproj/InfoPlist.strings PulseRate/en.lproj/InfoPlist.strings
+s350204887.699903
+e350204887.801853
+r1
+xCopyStringsFile
+x/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/en.lproj/InfoPlist.strings
+xPulseRate/en.lproj/InfoPlist.strings
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy PulseRate/en.lproj/InfoPlist.strings0246b3d7b3dfb441^6b47cdd7b3dfb441^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/en.lproj/InfoPlist.strings0000000000000000^488"CopyStringsFile build/Debug-iphoneos/PulseRate.app/en.lproj/InfoPlist.strings PulseRate/en.lproj/InfoPlist.strings    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/en.lproj -- PulseRate/en.lproj/InfoPlist.strings36"87D42CAB-B9A9-4FA8-AE7A-9631C005C27F-
+
+CCpResource "PulseRate/download (1).jpeg" "build/Debug-iphoneos/PulseRate.app/download (1).jpeg"
+s350204887.881301
+e350204887.905264
+r1
+xCpResource
+xPulseRate/download (1).jpeg
+xbuild/Debug-iphoneos/PulseRate.app/download (1).jpeg
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/Debug-iphoneos/PulseRate.app/download (1).jpeg7dafe1d7b3dfb441^dacae7d7b3dfb441^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/download%20(1).jpeg00f80c02dcffdf42^506"CpResource "PulseRate/download (1).jpeg" "build/Debug-iphoneos/PulseRate.app/download (1).jpeg"    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/aneesh/Documents/PulseRate/PulseRate/download (1).jpeg" /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app36"E50EBFBE-F999-4D86-9BB6-995F7807BAC9-
+
+CCpResource "PulseRate/download (2).jpeg" "build/Debug-iphoneos/PulseRate.app/download (2).jpeg"
+s350204887.876691
+e350204887.880076
+r1
+xCpResource
+xPulseRate/download (2).jpeg
+xbuild/Debug-iphoneos/PulseRate.app/download (2).jpeg
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/Debug-iphoneos/PulseRate.app/download (2).jpeg4982e0d7b3dfb441^1557e1d7b3dfb441^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/download%20(2).jpeg00f80c02dcffdf42^506"CpResource "PulseRate/download (2).jpeg" "build/Debug-iphoneos/PulseRate.app/download (2).jpeg"    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/aneesh/Documents/PulseRate/PulseRate/download (2).jpeg" /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app36"6A1D6843-4C0B-4C03-87C6-83109541CDDD-
+
+CCpResource "PulseRate/download (3).jpeg" "build/Debug-iphoneos/PulseRate.app/download (3).jpeg"
+s350204887.906530
+e350204887.909114
+r1
+xCpResource
+xPulseRate/download (3).jpeg
+xbuild/Debug-iphoneos/PulseRate.app/download (3).jpeg
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/Debug-iphoneos/PulseRate.app/download (3).jpeg1825e8d7b3dfb441^22c5e8d7b3dfb441^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/download%20(3).jpeg00f80c02dcffdf42^506"CpResource "PulseRate/download (3).jpeg" "build/Debug-iphoneos/PulseRate.app/download (3).jpeg"    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/aneesh/Documents/PulseRate/PulseRate/download (3).jpeg" /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app36"391C3012-EE3A-4ECE-B3AA-2A95C49808CC-
+
+CCpResource "PulseRate/images (1).jpeg" "build/Debug-iphoneos/PulseRate.app/images (1).jpeg"
+s350204887.862971
+e350204887.875414
+r1
+xCpResource
+xPulseRate/images (1).jpeg
+xbuild/Debug-iphoneos/PulseRate.app/images (1).jpeg
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy build/Debug-iphoneos/PulseRate.app/images (1).jpeg32ffdcd7b3dfb441^971be0d7b3dfb441^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/images%20(1).jpeg00f80c02dcffdf42^500"CpResource "PulseRate/images (1).jpeg" "build/Debug-iphoneos/PulseRate.app/images (1).jpeg"    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/aneesh/Documents/PulseRate/PulseRate/images (1).jpeg" /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app36"0DF37975-52E3-4EEB-B5CB-503F121CD86E-
+
+CCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/PulseRate.app/ResourceRules.plist
+s350204884.042391
+e350204884.068581
+r1
+xCpResource
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
+xbuild/Debug-iphoneos/PulseRate.app/ResourceRules.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Copy build/Debug-iphoneos/PulseRate.app/ResourceRules.plist63ee0ad4b3dfb441^863c12d4b3dfb441^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/ResourceRules.plist00f80c02dcffdf42^592"CpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/PulseRate.app/ResourceRules.plist    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app36"174C8EAB-E6DE-4162-AB49-E76A7545B796-
+
+CDataModelVersionCompile /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate.momd /Users/aneesh/Documents/PulseRate/PulseRate/PulseRate.xcdatamodeld
+s350204884.072639
+e350204884.396654
+r1
+xDataModelVersionCompile
+x/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate.momd
+x/Users/aneesh/Documents/PulseRate/PulseRate/PulseRate.xcdatamodeld
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"DataModelVersionCompile build/Debug-iphoneos/PulseRate.app/PulseRate.momd PulseRate/PulseRate.xcdatamodeld25b312d4b3dfb441^f39065d4b3dfb441^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/PulseRate.xcdatamodeld/0000000000000000^595"DataModelVersionCompile build/Debug-iphoneos/PulseRate.app/PulseRate.momd PulseRate/PulseRate.xcdatamodeld    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/momc -XD_MOMC_SDKROOT=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -MOMC_PLATFORMS iphonesimulator -MOMC_PLATFORMS iphoneos /Users/aneesh/Documents/PulseRate/PulseRate/PulseRate.xcdatamodeld /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate.momd36"3B1235B3-79C8-40EF-9824-AF435E1EDD24-
+
+CGenerateDSYMFile /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app.dSYM /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate
+s350204887.580000
+e350204887.697107
+r1
+xGenerateDSYMFile
+x/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app.dSYM
+x/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Generating /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app.dSYMb49094d7b3dfb441^d976b2d7b3dfb441^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app.dSYM00f80c02dcffdf42^455"GenerateDSYMFile build/Debug-iphoneos/PulseRate.app.dSYM build/Debug-iphoneos/PulseRate.app/PulseRate    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate -o /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app.dSYM36"A254701D-12AC-4B99-9031-8D6515010C04-
+
+CLd /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate normal armv7
+s350204886.135310
+e350204887.578313
+r1
+xLd
+x/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate
+xnormal
+xarmv7
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Link /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate77bb22d6b3dfb441^130f94d7b3dfb441^---0#0#0#--1036"Ld build/Debug-iphoneos/PulseRate.app/PulseRate normal armv7    cd /Users/aneesh/Documents/PulseRate    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -L/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -filelist /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/Objects-normal/armv7/PulseRate.LinkFileList -dead_strip -ObjC -fobjc-arc -miphoneos-version-min=5.0 -framework MessageUI -framework QuartzCore -framework UIKit /Users/aneesh/Documents/PulseRate/PulseRate/build/Debug-iphoneos/libCorePlot-CocoaTouch.a -framework Foundation -framework CoreGraphics -framework CoreData -o /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PulseRate36"0EF29385-7E53-4F5F-A66B-82DD669771EF-
+
+CProcessInfoPlistFile /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/Info.plist PulseRate/PulseRate-Info.plist
+s350204884.043525
+e350204884.067920
+r1
+xProcessInfoPlistFile
+x/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/Info.plist
+xPulseRate/PulseRate-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Process PulseRate/PulseRate-Info.plist89420bd4b3dfb441^fc3412d4b3dfb441^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/PulseRate-Info.plist0000000000000000^658"ProcessInfoPlistFile build/Debug-iphoneos/PulseRate.app/Info.plist PulseRate/PulseRate-Info.plist    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility PulseRate/PulseRate-Info.plist -genpkginfo /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/ResourceRules.plist -o /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/Info.plist36"DC67D836-35E3-42D0-AAD0-6EE327354CC4-
+
+CProcessPCH /Users/aneesh/Library/Developer/Xcode/DerivedData/PulseRate-gsiycqdaqifecvdnemdfvoqnopyt/Index/PrecompiledHeaders/PulseRate-Prefix-azpmgocdlibecrbckyigrdzsrsax_ast/PulseRate-Prefix.pch.pth PulseRate/PulseRate-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch.pth PulseRate/PulseRate-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s350204884.073374
+e350204884.634886
+r1
+xProcessPCH
+x/var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch.pth
+xPulseRate/PulseRate-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Precompile PulseRate/PulseRate-Prefix.pche2e412d4b3dfb441^b2b9a2d4b3dfb441^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/aneesh/Documents/PulseRate/PulseRate/PulseRate-Prefix.pch0000000000000000^2752"ProcessPCH /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch.pth PulseRate/PulseRate-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/aneesh/Documents/PulseRate    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -gdwarf-2 -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.0 -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-generated-files.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-own-target-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-all-target-headers.hmap -iquote /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate-project-headers.hmap -I/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/include -IPulseRate -IPulseRate/framework -IPulseRate/iPhoneOnly -IPulseRate/PulseRate.xcdatamodeld -IPulseRate/framework/iPhoneOnly -IPulseRate/framework/MacOnly -IPulseRate/framework/Source -IPulseRate/framework/TestResources -IPulseRate/PulseRate.xcdatamodeld/PulseRate.xcdatamodel -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources/armv7 -I/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/DerivedSources -F/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos -c /Users/aneesh/Documents/PulseRate/PulseRate/PulseRate-Prefix.pch -o /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/Tu/TuduFOyIEpKvgf4aIk1dAE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PulseRate-Prefix-eolzczsxnxwywpcdvkznlozuolue/PulseRate-Prefix.pch.d36"41B1500B-7579-4692-860B-FACF53BD02BC-
+
+CProcessProductPackaging "/Users/aneesh/Library/MobileDevice/Provisioning Profiles/FD1AB82F-C397-4CB9-BDEE-9C906A51B680.mobileprovision" /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/embedded.mobileprovision
+s350204889.917107
+e350204889.920766
+r1
+xProcessProductPackaging
+x/Users/aneesh/Library/MobileDevice/Provisioning Profiles/FD1AB82F-C397-4CB9-BDEE-9C906A51B680.mobileprovision
+x/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/embedded.mobileprovision
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection195"ProcessProductPackaging "/Users/aneesh/Library/MobileDevice/Provisioning Profiles/FD1AB82F-C397-4CB9-BDEE-9C906A51B680.mobileprovision" build/Debug-iphoneos/PulseRate.app/embedded.mobileprovision7fdcead9b3dfb441^5fb8ebd9b3dfb441^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/embedded.mobileprovision0000000000000000^606"ProcessProductPackaging "/Users/aneesh/Library/MobileDevice/Provisioning Profiles/FD1AB82F-C397-4CB9-BDEE-9C906A51B680.mobileprovision" build/Debug-iphoneos/PulseRate.app/embedded.mobileprovision    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/aneesh/Library/MobileDevice/Provisioning Profiles/FD1AB82F-C397-4CB9-BDEE-9C906A51B680.mobileprovision" -o /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app/embedded.mobileprovision36"03566370-A98C-42E8-ADB7-59306880BDAC-
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate.xcent
+s350204889.934655
+e350204889.950349
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist
+x/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate.xcent
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection181"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate.xcentcd59efd9b3dfb441^ad51f3d9b3dfb441^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate.xcent00f80c02dcffdf42^604"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate.xcent    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/aneesh/Documents/PulseRate/build/PulseRate.build/Debug-iphoneos/PulseRate.build/PulseRate.xcent36"CDFD74F2-E051-43B7-97C8-097AF761FDEB-
+
+CTouch /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app
+s350204889.924102
+e350204889.931294
+r1
+xTouch
+x/Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Touch /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app40a3ecd9b3dfb441^a56beed9b3dfb441^---0#0#0#--297"Touch build/Debug-iphoneos/PulseRate.app    cd /Users/aneesh/Documents/PulseRate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/aneesh/Documents/PulseRate/build/Debug-iphoneos/PulseRate.app36"4A647725-5087-476E-98FD-0C75CD894CD6-
+

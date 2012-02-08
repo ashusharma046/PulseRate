@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTLayer.m \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTLayer.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTDefinitions.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTResponder.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAxisSet.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTExceptions.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTGraph.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTBorderedLayer.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAnnotationHostLayer.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTLineStyle.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTPathExtensions.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/iPhoneOnly/CPTPlatformSpecificDefines.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/iPhoneOnly/CPTPlatformSpecificFunctions.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTShadow.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTUtilities.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/../build/CorePlot-CocoaTouch.build/Debug-iphoneos/CorePlot-CocoaTouch.build/DerivedSources/CorePlotProbes.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/NSCoderExtensions.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/NSNumberExtensions.h
