@@ -279,8 +279,8 @@
     
     if (textField==weakField) {
         pcView.tag=2;
-         [uv addSubview:pcView];
-         [uv addSubview:bar2];
+         [self.view addSubview:pcView];
+         [self.view addSubview:bar2];
     }
     else if(textField==dateField){
         pcView.tag=3;
@@ -303,8 +303,8 @@
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone  target:self action:@selector(setDate:)];
     NSArray *myToolbarItems = [[NSArray alloc] initWithObjects: item, nil];                 
     bar2.items=myToolbarItems;
-      [uv addSubview:pcView];  
-      [uv addSubview:bar2];  
+      [self.view addSubview:pcView];  
+      [self.view addSubview:bar2];  
     }
    
     [pcView reloadAllComponents];

@@ -5,8 +5,8 @@ cCheck dependencies
 cCpHeader CorePlot-CocoaTouch.h ../build/Debug-iphonesimulator/usr/local/include/CorePlot-CocoaTouch.h
 cCpHeader Source/NSDecimalNumberExtensions.h ../build/Debug-iphonesimulator/usr/local/include/NSDecimalNumberExtensions.h
 cCpHeader Source/CPTAxis.h ../build/Debug-iphonesimulator/usr/local/include/CPTAxis.h
-cCpHeader Source/CPTColor.h ../build/Debug-iphonesimulator/usr/local/include/CPTColor.h
 cCpHeader Source/CPTAxisSet.h ../build/Debug-iphonesimulator/usr/local/include/CPTAxisSet.h
+cCpHeader Source/CPTColor.h ../build/Debug-iphonesimulator/usr/local/include/CPTColor.h
 cCpHeader Source/CPTColorSpace.h ../build/Debug-iphonesimulator/usr/local/include/CPTColorSpace.h
 cCpHeader iPhoneOnly/CPTPlatformSpecificDefines.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlatformSpecificDefines.h
 cCpHeader iPhoneOnly/CPTPlatformSpecificCategories.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlatformSpecificCategories.h
@@ -34,8 +34,8 @@ cCpHeader Source/CPTGraph.h ../build/Debug-iphonesimulator/usr/local/include/CPT
 cCpHeader Source/CPTImage.h ../build/Debug-iphonesimulator/usr/local/include/CPTImage.h
 cCpHeader Source/CPTLayer.h ../build/Debug-iphonesimulator/usr/local/include/CPTLayer.h
 cCpHeader Source/CPTLineStyle.h ../build/Debug-iphonesimulator/usr/local/include/CPTLineStyle.h
-cCpHeader Source/CPTPlotAreaFrame.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlotAreaFrame.h
 cCpHeader Source/CPTPlot.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlot.h
+cCpHeader Source/CPTPlotAreaFrame.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlotAreaFrame.h
 cCpHeader Source/CPTPlotRange.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlotRange.h
 cCpHeader Source/CPTPlotSpace.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlotSpace.h
 cCpHeader Source/CPTPlotSymbol.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlotSymbol.h
@@ -1885,7 +1885,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies6341e9ea9ee2b441^e84ceaea9ee2b441^---0#1#0#--18"Check dependencies36"CC696B4E-EE9C-4DFD-BCD0-5CBDE88257B9-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesdd9866ada1e2b441^3ecb6fada1e2b441^---0#1#0#--18"Check dependencies36"668BBFD6-4DE0-4FEC-A4BB-D333CF86253D-
 
 CCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/CPTAnnotation.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAnnotation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s350211600.426609
