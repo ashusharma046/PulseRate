@@ -5,16 +5,16 @@ cCheck dependencies
 cCpHeader CorePlot-CocoaTouch.h ../build/Debug-iphonesimulator/usr/local/include/CorePlot-CocoaTouch.h
 cCpHeader Source/NSDecimalNumberExtensions.h ../build/Debug-iphonesimulator/usr/local/include/NSDecimalNumberExtensions.h
 cCpHeader Source/CPTAxis.h ../build/Debug-iphonesimulator/usr/local/include/CPTAxis.h
-cCpHeader Source/CPTAxisSet.h ../build/Debug-iphonesimulator/usr/local/include/CPTAxisSet.h
 cCpHeader Source/CPTColor.h ../build/Debug-iphonesimulator/usr/local/include/CPTColor.h
+cCpHeader Source/CPTAxisSet.h ../build/Debug-iphonesimulator/usr/local/include/CPTAxisSet.h
 cCpHeader Source/CPTColorSpace.h ../build/Debug-iphonesimulator/usr/local/include/CPTColorSpace.h
-cCpHeader iPhoneOnly/CPTPlatformSpecificCategories.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlatformSpecificCategories.h
 cCpHeader iPhoneOnly/CPTPlatformSpecificDefines.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlatformSpecificDefines.h
+cCpHeader iPhoneOnly/CPTPlatformSpecificCategories.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlatformSpecificCategories.h
 cCpHeader iPhoneOnly/CPTPlatformSpecificFunctions.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlatformSpecificFunctions.h
 cCpHeader iPhoneOnly/CPTGraphHostingView.h ../build/Debug-iphonesimulator/usr/local/include/CPTGraphHostingView.h
 cCpHeader Source/CPTXYPlotSpace.h ../build/Debug-iphonesimulator/usr/local/include/CPTXYPlotSpace.h
-cCpHeader Source/CPTPathExtensions.h ../build/Debug-iphonesimulator/usr/local/include/CPTPathExtensions.h
 cCpHeader Source/CPTBorderedLayer.h ../build/Debug-iphonesimulator/usr/local/include/CPTBorderedLayer.h
+cCpHeader Source/CPTPathExtensions.h ../build/Debug-iphonesimulator/usr/local/include/CPTPathExtensions.h
 cCpHeader Source/CPTTextStyle.h ../build/Debug-iphonesimulator/usr/local/include/CPTTextStyle.h
 cCpHeader Source/CPTTheme.h ../build/Debug-iphonesimulator/usr/local/include/CPTTheme.h
 cCpHeader Source/_CPTPlainBlackTheme.h ../build/Debug-iphonesimulator/usr/local/include/_CPTPlainBlackTheme.h
@@ -34,8 +34,8 @@ cCpHeader Source/CPTGraph.h ../build/Debug-iphonesimulator/usr/local/include/CPT
 cCpHeader Source/CPTImage.h ../build/Debug-iphonesimulator/usr/local/include/CPTImage.h
 cCpHeader Source/CPTLayer.h ../build/Debug-iphonesimulator/usr/local/include/CPTLayer.h
 cCpHeader Source/CPTLineStyle.h ../build/Debug-iphonesimulator/usr/local/include/CPTLineStyle.h
-cCpHeader Source/CPTPlot.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlot.h
 cCpHeader Source/CPTPlotAreaFrame.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlotAreaFrame.h
+cCpHeader Source/CPTPlot.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlot.h
 cCpHeader Source/CPTPlotRange.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlotRange.h
 cCpHeader Source/CPTPlotSpace.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlotSpace.h
 cCpHeader Source/CPTPlotSymbol.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlotSymbol.h
@@ -1885,7 +1885,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesfe28b6207ce2b441^e469d5207ce2b441^---0#1#0#--18"Check dependencies36"8F89B90B-881A-42C5-BB36-75F2F4309555-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies6341e9ea9ee2b441^e84ceaea9ee2b441^---0#1#0#--18"Check dependencies36"CC696B4E-EE9C-4DFD-BCD0-5CBDE88257B9-
 
 CCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/CPTAnnotation.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAnnotation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s350211600.426609

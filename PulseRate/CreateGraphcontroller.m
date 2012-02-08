@@ -55,10 +55,13 @@
     return YES;
 }
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    NSLog(@"row number is %d",rownum);
     tag=textField.tag;
     [textField resignFirstResponder];
+    // rownum=0;
+    [pcview reloadAllComponents];
     
-    rownum=0;
+   
     if (textField==selectDate) {
         lb1.hidden=YES;
         lb2.hidden=YES;

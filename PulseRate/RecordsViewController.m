@@ -271,6 +271,7 @@
     return YES;
 }
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    tag=0;
     pcView=[[UIPickerView alloc] initWithFrame:CGRectMake(100, 66, 320,40)];
     pcView.showsSelectionIndicator=YES;
     pcView.delegate=self;
@@ -397,7 +398,7 @@
     else{
         predicatStr=[NSString stringWithFormat:@"-%d-",num];
     }
-    NSLog(@"predicate is %@",predicatStr);
+    // NSLog(@"predicate is %@",predicatStr);
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
