@@ -12,6 +12,7 @@
 
 @implementation EnterUserDetailsViewController
 @synthesize age,weight,height,scView;
+@synthesize lb1,lb2,lb3;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -90,15 +91,23 @@
     self.title=@"User Setting";
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
+    lb1.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+    lb2.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+    lb3.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+    
+    
+    lb1.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+    lb2.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+    lb3.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+    self.view.backgroundColor=[UIColor grayColor];
+    scView.backgroundColor=[UIColor grayColor];
     
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
+   }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

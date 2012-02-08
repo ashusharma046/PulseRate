@@ -31,12 +31,27 @@
 {
     [super viewDidLoad];
     self.title=@"Graph";
-    UIBarButtonItem *mailPdfButton=[[UIBarButtonItem alloc] initWithTitle:@"Email Report" style:UIBarButtonItemStyleDone target:self action:@selector(mailReport)];
+    //  UIBarButtonItem *mailPdfButton=[[UIBarButtonItem alloc] initWithTitle:@"Email Report" style:UIBarButtonItemStyleDone target:self action:@selector(mailReport)];
     
     //mailPdfButton.title=@"Email Report";
     
-    self.navigationItem.rightBarButtonItem =  mailPdfButton;
+    //self.navigationItem.rightBarButtonItem =  mailPdfButton;
+    toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 360, 37)];
+    NSMutableArray* buttons = [[NSMutableArray alloc] initWithCapacity:5];
+    UIBarButtonItem *backButton =  [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(done:)];
+    UIBarButtonItem *emptLb=[[UIBarButtonItem alloc] initWithTitle:@"                             " style:UIBarButtonItemStylePlain target:self action:nil]; 
+    emptLb.enabled=NO;
+    UIBarButtonItem *dayReords = [[UIBarButtonItem alloc] initWithTitle:@"Email Pdf" style:UIBarButtonItemStyleBordered target:self action:@selector(drawPdf)];
     
+   [buttons addObject:backButton];
+   [buttons addObject:emptLb];
+    //[buttons addObject:weakrecords];
+   [buttons addObject:dayReords];
+  
+   [toolbar setItems:buttons animated:NO];
+   [self.view addSubview:toolbar];
+    
+
     
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -106,7 +121,7 @@
                     PulseRecord *pulseRecord=(PulseRecord *)[recordsArray objectAtIndex:i];  
                     NSArray *datecomps =[pulseRecord.entrytime componentsSeparatedByString:@"-"];
                     NSInteger k= [[datecomps objectAtIndex:2] intValue];
-                    
+                    NSLog(@"k is %d",k);
                     if([yax isEqualToString:@"Blood Pressure"])
                     {
                         [data addObject:[NSValue valueWithCGPoint:CGPointMake([[NSDecimalNumber numberWithFloat:k*1.15] floatValue], pulseRecord.bloodPresssure)]];
@@ -190,8 +205,15 @@
         
         
     }
-    self.view.backgroundColor=[UIColor yellowColor];
-    [self drawPdf];   
+   // self.view.backgroundColor=[UIColor grayColor];
+      self.view.backgroundColor=[UIColor brownColor];
+//     vw1.backgroundColor=[UIColor grayColor];
+//     vw2.backgroundColor=[UIColor grayColor];
+//     vw3.backgroundColor=[UIColor grayColor];
+//     vw4.backgroundColor=[UIColor grayColor];
+  //  self.view .backgroundColor=[UIColor colorWithRed:240/250 green:230/250 blue:140/250 alpha:1];
+    
+    
     
 }
 
@@ -244,21 +266,23 @@
     
 }
 -(void)drawPdf{
+    toolbar.hidden=YES;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString * pdfFilePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithString:@"Report.pdf"]];    UIGraphicsBeginPDFContextToFile(pdfFilePath, CGRectZero, nil);
     CGContextRef context1 = UIGraphicsGetCurrentContext();
-    UIGraphicsBeginPDFPageWithInfo([[UIScreen mainScreen] bounds], nil);
-    	
-	self.view.autoresizesSubviews = true;
+    UIGraphicsBeginPDFPageWithInfo([[UIScreen mainScreen] bounds], nil);	
     [self.view.layer renderInContext:context1];
     UIGraphicsEndPDFContext();
+    [self mailReport];
+    toolbar.hidden=NO;
 }
 -(void)mailReport{
-    // email the PDF File. 
+   
     MFMailComposeViewController* mailComposer = [[MFMailComposeViewController alloc] init] ;
     mailComposer.mailComposeDelegate = self;
-    NSString *path=[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0]stringByAppendingPathComponent:@"Report.gif"];
+    NSString *path=[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0]stringByAppendingPathComponent:@"Report.pdf"];
+    NSLog(@"path is %@",path);
     [mailComposer addAttachmentData:[NSData dataWithContentsOfFile:path]
                            mimeType:@"application/pdf" fileName:@"Report.pdf"];
     [mailComposer setSubject:@"Reports"];
@@ -428,8 +452,8 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    
-	return YES;
+    return (interfaceOrientation == UIInterfaceOrientationPortrait); 
+	//return YES;
 }
 
 @end

@@ -10,12 +10,14 @@
 
 @implementation CustomCell
 @synthesize pulse,bp,tmp,date;
+@synthesize lb1,lb2,lb3,lb4;
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
     }
+    
     return self;
 }
 

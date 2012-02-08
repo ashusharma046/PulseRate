@@ -22,6 +22,37 @@
     // Override point for customization after application launch.
     RootViewController *controller = (RootViewController *)self.window.rootViewController;
     controller.managedObjectContext = self.managedObjectContext;
+    
+    Class cls = NSClassFromString(@"UILocalNotification");
+    if (cls != nil) {
+		
+        UILocalNotification *notif = [[cls alloc] init];
+        
+        notif.timeZone = [NSTimeZone defaultTimeZone];
+		notif.repeatInterval=NSDayCalendarUnit;
+        notif.alertBody = @"Please fill your pulse rate ,temprature and blood pressure.";
+        notif.alertAction = 
+        notif.soundName = UILocalNotificationDefaultSoundName;
+        notif.applicationIconBadgeNumber = 1;
+                
+        NSDate *date=[NSDate date];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+        NSMutableString *dateString=[NSString stringWithFormat:@"%@-%@",[dateFormatter stringFromDate:date],@"09:00"];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd-HH:mm"];
+        date=[dateFormatter dateFromString:dateString];
+        notif.fireDate=date;		
+        
+		
+        [[UIApplication sharedApplication] scheduleLocalNotification:notif];
+        
+        
+        
+        
+               
+        
+    }
+
     return YES;
 }
 							

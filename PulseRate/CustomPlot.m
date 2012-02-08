@@ -73,7 +73,7 @@
 	
     // Setup some floats that represent the min/max values on our axis.
     float xAxisMin = -7;
-    float xAxisMax =35;//= 30;
+    float xAxisMax =37;//= 30;
     float yAxisMin = -20;
     float yAxisMax;
     
@@ -145,7 +145,7 @@
         
     }
     //For monthly reporting  xaxis labels locations
-    for (int i=0;i<=30;i++) {
+    for (int i=0;i<=31;i++) {
         [customTickLocations1 addObject:[NSDecimalNumber numberWithFloat:(i*(1.15))]];
         
         
@@ -193,9 +193,10 @@
     //for monthly reporting customization of x axis labels
     else{
         
-        for (int i=0;i<=30;i++) {
+         for (int i=0;i<=31;i++) {//latest cahnge
+        //for (int i=1;i<=31;i++) {
             CPTAxisLabel *newLabel = [[CPTAxisLabel alloc] initWithText:[NSString stringWithFormat:@"%d",i] textStyle:axisSet.xAxis.labelTextStyle];
-            newLabel.tickLocation = [[customTickLocations1 objectAtIndex:i] decimalValue];
+            newLabel.tickLocation = [[customTickLocations1 objectAtIndex:(i)] decimalValue];
             newLabel.offset =axisSet.xAxis.labelOffset + axisSet.xAxis.majorTickLength;
             [customLabels addObject:newLabel];
         }
@@ -267,7 +268,8 @@
         plot.barWidth = CPTDecimalFromFloat(.10f);
         
         
-        [self.graph addPlot:plot];// toPlotSpace:plotSpace]; 
+        [self.graph addPlot:plot];
+        // toPlotSpace:plotSpace]; 
         
     }
     else{

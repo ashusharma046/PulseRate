@@ -32,6 +32,7 @@
     NSString *dateString;
     BOOL isDayWiseReporting;
     NSMutableArray *timeStampArray;
+    UIToolbar* toolbar;
 }
 @property (copy)  NSString *xax;
 @property (copy)  NSString *yax;

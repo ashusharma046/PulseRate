@@ -41,7 +41,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor=[UIColor yellowColor];
+    //self.view.backgroundColor=[UIColor yellowColor];
     pcview.hidden=YES;
     graphtype.tag=3;
     monthType.tag=4;
@@ -110,9 +110,9 @@
     }
 }
 -(IBAction)setDate:(id)sender{
-     lb1.hidden=NO;
-     lb2.hidden=NO;
-     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    lb1.hidden=NO;
+    lb2.hidden=NO;
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd-HH:mm:ss ZZZ"];
     NSString *dateString=[dateFormatter stringFromDate:[datePicker date]];
     [selectDate setText:dateString];
@@ -147,24 +147,22 @@
     lb1.hidden=NO;
     lb2.hidden=NO;
      if (tag==3) {
-         NSLog(@"333333");
+
         if(rownum==0){
             graphtype.text=@"Line Graph";
         }
         else if(rownum==1){
            graphtype.text=@"Histogram";      
         }
-        else if(rownum==2){
-            graphtype.text=@"Pie Chart";
-        }
+       
     }
     
     else if(tag ==4){
-        NSLog(@"4444444");
+       
         monthType.text=[montharray objectAtIndex:rownum];
     }
     else if (tag==5) {
-         NSLog(@"555555555");
+    
         weakType.text=[weakArray objectAtIndex:rownum];
     }
     
@@ -222,10 +220,7 @@
         else if(row==1){
             title = @"Histogram";
         }
-        else if(row==2){
-            title=@"Pie Chart";
-        }
-      }
+    }
     
      else if(tag==4){
      title=[montharray objectAtIndex:row];

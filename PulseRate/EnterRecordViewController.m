@@ -15,6 +15,7 @@
 @synthesize temprature,bloodPressure,pulse;
 @synthesize scView;
 @synthesize viewRecordController;
+@synthesize lb1,lb2,lb3;
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -26,10 +27,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.view.backgroundColor=[UIColor purpleColor];
+	//self.view.backgroundColor=[UIColor purpleColor];
     self.title=@"Enter Records";
     scView.contentSize=CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(done:)];
+    lb1.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+    lb2.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+    lb3.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+    
+    
+    lb1.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+    lb2.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+    lb3.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+    self.view.backgroundColor=[UIColor grayColor];
+    
+   
     
 }
 -(IBAction)subMit:(id)sender{
@@ -40,20 +52,12 @@
     
     
     
-    PulseRecord *newContact = [NSEntityDescription insertNewObjectForEntityForName:@"PulseRecord" inManagedObjectContext:context];
+   
     int pul=[pulse.text intValue];
     float bp=[bloodPressure.text floatValue];
     float tmp=[temprature.text floatValue];
     
-    newContact.pulse=pul;
-    newContact.bloodPresssure=bp;
-    newContact.temprature=tmp;
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd-HH:mm:ss ZZZ"];
-    newContact.entrytime =[dateFormatter stringFromDate:[NSDate date]];
-    
-    
+      
     if(pul> 220){
         
         UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:@"Pulse Value Out of range" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
@@ -64,14 +68,25 @@
 		[alertView show];
         
     }
-    else if(tmp>110.00 || tmp< 94){
+    else if(tmp>110.00 || tmp < 94){
         UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:@"Temprature  Out of range" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
 		[alertView show];
         
     }
     
     else{
+        NSLog(@"save");
         NSError *error;
+         PulseRecord *newContact = [NSEntityDescription insertNewObjectForEntityForName:@"PulseRecord" inManagedObjectContext:context];
+        newContact.pulse=pul;
+        newContact.bloodPresssure=bp;
+        newContact.temprature=tmp;
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd-HH:mm:ss ZZZ"];
+        newContact.entrytime =[dateFormatter stringFromDate:[NSDate date]];
+        
+
         if([context save:&error]){
             UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:@"Your Record Inserted successfully" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
             [alertView show];

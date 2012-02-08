@@ -14,12 +14,17 @@
     IBOutlet UITextField *weight;
     IBOutlet UITextField *height;
     IBOutlet UIScrollView *scView;
-
+    IBOutlet UILabel *lb1;
+    IBOutlet UILabel *lb2;
+    IBOutlet UILabel *lb3;
 }
 @property(strong,nonatomic) IBOutlet UITextField *age;
 @property(strong,nonatomic) IBOutlet UITextField *weight;
 @property(strong,nonatomic) IBOutlet UITextField *height;
 @property(strong,nonatomic) IBOutlet UIScrollView *scView;
+@property (strong, nonatomic) IBOutlet UILabel *lb1;
+@property (strong, nonatomic) IBOutlet UILabel *lb2;
+@property (strong, nonatomic) IBOutlet UILabel *lb3;;
 -(IBAction)done:(id)sender;
 -(IBAction)back:(id)sender;
 @end

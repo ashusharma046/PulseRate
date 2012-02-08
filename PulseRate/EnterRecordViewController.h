@@ -16,12 +16,20 @@
     IBOutlet UIScrollView *scView;
     ViewRecordController *viewRecordController;
     BOOL keyboardIsShown;
+    IBOutlet UILabel *lb1;
+    IBOutlet UILabel *lb2;
+    IBOutlet UILabel *lb3;
+    
     
 }
 
 @property (strong, nonatomic) IBOutlet UITextField *temprature;
 @property (strong, nonatomic) IBOutlet UITextField *pulse;
 @property (strong, nonatomic) IBOutlet UITextField *bloodPressure;
+@property (strong, nonatomic) IBOutlet UILabel *lb1;
+@property (strong, nonatomic) IBOutlet UILabel *lb2;
+@property (strong, nonatomic) IBOutlet UILabel *lb3;;
+
 @property (strong, nonatomic) ViewRecordController *viewRecordController;
 @property (strong, nonatomic) IBOutlet UIScrollView *scView;
 -(IBAction)subMit:(id)sender;

@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "PulseRecord.h"
 #import "CustomCell.h"
+#import <QuartzCore/QuartzCore.h>
 @implementation ViewRecordController
 @synthesize cell;
 - (id)initWithStyle:(UITableViewStyle)style
@@ -35,60 +36,6 @@
 {
     [super viewDidLoad];
     
-   // self.title=@"View  Records";
-//    UIBarButtonItem *_backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
-//    self.navigationController.navigationItem.backBarButtonItem = _backButton;
-//    //self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(done:)];
-    
-    
-    UIToolbar* toolbar = [[UIToolbar alloc]
-                          initWithFrame:CGRectMake(0, 0, 100, 45)];
-   // [toolbar setBarStyle: UIBarStyleBlackOpaque];
-    
-    // create an array for the buttons
-    NSMutableArray* buttons = [[NSMutableArray alloc] initWithCapacity:5];
-    
-    // create a standard save button
-    UIBarButtonItem *backButton =  [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(done:)];
-    
-    
-    [buttons addObject:backButton];
-   
-    
-    // create a standard delete button with the trash icon
-    UIBarButtonItem *monthrecords = [[UIBarButtonItem alloc] initWithTitle:@"Monthly" style:UIBarButtonItemStyleBordered target:self action:@selector(done:)];
-    
-   // monthrecords.style = UIBarButtonItemStyleBordered;
-    [buttons addObject:monthrecords];
-     
-    UIBarButtonItem *weakrecords = [[UIBarButtonItem alloc] initWithTitle:@"Weakly" style:UIBarButtonItemStyleBordered target:self action:@selector(done:)];
-    
-    
-    [buttons addObject:weakrecords];
-
-   
-  
-   
-    
-    UIBarButtonItem *dayReords = [[UIBarButtonItem alloc] initWithTitle:@"Daily" style:UIBarButtonItemStyleBordered  target:self action:@selector(done:)];
-  
-    [buttons addObject:dayReords];
-   
-    
-     
-    
-    // put the buttons in the toolbar and release them
-    [toolbar setItems:buttons animated:NO];
-    
-    
-    // place the toolbar into the navigation bar
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:toolbar];
-  
-    
-    
-    
-    
-    
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
@@ -107,6 +54,7 @@
         
         NSLog(@" matches-----%d",[recordsArray count]);
     }
+    self.view.backgroundColor=[UIColor grayColor];
 }
 -(IBAction)done:(id)sender{
   
@@ -181,6 +129,36 @@
     float bp  = [[pulseRecord valueForKey:@"bloodPresssure"] floatValue];
     int pulse = [[pulseRecord valueForKey:@"pulse"] intValue];
     int age=[[[NSUserDefaults standardUserDefaults] objectForKey:@"age"]intValue];
+    cell.bp.layer.cornerRadius = 6; 
+    cell.tmp.layer.cornerRadius = 6; 
+    cell.pulse.layer.cornerRadius = 6; 
+    cell.date.layer.cornerRadius = 6; 
+    
+    
+    cell.tmp.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+    cell.bp.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+    cell.pulse.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+    cell.date.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+    
+    cell.tmp.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+    cell.bp.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+    cell.pulse.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+    cell.date.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+    
+    
+    
+    
+    
+     cell.lb1.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+     cell.lb2.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+     cell.lb3.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+     cell.lb4.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
+    
+     cell.lb1.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+     cell.lb2.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+     cell.lb3.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+     cell.lb4.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
+    cell.contentView.backgroundColor=[UIColor grayColor];
 
     if (tmp > 99.5) {
         [cell.tmp setBackgroundColor:[UIColor redColor]];

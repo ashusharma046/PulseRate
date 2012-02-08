@@ -13,6 +13,9 @@
 		9C715E8A14BB015B00FE7A91 /* EnterUserDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C715E8914BB015B00FE7A91 /* EnterUserDetailsViewController.m */; };
 		9C87A31F14C6DA5400F8EB9F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C87A31E14C6DA5400F8EB9F /* MessageUI.framework */; };
 		9C8AC72614C84C5400BA1392 /* EnterRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8AC72514C84C5400BA1392 /* EnterRecordViewController.m */; };
+		9C8E0F2A14DA785D007BFCEC /* download (2).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8E0F2914DA785D007BFCEC /* download (2).jpeg */; };
+		9C8E0F2C14DA7868007BFCEC /* download (1).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8E0F2B14DA7868007BFCEC /* download (1).jpeg */; };
+		9C8E0F2E14DA790B007BFCEC /* download (3).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8E0F2D14DA790B007BFCEC /* download (3).jpeg */; };
 		9C95718B14C7F5B700312DBF /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C95718A14C7F5B700312DBF /* InformationViewController.m */; };
 		9C9571A214C83C3500312DBF /* CustomPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9571A114C83C3500312DBF /* CustomPlot.m */; };
 		9C9A340314B4597F00A59B5E /* PulseRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A340214B4597F00A59B5E /* PulseRecord.m */; };
@@ -20,6 +23,13 @@
 		9C9A341414B46D2500A59B5E /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A341314B46D2500A59B5E /* CustomCell.m */; };
 		9C9C646D14B73C3F001CF28C /* CreateGraphcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9C646C14B73C3F001CF28C /* CreateGraphcontroller.m */; };
 		9CABE72F14B57B0300646E75 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CABE72E14B57B0300646E75 /* RootViewController.m */; };
+		9CADFF6314E105D000085F70 /* arrow-next.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CADFF6114E105D000085F70 /* arrow-next.png */; };
+		9CADFF6414E105D000085F70 /* arrow-Previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CADFF6214E105D000085F70 /* arrow-Previous.png */; };
+		9CADFF9B14E13C1D00085F70 /* topAndBottomRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CADFF9A14E13C1D00085F70 /* topAndBottomRow.png */; };
+		9CB6D40114D8067500F0EC94 /* DayWiseRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6D40014D8067400F0EC94 /* DayWiseRecordViewController.m */; };
+		9CB6D41414D8337F00F0EC94 /* RecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6D41314D8337F00F0EC94 /* RecordsViewController.m */; };
+		9CB6D42A14D9465000F0EC94 /* forwardArrowTrans.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CB6D42914D9465000F0EC94 /* forwardArrowTrans.png */; };
+		9CB6D42C14D946A000F0EC94 /* images (1).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9CB6D42B14D946A000F0EC94 /* images (1).jpeg */; };
 		9CB83C1014B44B5700D2D4C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB83C0F14B44B5700D2D4C4 /* UIKit.framework */; };
 		9CB83C1214B44B5700D2D4C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB83C1114B44B5700D2D4C4 /* Foundation.framework */; };
 		9CB83C1414B44B5700D2D4C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB83C1314B44B5700D2D4C4 /* CoreGraphics.framework */; };
@@ -53,6 +63,9 @@
 		9C87A31E14C6DA5400F8EB9F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9C8AC72414C84C5300BA1392 /* EnterRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterRecordViewController.h; sourceTree = "<group>"; };
 		9C8AC72514C84C5400BA1392 /* EnterRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterRecordViewController.m; sourceTree = "<group>"; };
+		9C8E0F2914DA785D007BFCEC /* download (2).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "download (2).jpeg"; sourceTree = "<group>"; };
+		9C8E0F2B14DA7868007BFCEC /* download (1).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "download (1).jpeg"; sourceTree = "<group>"; };
+		9C8E0F2D14DA790B007BFCEC /* download (3).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "download (3).jpeg"; sourceTree = "<group>"; };
 		9C8E762714BEBF32006DD219 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
 		9C95718914C7F5AB00312DBF /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
 		9C95718A14C7F5B700312DBF /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
@@ -68,6 +81,15 @@
 		9C9C646C14B73C3F001CF28C /* CreateGraphcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGraphcontroller.m; sourceTree = "<group>"; };
 		9CABE72D14B57B0300646E75 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		9CABE72E14B57B0300646E75 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		9CADFF6114E105D000085F70 /* arrow-next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-next.png"; sourceTree = "<group>"; };
+		9CADFF6214E105D000085F70 /* arrow-Previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-Previous.png"; sourceTree = "<group>"; };
+		9CADFF9A14E13C1D00085F70 /* topAndBottomRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topAndBottomRow.png; sourceTree = "<group>"; };
+		9CB6D3FF14D8067400F0EC94 /* DayWiseRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayWiseRecordViewController.h; sourceTree = "<group>"; };
+		9CB6D40014D8067400F0EC94 /* DayWiseRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayWiseRecordViewController.m; sourceTree = "<group>"; };
+		9CB6D41214D8337F00F0EC94 /* RecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordsViewController.h; sourceTree = "<group>"; };
+		9CB6D41314D8337F00F0EC94 /* RecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordsViewController.m; sourceTree = "<group>"; };
+		9CB6D42914D9465000F0EC94 /* forwardArrowTrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forwardArrowTrans.png; sourceTree = "<group>"; };
+		9CB6D42B14D946A000F0EC94 /* images (1).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images (1).jpeg"; sourceTree = "<group>"; };
 		9CB83C0B14B44B5700D2D4C4 /* PulseRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB83C0F14B44B5700D2D4C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9CB83C1114B44B5700D2D4C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,8 +182,12 @@
 				9C8AC72514C84C5400BA1392 /* EnterRecordViewController.m */,
 				9C4AFCF014B6CDD800FDE4B8 /* GraphViewController.h */,
 				9C4AFCF114B6CDD800FDE4B8 /* GraphViewController.m */,
+				9CB6D41214D8337F00F0EC94 /* RecordsViewController.h */,
+				9CB6D41314D8337F00F0EC94 /* RecordsViewController.m */,
 				9C9A340D14B46B5B00A59B5E /* ViewRecordController.h */,
 				9C9A340E14B46B5B00A59B5E /* ViewRecordController.m */,
+				9CB6D3FF14D8067400F0EC94 /* DayWiseRecordViewController.h */,
+				9CB6D40014D8067400F0EC94 /* DayWiseRecordViewController.m */,
 				9CABE72D14B57B0300646E75 /* RootViewController.h */,
 				9CABE72E14B57B0300646E75 /* RootViewController.m */,
 				9C715E8814BB015A00FE7A91 /* EnterUserDetailsViewController.h */,
@@ -219,6 +245,14 @@
 			children = (
 				9CB83C1914B44B5700D2D4C4 /* PulseRate-Info.plist */,
 				9CB83C1A14B44B5700D2D4C4 /* InfoPlist.strings */,
+				9CB6D42B14D946A000F0EC94 /* images (1).jpeg */,
+				9CADFF9A14E13C1D00085F70 /* topAndBottomRow.png */,
+				9CADFF6114E105D000085F70 /* arrow-next.png */,
+				9CADFF6214E105D000085F70 /* arrow-Previous.png */,
+				9C8E0F2D14DA790B007BFCEC /* download (3).jpeg */,
+				9C8E0F2B14DA7868007BFCEC /* download (1).jpeg */,
+				9CB6D42914D9465000F0EC94 /* forwardArrowTrans.png */,
+				9C8E0F2914DA785D007BFCEC /* download (2).jpeg */,
 				9CB83C1D14B44B5700D2D4C4 /* main.m */,
 				9CB83C1F14B44B5700D2D4C4 /* PulseRate-Prefix.pch */,
 			);
@@ -293,6 +327,14 @@
 			files = (
 				9CB83C1C14B44B5700D2D4C4 /* InfoPlist.strings in Resources */,
 				9CB83C2514B44B5700D2D4C4 /* MainStoryboard.storyboard in Resources */,
+				9CB6D42A14D9465000F0EC94 /* forwardArrowTrans.png in Resources */,
+				9CB6D42C14D946A000F0EC94 /* images (1).jpeg in Resources */,
+				9C8E0F2A14DA785D007BFCEC /* download (2).jpeg in Resources */,
+				9C8E0F2C14DA7868007BFCEC /* download (1).jpeg in Resources */,
+				9C8E0F2E14DA790B007BFCEC /* download (3).jpeg in Resources */,
+				9CADFF6314E105D000085F70 /* arrow-next.png in Resources */,
+				9CADFF6414E105D000085F70 /* arrow-Previous.png in Resources */,
+				9CADFF9B14E13C1D00085F70 /* topAndBottomRow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +359,8 @@
 				9C95718B14C7F5B700312DBF /* InformationViewController.m in Sources */,
 				9C9571A214C83C3500312DBF /* CustomPlot.m in Sources */,
 				9C8AC72614C84C5400BA1392 /* EnterRecordViewController.m in Sources */,
+				9CB6D40114D8067500F0EC94 /* DayWiseRecordViewController.m in Sources */,
+				9CB6D41414D8337F00F0EC94 /* RecordsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,12 +444,14 @@
 		9CB83C3214B44B5700D2D4C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: manish nath (32777266PH)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseRate/PulseRate-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "PulseRate/PulseRate-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FD1AB82F-C397-4CB9-BDEE-9C906A51B680";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -413,12 +459,14 @@
 		9CB83C3314B44B5700D2D4C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: manish nath (32777266PH)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseRate/PulseRate-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "PulseRate/PulseRate-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FD1AB82F-C397-4CB9-BDEE-9C906A51B680";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
