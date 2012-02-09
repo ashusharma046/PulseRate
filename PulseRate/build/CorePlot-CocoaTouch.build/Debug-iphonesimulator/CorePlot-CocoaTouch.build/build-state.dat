@@ -122,8 +122,8 @@ cCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-Coco
 cCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/_CPTPlainWhiteTheme.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/_CPTPlainWhiteTheme.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/_CPTStocksTheme.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/_CPTStocksTheme.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/CPTTimeFormatter.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTTimeFormatter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/CPTPlotGroup.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTPlotGroup.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/_CPTXYTheme.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/_CPTXYTheme.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/CPTPlotGroup.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTPlotGroup.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/CPTTradingRangePlot.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTTradingRangePlot.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/CPTPieChart.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTPieChart.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/CPTConstraints.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTConstraints.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -1885,7 +1885,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesdd9866ada1e2b441^3ecb6fada1e2b441^---0#1#0#--18"Check dependencies36"668BBFD6-4DE0-4FEC-A4BB-D333CF86253D-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies08c7047eeae3b441^2860077eeae3b441^---0#1#0#--18"Check dependencies36"0B6F8114-03C7-42BC-8917-477302B13B88-
 
 CCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/CPTAnnotation.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAnnotation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s350211600.426609

@@ -1885,7 +1885,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies60cc82d3d3dfb441^529a8dd3d3dfb441^---0#1#0#--18"Check dependencies36"5F51E658-082B-48E7-A955-8A1D964B2E0B-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesbea3221ca9e3b441^2102261ca9e3b441^---0#1#0#--18"Check dependencies36"F8F53386-7E2E-40A4-A2D9-3A4C4DA7335F-
 
 CCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphoneos/CorePlot-CocoaTouch.build/Objects-normal/armv7/CPTAnnotation.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAnnotation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s350204879.361141

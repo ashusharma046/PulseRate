@@ -54,7 +54,7 @@
     [buttons addObject:allReords];
     
     [toolbar setItems:buttons animated:NO];
-    // self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:toolbar];
+   
     [self.view addSubview:toolbar];
     montharray =[NSArray arrayWithObjects:@"Jan",@"Feb",@"Mar",@"Aprail",@"may",@"jun",@"july",@"august",@"sep",@"oct",@"nov",@"dec", nil];
     weakarray=[NSArray arrayWithObjects:@"First",@"Second",@"Third",@"Fourth",@"Fifth",nil];
@@ -143,10 +143,17 @@
     [lb14 setBackgroundColor:[UIColor grayColor]];    
     } 
     [sc setContentSize:CGSizeMake(([recordsArray count])*(267), 190)];
-    sc.pagingEnabled=YES;
+     sc.pagingEnabled=YES;
      //sc.frame=CGRectMake(25, 170, 267, 286);
     
- }
+  }
+ /*
+ *-----------------------------------------------------------------------------
+ *
+ * IBAction Methods  
+ *
+ *-----------------------------------------------------------------------------
+ */
 
   -(IBAction)monthWiseListing:(id)sender{
       NSArray *buttons=[toolbar items];
@@ -228,7 +235,7 @@
     
 }
 
-
+/*
 -(IBAction)dayWiseListing:(id)sender{
     [vc.view removeFromSuperview];
     for (UIView *subView in  [uv subviews]) {
@@ -265,6 +272,229 @@
     [self layOutScroll:array];
 
 }
+*/ 
+-(IBAction)weakWiseListing:(id)sender{
+    
+    NSArray *buttons=[toolbar items];
+    int i;
+    for (i=0; i<[buttons count]; i++) {
+        UIBarButtonItem *bt=[buttons objectAtIndex:i];
+        if (i==2) {
+            bt.enabled=NO;
+        }
+        else{
+            bt.enabled=YES;
+        }
+        
+    }
+    
+    [vc.view removeFromSuperview];
+    for (UIView *subView in  [uv subviews]) {
+        [subView removeFromSuperview];
+    }    
+    
+    for(i=0;i< [[uv subviews]count];i++){
+        UIView *sbView=[[uv subviews] objectAtIndex:i];
+        [sbView removeFromSuperview];
+    }
+    UILabel *lb=[[UILabel alloc] initWithFrame:CGRectMake(20,45,100,40)]; 
+    lb.text=@"Select Month";
+    
+    UILabel *lb2=[[UILabel alloc] initWithFrame:CGRectMake(20,85,100,40)]; 
+    lb2.text=@"Select Weak";
+    [lb setBackgroundColor:[UIColor clearColor]];
+    [lb2 setBackgroundColor:[UIColor clearColor]];
+    
+    UIButton *bt=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    bt.frame=CGRectMake(70, 128, 140, 35);
+    [bt setTitle:@"Show Results" forState:UIControlStateNormal];
+    [bt addTarget:self action:@selector(showweakresult:) forControlEvents:UIControlEventTouchUpInside];
+    [bt setBackgroundColor:[UIColor clearColor]];
+    weakField=[[UITextField alloc] initWithFrame:CGRectMake(140, 90, 100, 30)];
+    weakField.borderStyle=UITextBorderStyleRoundedRect;
+    tF=[[UITextField alloc] initWithFrame:CGRectMake(140, 52, 100, 30)];
+    tF.borderStyle=UITextBorderStyleRoundedRect;
+    
+    tF.delegate=self;
+    weakField.delegate=self;
+    [uv addSubview:lb];
+    [uv addSubview:lb2];
+    [uv addSubview:tF];
+    [uv addSubview:weakField];
+    [uv addSubview:bt];
+    rightArrow.hidden=YES; 
+    leftArrow.hidden=YES; 
+    
+    
+}
+-(IBAction)showweakresult:(id)sender{
+    [vc.view removeFromSuperview];
+    int num=[montharray indexOfObject:tF.text];
+    int weaknum=[weakarray indexOfObject:weakField.text]+1;
+    NSString *predicatStr;
+    if (num<=8) {
+        predicatStr=[NSString stringWithFormat:@"-0%d-",(num+1)];
+    }
+    else{
+        predicatStr=[NSString stringWithFormat:@"-%d-",num];
+    }
+ 
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDesc];
+    
+    NSPredicate *myPred=[NSPredicate predicateWithFormat:@"entrytime CONTAINS[cd] %@",predicatStr];
+    request.predicate=myPred;  
+    NSError *error;
+    NSArray *recordsArray = [context executeFetchRequest:request error:&error]; 
+    totalRecords=[recordsArray count];
+    NSMutableArray *resultsArray = [[NSMutableArray alloc] init]; 
+    
+    NSLog(@"weak number is %d",weaknum);
+    for (PulseRecord *rc in recordsArray) {
+        NSArray *dateArray=[rc.entrytime componentsSeparatedByString:@"-"];
+        int date=[[dateArray objectAtIndex:2]intValue];
+        if (date>(weaknum-1)*7 && date <=weaknum*7) {
+            [resultsArray addObject:rc];
+        }
+        
+    }
+    if ([resultsArray count]==0) {
+        rightArrow.hidden=YES; 
+        leftArrow.hidden=YES;
+        UIAlertView *alt=[[UIAlertView alloc] initWithTitle:@"No Result Found" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alt show];
+        
+    }
+    else{
+        rightArrow.hidden=NO; 
+        leftArrow.hidden=NO;
+    }
+    [self layOutScroll:resultsArray];
+    
+    
+}
+-(IBAction)showresultforDate:(id)sender{
+    [vc.view removeFromSuperview];
+    int num=[montharray indexOfObject:tF.text];
+    NSLog(@"month is%d",(num+1));
+    NSString *predicatStr;
+    
+    predicatStr=[NSString stringWithFormat:@"%@*",[dateField.text substringToIndex:10]];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDesc];
+    NSLog(@"predicate is %@",predicatStr);
+    NSPredicate *myPred=[NSPredicate predicateWithFormat:@"entrytime like %@",predicatStr];
+    request.predicate=myPred;  
+    NSError *error;
+    NSArray *recordsArray = [context executeFetchRequest:request error:&error]; 
+    totalRecords=[recordsArray count];
+    if ([recordsArray count]==0) {
+        UIAlertView *alt=[[UIAlertView alloc] initWithTitle:@"No Result Found" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alt show];
+        NSLog(@"no result found");
+        rightArrow.hidden=YES; 
+        leftArrow.hidden=YES;
+    }
+    else{
+        rightArrow.hidden=NO; 
+        leftArrow.hidden=NO;
+    }
+    [self layOutScroll:recordsArray];
+}
+-(IBAction)showmonthresult:(id)sender{
+    [vc.view removeFromSuperview];
+    int num=[montharray indexOfObject:tF.text];
+    NSLog(@"month is%d",(num+1));
+    NSString *predicatStr;
+    if (num<=8) {
+        predicatStr=[NSString stringWithFormat:@"????-0%d-*",(num+1)];
+    }
+    else{
+        predicatStr=[NSString stringWithFormat:@"????-%d-*",num];
+    }
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDesc];
+    NSLog(@"predicate is %@",predicatStr);
+    NSPredicate *myPred=[NSPredicate predicateWithFormat:@"entrytime like %@",predicatStr];
+    request.predicate=myPred;  
+    NSError *error;
+    NSArray *recordsArray = [context executeFetchRequest:request error:&error]; 
+    totalRecords=[recordsArray count];
+    if ([recordsArray count]==0) {
+        UIAlertView *alt=[[UIAlertView alloc] initWithTitle:@"No Result Found" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alt show];
+        NSLog(@"no result found");
+        rightArrow.hidden=YES; 
+        leftArrow.hidden=YES;
+    }
+    else{
+        rightArrow.hidden=NO; 
+        leftArrow.hidden=NO;
+    }
+    [self layOutScroll:recordsArray];
+    
+    
+    
+    
+}
+-(IBAction)showdateresult:(id)sender{
+    [vc.view removeFromSuperview];
+    int num=[montharray indexOfObject:tF.text];
+    NSLog(@"month is%d",(num+1));
+    NSString *predicatStr;
+    if (num<=8) {
+        predicatStr=[NSString stringWithFormat:@"????-0%d-*",(num+1)];
+    }
+    else{
+        predicatStr=[NSString stringWithFormat:@"????-%d-*",num];
+    }
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDesc];
+    NSLog(@"predicate is %@",predicatStr);
+    NSPredicate *myPred=[NSPredicate predicateWithFormat:@"entrytime like %@",predicatStr];
+    request.predicate=myPred;  
+    NSError *error;
+    NSArray *recordsArray = [context executeFetchRequest:request error:&error]; 
+    totalRecords=[recordsArray count];
+    if ([recordsArray count]==0) {
+        UIAlertView *alt=[[UIAlertView alloc] initWithTitle:@"No Result Found" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alt show];
+        NSLog(@"no result found");
+        rightArrow.hidden=YES; 
+        leftArrow.hidden=YES;
+    }
+    else{
+        rightArrow.hidden=NO; 
+        leftArrow.hidden=NO;
+    }
+    [self layOutScroll:recordsArray];
+}
+
+ -(IBAction)done:(id)sender{
+    
+    [self dismissModalViewControllerAnimated:YES];
+ }
+
+/*
+ *-----------------------------------------------------------------------------
+ *
+ * UITextField Delegate  Methods  
+ *
+ *-----------------------------------------------------------------------------
+ */
+
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     sc.userInteractionEnabled=NO;;
     [textField resignFirstResponder];
@@ -333,214 +563,13 @@
 
 
 }
--(IBAction)weakWiseListing:(id)sender{
-    
-    NSArray *buttons=[toolbar items];
-    int i;
-    for (i=0; i<[buttons count]; i++) {
-        UIBarButtonItem *bt=[buttons objectAtIndex:i];
-        if (i==2) {
-            bt.enabled=NO;
-        }
-        else{
-            bt.enabled=YES;
-        }
-        
-    }
-
-    [vc.view removeFromSuperview];
-    for (UIView *subView in  [uv subviews]) {
-        [subView removeFromSuperview];
-    }    
-    
-    for(i=0;i< [[uv subviews]count];i++){
-        UIView *sbView=[[uv subviews] objectAtIndex:i];
-        [sbView removeFromSuperview];
-    }
-    UILabel *lb=[[UILabel alloc] initWithFrame:CGRectMake(20,45,100,40)]; 
-    lb.text=@"Select Month";
-    
-    UILabel *lb2=[[UILabel alloc] initWithFrame:CGRectMake(20,85,100,40)]; 
-    lb2.text=@"Select Weak";
-    [lb setBackgroundColor:[UIColor clearColor]];
-    [lb2 setBackgroundColor:[UIColor clearColor]];
-    
-    UIButton *bt=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-    bt.frame=CGRectMake(70, 128, 140, 35);
-    [bt setTitle:@"Show Results" forState:UIControlStateNormal];
-    [bt addTarget:self action:@selector(showweakresult:) forControlEvents:UIControlEventTouchUpInside];
-    [bt setBackgroundColor:[UIColor clearColor]];
-    weakField=[[UITextField alloc] initWithFrame:CGRectMake(140, 90, 100, 30)];
-    weakField.borderStyle=UITextBorderStyleRoundedRect;
-    tF=[[UITextField alloc] initWithFrame:CGRectMake(140, 52, 100, 30)];
-    tF.borderStyle=UITextBorderStyleRoundedRect;
-
-    tF.delegate=self;
-    weakField.delegate=self;
-    [uv addSubview:lb];
-    [uv addSubview:lb2];
-    [uv addSubview:tF];
-    [uv addSubview:weakField];
-    [uv addSubview:bt];
-    rightArrow.hidden=YES; 
-    leftArrow.hidden=YES; 
-    
-
-}
--(IBAction)showweakresult:(id)sender{
-    [vc.view removeFromSuperview];
-    int num=[montharray indexOfObject:tF.text];
-    int weaknum=[weakarray indexOfObject:weakField.text]+1;
-    NSString *predicatStr;
-    if (num<=8) {
-        predicatStr=[NSString stringWithFormat:@"-0%d-",(num+1)];
-    }
-    else{
-        predicatStr=[NSString stringWithFormat:@"-%d-",num];
-    }
-    // NSLog(@"predicate is %@",predicatStr);
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
-    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    [request setEntity:entityDesc];
-    
-    NSPredicate *myPred=[NSPredicate predicateWithFormat:@"entrytime CONTAINS[cd] %@",predicatStr];
-    request.predicate=myPred;  
-    NSError *error;
-    NSArray *recordsArray = [context executeFetchRequest:request error:&error]; 
-    totalRecords=[recordsArray count];
-    NSMutableArray *resultsArray = [[NSMutableArray alloc] init]; 
-    
-    NSLog(@"weak number is %d",weaknum);
-    for (PulseRecord *rc in recordsArray) {
-        NSArray *dateArray=[rc.entrytime componentsSeparatedByString:@"-"];
-        int date=[[dateArray objectAtIndex:2]intValue];
-        if (date>(weaknum-1)*7 && date <=weaknum*7) {
-            [resultsArray addObject:rc];
-        }
-        
-    }
-    if ([resultsArray count]==0) {
-        rightArrow.hidden=YES; 
-        leftArrow.hidden=YES;
-        UIAlertView *alt=[[UIAlertView alloc] initWithTitle:@"No Result Found" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [alt show];
-        
-    }
-    else{
-        rightArrow.hidden=NO; 
-        leftArrow.hidden=NO;
-    }
-    [self layOutScroll:resultsArray];
-
-
-}
--(IBAction)showresultforDate:(id)sender{
-    [vc.view removeFromSuperview];
-    int num=[montharray indexOfObject:tF.text];
-    NSLog(@"month is%d",(num+1));
-    NSString *predicatStr;
-    
-    predicatStr=[NSString stringWithFormat:@"%@*",[dateField.text substringToIndex:10]];
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
-    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    [request setEntity:entityDesc];
-    NSLog(@"predicate is %@",predicatStr);
-    NSPredicate *myPred=[NSPredicate predicateWithFormat:@"entrytime like %@",predicatStr];
-    request.predicate=myPred;  
-    NSError *error;
-    NSArray *recordsArray = [context executeFetchRequest:request error:&error]; 
-    totalRecords=[recordsArray count];
-    if ([recordsArray count]==0) {
-        UIAlertView *alt=[[UIAlertView alloc] initWithTitle:@"No Result Found" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [alt show];
-        NSLog(@"no result found");
-        rightArrow.hidden=YES; 
-        leftArrow.hidden=YES;
-    }
-    else{
-        rightArrow.hidden=NO; 
-        leftArrow.hidden=NO;
-    }
-    [self layOutScroll:recordsArray];
-}
--(IBAction)showmonthresult:(id)sender{
-    [vc.view removeFromSuperview];
-    int num=[montharray indexOfObject:tF.text];
-      NSLog(@"month is%d",(num+1));
-    NSString *predicatStr;
-    if (num<=8) {
-        predicatStr=[NSString stringWithFormat:@"????-0%d-*",(num+1)];
-    }
-    else{
-        predicatStr=[NSString stringWithFormat:@"????-%d-*",num];
-    }
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
-    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-     [request setEntity:entityDesc];
-    NSLog(@"predicate is %@",predicatStr);
-    NSPredicate *myPred=[NSPredicate predicateWithFormat:@"entrytime like %@",predicatStr];
-    request.predicate=myPred;  
-    NSError *error;
-    NSArray *recordsArray = [context executeFetchRequest:request error:&error]; 
-    totalRecords=[recordsArray count];
-    if ([recordsArray count]==0) {
-        UIAlertView *alt=[[UIAlertView alloc] initWithTitle:@"No Result Found" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [alt show];
-        NSLog(@"no result found");
-        rightArrow.hidden=YES; 
-        leftArrow.hidden=YES;
-    }
-    else{
-        rightArrow.hidden=NO; 
-        leftArrow.hidden=NO;
-    }
-    [self layOutScroll:recordsArray];
-    
-    
-   
-    
-}
--(IBAction)showdateresult:(id)sender{
-    [vc.view removeFromSuperview];
-    int num=[montharray indexOfObject:tF.text];
-    NSLog(@"month is%d",(num+1));
-    NSString *predicatStr;
-    if (num<=8) {
-        predicatStr=[NSString stringWithFormat:@"????-0%d-*",(num+1)];
-    }
-    else{
-        predicatStr=[NSString stringWithFormat:@"????-%d-*",num];
-    }
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
-    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    [request setEntity:entityDesc];
-    NSLog(@"predicate is %@",predicatStr);
-    NSPredicate *myPred=[NSPredicate predicateWithFormat:@"entrytime like %@",predicatStr];
-    request.predicate=myPred;  
-    NSError *error;
-    NSArray *recordsArray = [context executeFetchRequest:request error:&error]; 
-    totalRecords=[recordsArray count];
-    if ([recordsArray count]==0) {
-        UIAlertView *alt=[[UIAlertView alloc] initWithTitle:@"No Result Found" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [alt show];
-        NSLog(@"no result found");
-        rightArrow.hidden=YES; 
-        leftArrow.hidden=YES;
-    }
-    else{
-        rightArrow.hidden=NO; 
-        leftArrow.hidden=NO;
-    }
-    [self layOutScroll:recordsArray];
-}
+/*
+ *-----------------------------------------------------------------------------
+ *
+ * UIScrollView Delegate  Methods  
+ *
+ *-----------------------------------------------------------------------------
+ */
 
 
 
@@ -555,7 +584,9 @@
      if ([sc contentOffset].x==(totalRecords-1)*267) {
          rightArrow.hidden=YES;
      }
-     
+     [leftArrow setUserInteractionEnabled:NO];
+     [rightArrow setUserInteractionEnabled:NO];
+
  }
 
 -(IBAction)scrollMeBackward:(id)sender{
@@ -576,6 +607,9 @@
     else{
         rightArrow.hidden=NO;
     }
+    [leftArrow setUserInteractionEnabled:NO];
+    [rightArrow setUserInteractionEnabled:NO];
+
 
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -595,11 +629,20 @@
     }
 
 }
--(IBAction)done:(id)sender{
-    
-    [self dismissModalViewControllerAnimated:YES];
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
+
+    [leftArrow setUserInteractionEnabled:YES];
+    [rightArrow setUserInteractionEnabled:YES];
 }
 
+/*
+ *-----------------------------------------------------------------------------
+ *
+ * UIPickerView Delegate  Methods  
+ *
+ *-----------------------------------------------------------------------------
+ */
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow: (NSInteger)row inComponent:(NSInteger)component {
     tag=row;
 }

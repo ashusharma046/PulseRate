@@ -22,7 +22,14 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - View lifecycle
+/*
+ *-----------------------------------------------------------------------------
+ *
+ * View LifeCycle Methods  
+ *
+ *-----------------------------------------------------------------------------
+ */
+
 
 - (void)viewDidLoad
 {
@@ -44,69 +51,7 @@
    
     
 }
--(IBAction)subMit:(id)sender{
-    
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-    
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
-    
-    
-    
-   
-    int pul=[pulse.text intValue];
-    float bp=[bloodPressure.text floatValue];
-    float tmp=[temprature.text floatValue];
-    
-      
-    if(pul> 220){
-        
-        UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:@"Pulse Value Out of range" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-		[alertView show];
-    }
-    else if(bp>230.00){
-        UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:@"Blood Pressure  Out of range" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-		[alertView show];
-        
-    }
-    else if(tmp>110.00 || tmp < 94){
-        UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:@"Temprature  Out of range" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-		[alertView show];
-        
-    }
-    
-    else{
-        NSLog(@"save");
-        NSError *error;
-         PulseRecord *newContact = [NSEntityDescription insertNewObjectForEntityForName:@"PulseRecord" inManagedObjectContext:context];
-        newContact.pulse=pul;
-        newContact.bloodPresssure=bp;
-        newContact.temprature=tmp;
-        
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-        [dateFormatter setDateFormat:@"yyyy-MM-dd-HH:mm:ss ZZZ"];
-        newContact.entrytime =[dateFormatter stringFromDate:[NSDate date]];
-        
 
-        if([context save:&error]){
-            UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:@"Your Record Inserted successfully" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            [alertView show];
-            
-        }
-        
-        [self dismissModalViewControllerAnimated:YES];    
-    }
-}
-
-
-
--(IBAction)done:(id)sender{
-    
-    [self dismissModalViewControllerAnimated:YES];
-}
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [textField resignFirstResponder];
-    return YES;
-}
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -140,6 +85,86 @@
 
 
 
+/*
+ *-----------------------------------------------------------------------------
+ *
+ * IBAction Methods  
+ *
+ *-----------------------------------------------------------------------------
+ */
+-(IBAction)subMit:(id)sender{
+    
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    
+    
+    
+    int pul=[pulse.text intValue];
+    float bp=[bloodPressure.text floatValue];
+    float tmp=[temprature.text floatValue];
+    
+    
+    if(pul> 220){
+        
+        UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:@"Pulse Value Out of range" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+		[alertView show];
+    }
+    else if(bp>230.00){
+        UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:@"Blood Pressure  Out of range" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+		[alertView show];
+        
+    }
+    else if(tmp>110.00 || tmp < 94){
+        UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:@"Temprature  Out of range" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+		[alertView show];
+        
+    }
+    
+    else{
+        NSLog(@"save");
+        NSError *error;
+        PulseRecord *newContact = [NSEntityDescription insertNewObjectForEntityForName:@"PulseRecord" inManagedObjectContext:context];
+        newContact.pulse=pul;
+        newContact.bloodPresssure=bp;
+        newContact.temprature=tmp;
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd-HH:mm:ss ZZZ"];
+        newContact.entrytime =[dateFormatter stringFromDate:[NSDate date]];
+        
+        
+        if([context save:&error]){
+            UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:@"Your Record Inserted successfully" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            [alertView show];
+            
+        }
+        
+        [self dismissModalViewControllerAnimated:YES];    
+    }
+}
+
+
+
+-(IBAction)done:(id)sender{
+    
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+
+/*
+ *-----------------------------------------------------------------------------
+ *
+ * UITextfiled Delegate  Methods  
+ *
+ *-----------------------------------------------------------------------------
+ */
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField { 
     if (textField==bloodPressure) {

@@ -15,6 +15,8 @@
 @synthesize graphtype;
 @synthesize monthType,weakType,selectDate;
 @synthesize lb1,lb2;
+@synthesize arrow,arrow1,arrow2;
+@synthesize monthView,dayView,weakView;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,7 +30,7 @@
 {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
+  
     // Release any cached data, images, etc that aren't in use.
 }
 
@@ -41,15 +43,138 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //self.view.backgroundColor=[UIColor yellowColor];
+      arrrowSate=YES;
+    arrrowSate1=YES;
+    arrrowSate2=YES;
     pcview.hidden=YES;
     graphtype.tag=3;
     monthType.tag=4;
     weakType.tag=5;
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(done:)];
+    monthView.frame=CGRectMake(0, 216, 320, 0);
+    weakView.frame=CGRectMake(0, 253, 356, 0);
+    dayView.frame=CGRectMake(0, 296, 320, 0);
+    monthView.hidden=YES;
+    weakView.hidden=YES;
+    dayView.hidden=YES;
+    [self.view setBackgroundColor:[UIColor grayColor]];
+    [monthView setBackgroundColor:[UIColor grayColor]];
+    [weakView setBackgroundColor:[UIColor grayColor]];
+    [dayView setBackgroundColor:[UIColor grayColor]];
+    }
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    
 }
+-(IBAction)arrowTapped:(UIButton *)sender{
+   
+    if(sender==arrow){
+    
+    if (arrrowSate==YES) {
+      
+        [arrow setImage:[UIImage imageNamed:@"carat-open.png"] forState:UIControlStateNormal];
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:0.5];
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:monthView cache:YES];
+        monthView.hidden=NO;
+       monthView.frame=CGRectMake(0, 216, 320,33);
 
+        [UIView commitAnimations];
+        
+    }
+    else{
+    [arrow setImage:[UIImage imageNamed:@"carat.png"] forState:UIControlStateNormal];
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:0.5];
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:monthView cache:YES];
+        
+        monthView.frame=CGRectMake(0, 216, 320, 0);
+        monthView.hidden=YES;
+        [UIView commitAnimations];  
+    }
+    
+     arrrowSate=!arrrowSate;
+        
+    }
+    else if(sender==arrow1){
+        
+        
+        if (arrrowSate1==YES) {
+            
+            [arrow1 setImage:[UIImage imageNamed:@"carat-open.png"] forState:UIControlStateNormal];
+            [UIView beginAnimations:nil context:nil];
+            [UIView setAnimationDuration:0.5];
+            [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:weakView cache:YES];
+            [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:monthView cache:YES];
+             weakView.hidden=NO;
+             weakView.frame=CGRectMake(0, 253, 320, 35);
+            monthView.hidden=NO;
+            monthView.frame=CGRectMake(0, 216, 320, 33);
+            [UIView commitAnimations];
+            
+        }
+        else{
+            [arrow1 setImage:[UIImage imageNamed:@"carat.png"] forState:UIControlStateNormal];
+            [UIView beginAnimations:nil context:nil];
+            [UIView setAnimationDuration:0.5];
+            [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:weakView cache:YES];
+             [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:monthView cache:YES];
+            
+            weakView.frame=CGRectMake(0, 253, 320,35);
+            weakView.hidden=YES;
+            monthView.hidden=YES;
+            monthView.frame=CGRectMake(0, 216, 320, 0);
+            [UIView commitAnimations];  
+        }
+        
+        arrrowSate1=!arrrowSate1;
+        
 
+        
+    }
+    else{
+        arrrowSate=NO;
+        arrrowSate1=NO;
+        monthView.hidden=YES;
+        weakView.hidden=YES;
+        [arrow setImage:[UIImage imageNamed:@"carat.png"] forState:UIControlStateNormal];
+        [arrow1 setImage:[UIImage imageNamed:@"carat.png"] forState:UIControlStateNormal];
+        if (arrrowSate2==YES) {
+            
+            [arrow2 setImage:[UIImage imageNamed:@"carat-open.png"] forState:UIControlStateNormal];
+            [UIView beginAnimations:nil context:nil];
+            [UIView setAnimationDuration:0.5];
+            [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:dayView cache:YES];
+            dayView.hidden=NO;
+            dayView.frame=CGRectMake(0, 296, 320,36);
+            
+            [UIView commitAnimations];
+            
+        }
+        else{
+            [arrow2 setImage:[UIImage imageNamed:@"carat.png"] forState:UIControlStateNormal];
+            [UIView beginAnimations:nil context:nil];
+            [UIView setAnimationDuration:0.5];
+            [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:dayView cache:YES];
+            
+            dayView.frame=CGRectMake(0, 296, 320,36);
+            dayView.hidden=YES;
+            [UIView commitAnimations];  
+        }
+        
+        arrrowSate2=!arrrowSate2;
+        
+
+    
+    }
+}
+ /*
+ *-----------------------------------------------------------------------------
+ *
+ * UITExtFiled delegate  Methods   *
+ *-----------------------------------------------------------------------------
+ */
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
     return YES;
@@ -112,27 +237,7 @@
     return NO;
     }
 }
--(IBAction)setDate:(id)sender{
-    lb1.hidden=NO;
-    lb2.hidden=NO;
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd-HH:mm:ss ZZZ"];
-    NSString *dateString=[dateFormatter stringFromDate:[datePicker date]];
-    [selectDate setText:dateString];
-    [bar2 removeFromSuperview];
-    [datePicker removeFromSuperview];
-}
 
-
--(IBAction)done:(id)sender{
-   
-    [self dismissModalViewControllerAnimated:YES]; 
-}
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    
-}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -187,12 +292,42 @@
     [bar removeFromSuperview];
 
 }
+/*
+ *-----------------------------------------------------------------------------
+ *
+ *IBAction  Methods   *
+ *-----------------------------------------------------------------------------
+ */
+-(IBAction)setDate:(id)sender{
+    lb1.hidden=NO;
+    lb2.hidden=NO;
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd-HH:mm:ss ZZZ"];
+    NSString *dateString=[dateFormatter stringFromDate:[datePicker date]];
+    [selectDate setText:dateString];
+    [bar2 removeFromSuperview];
+    [datePicker removeFromSuperview];
+}
 
+
+-(IBAction)done:(id)sender{
+    
+    [self dismissModalViewControllerAnimated:YES]; 
+}
+
+
+
+
+/*
+ *-----------------------------------------------------------------------------
+ *
+ * Picker delegate and datasource Methods   *
+ *-----------------------------------------------------------------------------
+ */
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow: (NSInteger)row inComponent:(NSInteger)component {
     rownum=row;
     
 }
-
 // tell the picker how many rows are available for a given component
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     NSUInteger numRows = 3;

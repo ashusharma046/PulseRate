@@ -27,7 +27,14 @@
     return self;
 }
 
-// This does the actual work of creating the plot if we don't already have a graph object.
+/*
+ *-----------------------------------------------------------------------------
+ *
+ * Initialization  of plot
+ *
+ *-----------------------------------------------------------------------------
+ */
+
 -(void)initialisePlot
 {
     // Start with some simple sanity checks before we kick off
@@ -283,6 +290,13 @@
     }
     
 }
+/*
+ *-----------------------------------------------------------------------------
+ *
+ * Data source  Methods  of plot
+ *
+ *-----------------------------------------------------------------------------
+ */
 
 -(NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plot 
 {

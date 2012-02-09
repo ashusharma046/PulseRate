@@ -31,11 +31,7 @@
 {
     [super viewDidLoad];
     self.title=@"Graph";
-    //  UIBarButtonItem *mailPdfButton=[[UIBarButtonItem alloc] initWithTitle:@"Email Report" style:UIBarButtonItemStyleDone target:self action:@selector(mailReport)];
-    
-    //mailPdfButton.title=@"Email Report";
-    
-    //self.navigationItem.rightBarButtonItem =  mailPdfButton;
+
     toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 360, 37)];
     NSMutableArray* buttons = [[NSMutableArray alloc] initWithCapacity:5];
     UIBarButtonItem *backButton =  [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(done:)];
@@ -45,7 +41,7 @@
     
    [buttons addObject:backButton];
    [buttons addObject:emptLb];
-    //[buttons addObject:weakrecords];
+   
    [buttons addObject:dayReords];
   
    [toolbar setItems:buttons animated:NO];
@@ -64,17 +60,20 @@
     NSError *error;
     NSString *predicatestr;
     if (monthnum <10) {
-        predicatestr=[NSString stringWithFormat:@"-0%d-",monthnum];
+       // predicatestr=[NSString stringWithFormat:@"-0%d-",monthnum];
+        predicatestr=[NSString stringWithFormat:@"????-0%d-*",monthnum];
+        NSLog(@"pster is --%@",predicatestr);
     }
     else{
-        predicatestr=[NSString stringWithFormat:@"-%d-",monthnum];
+        //predicatestr=[NSString stringWithFormat:@"-%d-",monthnum];
+        predicatestr=[NSString stringWithFormat:@"????-0%d-*",monthnum];
     }
     
     
     
     NSPredicate *myPred;
     if(!isDayWiseReporting){
-        myPred=[NSPredicate predicateWithFormat:@"entrytime CONTAINS[cd] %@",predicatestr];
+        myPred=[NSPredicate predicateWithFormat:@"entrytime like %@",predicatestr];
         request.predicate=myPred;    
         recordsArray = [context executeFetchRequest:request error:&error];   
         NSLog(@"  number ----");

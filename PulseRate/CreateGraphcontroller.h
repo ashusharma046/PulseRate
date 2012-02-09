@@ -24,6 +24,16 @@
     UIDatePicker *datePicker ;
     IBOutlet UILabel *lb1;
     IBOutlet UILabel *lb2;
+    
+    IBOutlet UIButton *arrow; 
+    BOOL arrrowSate;
+    BOOL arrrowSate1;
+    BOOL arrrowSate2;
+    UIView *monthView;
+    UIView *dayView;
+    UIView *weakView;
+    IBOutlet UIButton *arrow1; 
+    IBOutlet UIButton *arrow2; 
 }
 @property(strong,nonatomic) IBOutlet UITextField *xaxis;
 @property(strong,nonatomic) IBOutlet UITextField *yaxis;
@@ -35,5 +45,12 @@
 @property(strong,nonatomic) GraphViewController *tUTViewController;
 @property(strong,nonatomic) IBOutlet UILabel *lb1;
 @property(strong,nonatomic) IBOutlet UILabel *lb2;
+@property(strong,nonatomic) IBOutlet UIButton *arrow;
+@property(strong,nonatomic) IBOutlet UIButton *arrow1;
+@property(strong,nonatomic) IBOutlet UIButton *arrow2;
+@property(strong,nonatomic) IBOutlet UIView *monthView;;
+@property(strong,nonatomic) IBOutlet UIView *dayView;
+@property(strong,nonatomic) IBOutlet UIView *weakView;
 -(IBAction)done:(id)sender;
+-(IBAction)arrowTapped:(UIButton *)sender;
 @end
