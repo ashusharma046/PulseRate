@@ -532,7 +532,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" id="bEP-hc-rKJ">
-                                <rect key="frame" x="114" y="45" width="211" height="216"/>
+                                <rect key="frame" x="114" y="33" width="211" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="PCC-T7-vTe" id="fwk-G3-tdk"/>
@@ -648,11 +648,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="9ab-no-nmu">
-                                <rect key="frame" x="0.0" y="253" width="356" height="35"/>
+                                <rect key="frame" x="0.0" y="248" width="356" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="qfc-1f-ojq">
-                                        <rect key="frame" x="160" y="0.0" width="142" height="31"/>
+                                        <rect key="frame" x="160" y="5" width="142" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -661,7 +661,7 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Select Weak" lineBreakMode="tailTruncation" minimumFontSize="10" id="zNb-XP-Eod">
-                                        <rect key="frame" x="26" y="4" width="96" height="21"/>
+                                        <rect key="frame" x="26" y="9" width="96" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -698,7 +698,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="hJi-cy-VdK">
-                                        <rect key="frame" x="167" y="0.0" width="133" height="31"/>
+                                        <rect key="frame" x="165" y="0.0" width="141" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -707,7 +707,7 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Select Date" lineBreakMode="tailTruncation" minimumFontSize="10" id="83s-Sy-fVS">
-                                        <rect key="frame" x="34" y="10" width="80" height="21"/>
+                                        <rect key="frame" x="30" y="6" width="80" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -904,6 +904,123 @@
         <image name="arrow-next.png" width="31" height="45"/>
         <image name="carat.png" width="11" height="11"/>
     </resources>
+    <classes>
+        <class className="CPTGraphHostingView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CPTGraphHostingView.h"/>
+        </class>
+        <class className="CreateGraphcontroller" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateGraphcontroller.h"/>
+            <relationships>
+                <relationship kind="action" name="arrowTapped:" candidateClass="UIButton"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="arrow" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="arrow1" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="arrow2" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="dayView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="graphtype" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="lb1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lb2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="monthType" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="monthView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="pcview" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="selectDate" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="weakType" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="weakView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="xaxis" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="yaxis" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="CustomCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bp" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="date" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lb1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lb2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lb3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lb4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pulse" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tmp" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="EnterRecordViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EnterRecordViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="subMit:"/>
+                <relationship kind="outlet" name="bloodPressure" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="lb1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lb2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lb3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pulse" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="scView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="temprature" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="EnterUserDetailsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EnterUserDetailsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="age" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="height" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="lb1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lb2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lb3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="weight" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="GraphViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GraphViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="_graphHostingView" candidateClass="CPTGraphHostingView"/>
+                <relationship kind="outlet" name="lb1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lb2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lb3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lb4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="vw1" candidateClass="UIView"/>
+                <relationship kind="outlet" name="vw2" candidateClass="UIView"/>
+                <relationship kind="outlet" name="vw3" candidateClass="UIView"/>
+                <relationship kind="outlet" name="vw4" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="InformationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="informationText" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="RecordsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecordsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dayWiseListing:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="monthWiseListing:"/>
+                <relationship kind="action" name="scrollMeBackward:"/>
+                <relationship kind="action" name="scrollMeForeward:"/>
+                <relationship kind="action" name="weakWiseListing:"/>
+                <relationship kind="outlet" name="leftArrow" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="rightArrow" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="sc" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="uv" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="RootViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
+        </class>
+        <class className="ViewRecordController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewRecordController.h"/>
+            <relationships>
+                <relationship kind="action" name="dayWiseListing:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="monthWiseListing:"/>
+                <relationship kind="action" name="weakWiseListing:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
