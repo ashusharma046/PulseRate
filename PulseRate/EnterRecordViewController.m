@@ -123,7 +123,7 @@
     }
     
     else{
-        NSLog(@"save");
+       // NSLog(@"save");
         NSError *error;
         PulseRecord *newContact = [NSEntityDescription insertNewObjectForEntityForName:@"PulseRecord" inManagedObjectContext:context];
         newContact.pulse=pul;
