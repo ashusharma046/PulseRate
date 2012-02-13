@@ -1,0 +1,35 @@
+dependencies: \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAxis.m \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAxis.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTDefinitions.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTLayer.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTResponder.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTTextStyle.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAxisLabel.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAxisLabelGroup.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAxisSet.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAxisTitle.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTColor.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTExceptions.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTFill.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTGradient.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTGridLineGroup.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTGridLines.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTImage.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTLimitBand.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTLineCap.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTLineStyle.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTMutablePlotRange.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTPlotRange.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/iPhoneOnly/CPTPlatformSpecificCategories.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/iPhoneOnly/CPTPlatformSpecificDefines.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTPlotArea.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAnnotationHostLayer.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTGraph.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTBorderedLayer.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTPlotSpace.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTShadow.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTTextLayer.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTUtilities.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/NSCoderExtensions.h \
+  /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/NSDecimalNumberExtensions.h
