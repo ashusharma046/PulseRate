@@ -201,7 +201,7 @@
         
     }
   
-      self.view.backgroundColor=[UIColor brownColor];
+    self.view.backgroundColor=[UIColor colorWithRed:(211.0/255.0) green:(211.0/255) blue:(211.0/255) alpha:1.0];
     vw1.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(239.0/255) blue:(213.0/255) alpha:1.0];
     lb1.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(239.0/255) blue:(213.0/255) alpha:1.0]; 
     
