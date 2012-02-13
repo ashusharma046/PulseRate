@@ -200,16 +200,19 @@
         
         
     }
-   // self.view.backgroundColor=[UIColor grayColor];
+  
       self.view.backgroundColor=[UIColor brownColor];
-//     vw1.backgroundColor=[UIColor grayColor];
-//     vw2.backgroundColor=[UIColor grayColor];
-//     vw3.backgroundColor=[UIColor grayColor];
-//     vw4.backgroundColor=[UIColor grayColor];
-  //  self.view .backgroundColor=[UIColor colorWithRed:240/250 green:230/250 blue:140/250 alpha:1];
+    vw1.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(239.0/255) blue:(213.0/255) alpha:1.0];
+    lb1.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(239.0/255) blue:(213.0/255) alpha:1.0]; 
     
+    vw2.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(255.0/255) blue:(240.0/255) alpha:1.0];
+    lb2.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(255.0/255) blue:(240.0/255) alpha:1.0]; 
     
+    vw3.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(228.0/255) blue:(225.0/255) alpha:1.0];
+    lb4.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(228.0/255) blue:(225.0/255) alpha:1.0]; 
     
+    vw4.backgroundColor=[UIColor colorWithRed:(238.0/255.0) green:(238.0/255) blue:(224.0/255) alpha:1.0];
+    lb3.backgroundColor=[UIColor colorWithRed:(235.0/255.0) green:(238.0/255) blue:(224.0/255) alpha:1.0]; 
 }
 
 - (void)viewDidUnload
