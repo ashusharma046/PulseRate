@@ -170,25 +170,25 @@
     if (textField==bloodPressure) {
         
         
-        scView.frame = CGRectMake( scView.frame.origin.x,  scView.frame.origin.y-30, 
+        scView.frame = CGRectMake( scView.frame.origin.x,  scView.frame.origin.y-90, 
                                   scView.frame.size.width,  scView.frame.size.height); 
     }
     if (textField==temprature) {
         
         
-        scView.frame = CGRectMake( scView.frame.origin.x,  scView.frame.origin.y-90, 
+        scView.frame = CGRectMake( scView.frame.origin.x,  scView.frame.origin.y-30, 
                                   scView.frame.size.width,  scView.frame.size.height); 
     }
 }
 -(void)textFieldDidEndEditing:(UITextField *)textField {
     if (textField==bloodPressure) {
-        scView.frame = CGRectMake(scView.frame.origin.x,  scView.frame.origin.y+30, 
+        scView.frame = CGRectMake(scView.frame.origin.x,  scView.frame.origin.y+90, 
                                   scView.frame.size.width,  scView.frame.size.height ); 
     }
     if (textField==temprature) {
         
         
-        scView.frame = CGRectMake( scView.frame.origin.x,  scView.frame.origin.y+90, 
+        scView.frame = CGRectMake( scView.frame.origin.x,  scView.frame.origin.y+30, 
                                   scView.frame.size.width,  scView.frame.size.height); 
     }
     
