@@ -54,19 +54,16 @@
     [buttons addObject:allReords];
     
     [toolbar setItems:buttons animated:NO];
-   
+    
     [self.view addSubview:toolbar];
     montharray =[NSArray arrayWithObjects:@"Jan",@"Feb",@"Mar",@"Aprail",@"may",@"jun",@"july",@"august",@"sep",@"oct",@"nov",@"dec", nil];
     weakarray=[NSArray arrayWithObjects:@"First",@"Second",@"Third",@"Fourth",@"Fifth",nil];
-
-  
-  
     uv.backgroundColor=[UIColor clearColor];
     leftArrow.hidden=YES;
     vc= [self.storyboard instantiateViewControllerWithIdentifier:@"ViewRecordController"];
     vc.view.frame=CGRectMake(0, 45, 320, 470);
     [self.view addSubview:vc.view];
-
+    
 }
 -(void)showAllRecords{
     NSArray *buttons=[toolbar items];
@@ -81,8 +78,8 @@
         }
         
     }
-
-     vc.view.frame=CGRectMake(0, 45, 320, 470);
+    
+    vc.view.frame=CGRectMake(0, 45, 320, 470);
     [self.view addSubview:vc.view];
 }
 -(void)layOutScroll:(NSArray *)recordsArray{
@@ -94,61 +91,61 @@
     
     int i;
     for (i=0; i<[recordsArray count]; i++) {
-    PulseRecord *pulseRecord=[recordsArray objectAtIndex:i];
-    UIView  *uv1;  
-    UIView  *uv2;      
-    if (i==0) {
-    uv2=[[UIView alloc]  initWithFrame:CGRectMake(0,0, 267, 190)];    
-    uv1=[[UIView alloc]  initWithFrame:CGRectMake(0,0, 257, 190)];
-    }
-    else{
-    uv1=[[UIView alloc]  initWithFrame:CGRectMake(10,0, 257, 190)];
-    uv2=[[UIView alloc]  initWithFrame:CGRectMake(i*(267),0, 267, 190)]; 
-    }
-    uv1.layer.cornerRadius = 12;    
-    [uv2 addSubview:uv1]; 
-  
-    UILabel *lb1=[[UILabel alloc] initWithFrame:CGRectMake(10,10, 140, 40)];
-    UILabel *lb2=[[UILabel alloc] initWithFrame:CGRectMake(10,50, 140, 40)];
-    UILabel *lb3=[[UILabel alloc] initWithFrame:CGRectMake(10,90, 150, 40)]; 
-    [uv1 addSubview:lb1]; 
-    [uv1 addSubview:lb2]; 
-    [uv1 addSubview:lb3];
-    lb1.text=@"Pulse";
-    lb2.text=@"Temprature";
-    lb3.text=@"Blood Pressure";
-     
-    UILabel *lb11=[[UILabel alloc] initWithFrame:CGRectMake(140, 10, 110, 40)];
-    UILabel *lb12=[[UILabel alloc] initWithFrame:CGRectMake(140, 50, 110, 40)];
-    UILabel *lb13=[[UILabel alloc] initWithFrame:CGRectMake(140, 90, 110, 40)]; 
-    UILabel *lb14=[[UILabel alloc] initWithFrame:CGRectMake(40, 140, 200, 30)];     
-    [uv1 addSubview:lb11]; 
-    [uv1 addSubview:lb12]; 
-    [uv1 addSubview:lb13];
-    [uv1 addSubview:lb14];    
-    lb11.text=[NSString stringWithFormat:@"%d BPM",[[pulseRecord valueForKey:@"pulse"] intValue]];;
-    lb12.text=[NSString stringWithFormat:@"%.02f °F ",[[pulseRecord valueForKey:@"temprature"] floatValue]];
-    lb13.text=[NSString stringWithFormat:@"%.02f mmHg",[[pulseRecord valueForKey:@"bloodPresssure"] floatValue]];  
-    lb14.text=[[NSString stringWithString:(NSString *)[pulseRecord valueForKey:@"entrytime"]] substringToIndex:19];     
+        PulseRecord *pulseRecord=[recordsArray objectAtIndex:i];
+        UIView  *uv1;  
+        UIView  *uv2;      
+        if (i==0) {
+            uv2=[[UIView alloc]  initWithFrame:CGRectMake(0,0, 267, 190)];    
+            uv1=[[UIView alloc]  initWithFrame:CGRectMake(0,0, 257, 190)];
+        }
+        else{
+            uv1=[[UIView alloc]  initWithFrame:CGRectMake(10,0, 257, 190)];
+            uv2=[[UIView alloc]  initWithFrame:CGRectMake(i*(267),0, 267, 190)]; 
+        }
+        uv1.layer.cornerRadius = 12;    
+        [uv2 addSubview:uv1]; 
+        
+        UILabel *lb1=[[UILabel alloc] initWithFrame:CGRectMake(10,10, 140, 40)];
+        UILabel *lb2=[[UILabel alloc] initWithFrame:CGRectMake(10,50, 140, 40)];
+        UILabel *lb3=[[UILabel alloc] initWithFrame:CGRectMake(10,90, 150, 40)]; 
+        [uv1 addSubview:lb1]; 
+        [uv1 addSubview:lb2]; 
+        [uv1 addSubview:lb3];
+        lb1.text=@"Pulse";
+        lb2.text=@"Temprature";
+        lb3.text=@"Blood Pressure";
+        
+        UILabel *lb11=[[UILabel alloc] initWithFrame:CGRectMake(140, 10, 110, 40)];
+        UILabel *lb12=[[UILabel alloc] initWithFrame:CGRectMake(140, 50, 110, 40)];
+        UILabel *lb13=[[UILabel alloc] initWithFrame:CGRectMake(140, 90, 110, 40)]; 
+        UILabel *lb14=[[UILabel alloc] initWithFrame:CGRectMake(40, 140, 200, 30)];     
+        [uv1 addSubview:lb11]; 
+        [uv1 addSubview:lb12]; 
+        [uv1 addSubview:lb13];
+        [uv1 addSubview:lb14];    
+        lb11.text=[NSString stringWithFormat:@"%d BPM",[[pulseRecord valueForKey:@"pulse"] intValue]];;
+        lb12.text=[NSString stringWithFormat:@"%.02f °F ",[[pulseRecord valueForKey:@"temprature"] floatValue]];
+        lb13.text=[NSString stringWithFormat:@"%.02f mmHg",[[pulseRecord valueForKey:@"bloodPresssure"] floatValue]];  
+        lb14.text=[[NSString stringWithString:(NSString *)[pulseRecord valueForKey:@"entrytime"]] substringToIndex:19];     
         uv1.tag=i+1;
-         
-    [sc addSubview:uv2];
-    [uv1 setBackgroundColor:[UIColor grayColor]]; 
-    [lb1 setBackgroundColor:[UIColor grayColor]]; 
-    [lb2 setBackgroundColor:[UIColor grayColor]]; 
-    [lb3 setBackgroundColor:[UIColor grayColor]];     
-    [lb11 setBackgroundColor:[UIColor grayColor]]; 
-    [lb12 setBackgroundColor:[UIColor grayColor]]; 
-    [lb13 setBackgroundColor:[UIColor grayColor]];
-    [lb14 setBackgroundColor:[UIColor grayColor]];    
+        
+        [sc addSubview:uv2];
+        [uv1 setBackgroundColor:[UIColor grayColor]]; 
+        [lb1 setBackgroundColor:[UIColor grayColor]]; 
+        [lb2 setBackgroundColor:[UIColor grayColor]]; 
+        [lb3 setBackgroundColor:[UIColor grayColor]];     
+        [lb11 setBackgroundColor:[UIColor grayColor]]; 
+        [lb12 setBackgroundColor:[UIColor grayColor]]; 
+        [lb13 setBackgroundColor:[UIColor grayColor]];
+        [lb14 setBackgroundColor:[UIColor grayColor]];    
     } 
     [sc setContentSize:CGSizeMake(([recordsArray count])*(267), 190)];
     sc.pagingEnabled=YES;
-     //sc.frame=CGRectMake(25, 170, 267, 286);
+    //sc.frame=CGRectMake(25, 170, 267, 286);
     
-  }
+}
 
- /*
+/*
  *-----------------------------------------------------------------------------
  *
  * IBAction Methods  
@@ -156,12 +153,12 @@
  *-----------------------------------------------------------------------------
  */
 
-  /*
-  *-----------------------------------------------------------------------------
-  *
-  *  Handling monthwise reporting  
-  *
-   *-----------------------------------------------------------------------------
+/*
+ *-----------------------------------------------------------------------------
+ *
+ *  Handling monthwise reporting  
+ *
+ *-----------------------------------------------------------------------------
  */
 
 -(IBAction)showmonthresult:(id)sender{
@@ -209,19 +206,19 @@
 }
 
 
-  -(IBAction)monthWiseListing:(id)sender{
-      NSArray *buttons=[toolbar items];
-      int i;
-      for (i=0; i<[buttons count]; i++) {
-          UIBarButtonItem *bt=[buttons objectAtIndex:i];
-          if (i==1) {
-              bt.enabled=NO;
-          }
-          else{
-           bt.enabled=YES;
-          }
-                  
-      }
+-(IBAction)monthWiseListing:(id)sender{
+    NSArray *buttons=[toolbar items];
+    int i;
+    for (i=0; i<[buttons count]; i++) {
+        UIBarButtonItem *bt=[buttons objectAtIndex:i];
+        if (i==1) {
+            bt.enabled=NO;
+        }
+        else{
+            bt.enabled=YES;
+        }
+        
+    }
     [vc.view removeFromSuperview];
     for (UIView *subView in  [uv subviews]) {
         [subView removeFromSuperview];
@@ -246,11 +243,11 @@
     leftArrow.hidden=YES;  
     
     
-
+    
     
 }
 
- /*
+/*
  *-----------------------------------------------------------------------------
  *
  *  Handling weakwise reporting  
@@ -323,7 +320,7 @@
     else{
         predicatStr=[NSString stringWithFormat:@"-%d-",num];
     }
- 
+    
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
@@ -337,7 +334,7 @@
     totalRecords=[recordsArray count];
     NSMutableArray *resultsArray = [[NSMutableArray alloc] init]; 
     
-    NSLog(@"weak number is %d  and toatalrecords--%d",weaknum,[recordsArray count]);
+    //NSLog(@"weak number is %d  and toatalrecords--%d",weaknum,[recordsArray count]);
     for (PulseRecord *rc in recordsArray) {
         NSArray *dateArray=[rc.entrytime componentsSeparatedByString:@"-"];
         int date=[[dateArray objectAtIndex:2]intValue];
@@ -378,7 +375,7 @@
 -(IBAction)showresultforDate:(id)sender{
     [vc.view removeFromSuperview];
     int num=[montharray indexOfObject:tF.text];
-    NSLog(@"month is%d",(num+1));
+   // NSLog(@"month is%d",(num+1));
     NSString *predicatStr;
     
     predicatStr=[NSString stringWithFormat:@"%@*",[dateField.text substringToIndex:10]];
@@ -396,7 +393,7 @@
     if ([recordsArray count]==0) {
         UIAlertView *alt=[[UIAlertView alloc] initWithTitle:@"No Result Found" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [alt show];
-        NSLog(@"no result found");
+      //  NSLog(@"no result found");
         rightArrow.hidden=YES; 
         leftArrow.hidden=YES;
     }
@@ -409,12 +406,12 @@
             rightArrow.hidden=YES;
             leftArrow.hidden=YES;
         }
-
+        
     }
     [self layOutScroll:recordsArray];
- }
+}
 
- -(IBAction)dateListing:(id)sender{
+-(IBAction)dateListing:(id)sender{
     NSLog(@"date listing");
     NSArray *buttons=[toolbar items];
     int i;
@@ -453,7 +450,7 @@
     leftArrow.hidden=YES;  
     
     
- }
+}
 -(IBAction)showdateresult:(id)sender{
     [vc.view removeFromSuperview];
     int num=[montharray indexOfObject:tF.text];
@@ -469,7 +466,7 @@
     NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"PulseRecord" inManagedObjectContext:context];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDesc];
-    NSLog(@"predicate is %@",predicatStr);
+   // NSLog(@"predicate is %@",predicatStr);
     NSPredicate *myPred=[NSPredicate predicateWithFormat:@"entrytime like %@",predicatStr];
     request.predicate=myPred;  
     NSError *error;
@@ -478,7 +475,7 @@
     if ([recordsArray count]==0) {
         UIAlertView *alt=[[UIAlertView alloc] initWithTitle:@"No Result Found" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [alt show];
-        NSLog(@"no result found");
+        //NSLog(@"no result found");
         rightArrow.hidden=YES; 
         leftArrow.hidden=YES;
     }
@@ -490,12 +487,12 @@
 }
 
 
- -(IBAction)done:(id)sender{
+-(IBAction)done:(id)sender{
     
     [self dismissModalViewControllerAnimated:YES];
- }
+}
 
- /*
+/*
  *-----------------------------------------------------------------------------
  *
  * UITextField Delegate  Methods  
@@ -510,47 +507,77 @@
 }
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     tag=0;
-    pcView=[[UIPickerView alloc] initWithFrame:CGRectMake(100, 66, 320,40)];
+    pcView=[[UIPickerView alloc] initWithFrame:CGRectMake(0, 480, 320,40)];
     pcView.showsSelectionIndicator=YES;
     pcView.delegate=self;
     pcView.dataSource=self;
-    
+    bar2.frame = CGRectMake(0, 454, 320,26);
+    [self.view addSubview:bar2];
     if (textField==weakField) {
         pcView.tag=2;
-         [self.view addSubview:pcView];
-         [self.view addSubview:bar2];
+        [self.view addSubview:pcView];
+        //
+       // [self.view addSubview:bar1];
+        
+        
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:2];
+        pcView.frame = CGRectMake(0, 296, 320,40); 
+        bar2.frame = CGRectMake(0, 276, 320,26);
+        [UIView commitAnimations];
+        
+        
     }
     else if(textField==dateField){
         pcView.tag=3;
-        dpc=[[UIDatePicker alloc] initWithFrame:CGRectMake(40,66,320 , 120)];
-        dpc.datePickerMode=UIDatePickerModeDate;
+        dateField.userInteractionEnabled=NO;
+        
+        
+        dpc=[[UIDatePicker alloc] initWithFrame:CGRectMake(0,480,320 , 26)];
         [self.view addSubview:dpc];
-        bar1=[[UIToolbar alloc] initWithFrame:CGRectMake(20, 40, 320,26)];
+        dpc.datePickerMode=UIDatePickerModeDate;
+        bar1=[[UIToolbar alloc] initWithFrame:CGRectMake(0, 454, 320,26)];
         UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone  target:self action:@selector(setDateFiled)];
         NSArray *myToolbarItems = [[NSArray alloc] initWithObjects: item, nil];                 
         bar1.items=myToolbarItems;
         
-        [uv addSubview:bar1];
+        [self.view addSubview:bar1];
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:2];
+        dpc.frame = CGRectMake(0,300,320 , 120); 
+        bar1.frame = CGRectMake(0, 274, 320,26);
+        [UIView commitAnimations];
+        
+        
         
         
     }
     else{
-    pcView.tag=1;
-    [pcView reloadAllComponents];
-    bar2=[[UIToolbar alloc] initWithFrame:CGRectMake(100, 40, 320,26)];
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone  target:self action:@selector(setDate:)];
-    NSArray *myToolbarItems = [[NSArray alloc] initWithObjects: item, nil];                 
-    bar2.items=myToolbarItems;
-      [self.view addSubview:pcView];  
-      [self.view addSubview:bar2];  
+        pcView.tag=1;
+        [pcView reloadAllComponents];
+        bar2=[[UIToolbar alloc] initWithFrame:CGRectMake(0, 454, 320,26)];
+        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone  target:self action:@selector(setDate:)];
+        NSArray *myToolbarItems = [[NSArray alloc] initWithObjects: item, nil];                 
+        bar2.items=myToolbarItems;
+        [self.view addSubview:pcView];  
+        [self.view addSubview:bar2];  
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:2];
+        pcView.frame = CGRectMake(0, 296, 320,40); 
+        bar2.frame = CGRectMake(0, 276, 320,26);
+        [UIView commitAnimations];
+
     }
-   
+    
+    
     [pcView reloadAllComponents];
     [uv reloadInputViews];
+        
+    
     return NO;
 }
 -(void)setDateFiled{
-   
+    dateField.userInteractionEnabled=YES;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd-HH:mm:ss ZZZ"];
     NSString *dateString=[dateFormatter stringFromDate:[dpc date]];
@@ -560,18 +587,21 @@
 }
 -(IBAction)setDate:(id)sender{
     if (pcView.tag==1) {
-    [tF setText:[montharray objectAtIndex:tag]];
+        [tF setText:[montharray objectAtIndex:tag]];
     }
     else if(pcView.tag==2){
-    [weakField setText:[weakarray objectAtIndex:tag]];
+        [weakField setText:[weakarray objectAtIndex:tag]];
     }
     sc.userInteractionEnabled=YES;
+    pcView.frame = CGRectMake(0, 296, 320,40); 
+    bar2.frame = CGRectMake(0, 276, 320,26);
+    
     [bar2 removeFromSuperview];
     [pcView removeFromSuperview];
-
-
+    
+    
 }
- /*
+/*
  *-----------------------------------------------------------------------------
  *
  * UIScrollView Delegate  Methods  
@@ -581,22 +611,21 @@
 
 
 
- -(IBAction)scrollMeForeward:(id)sender{
-     
-     CGPoint pt=[sc contentOffset];
-     pt.x=pt.x+267;
-     [sc setContentOffset:pt animated:YES];
-     if ([sc contentOffset].x==0) {
-         leftArrow.hidden=YES;
-     }
-     NSLog(@"  totalrecord is %d-------------- sc content offset is %f",totalRecords,[sc contentOffset].x);
-     if ([sc contentOffset].x==(totalRecords-1)*267) {
-         rightArrow.hidden=YES;
-     }
-     [leftArrow setUserInteractionEnabled:NO];
-     [rightArrow setUserInteractionEnabled:NO];
-
- }
+-(IBAction)scrollMeForeward:(id)sender{
+    
+    CGPoint pt=[sc contentOffset];
+    pt.x=pt.x+267;
+    [sc setContentOffset:pt animated:YES];
+    if ([sc contentOffset].x==0) {
+        leftArrow.hidden=YES;
+    }
+    if ([sc contentOffset].x==(totalRecords-1)*267) {
+        rightArrow.hidden=YES;
+    }
+    [leftArrow setUserInteractionEnabled:NO];
+    [rightArrow setUserInteractionEnabled:NO];
+    
+}
 
 -(IBAction)scrollMeBackward:(id)sender{
     
@@ -609,7 +638,7 @@
     else{
         leftArrow.hidden=NO;
     }
-     NSLog(@"sc content offset is %f",[sc contentOffset].x);
+    NSLog(@"sc content offset is %f",[sc contentOffset].x);
     if ([sc contentOffset].x==(totalRecords-1)*267) {
         rightArrow.hidden=YES;
     }
@@ -618,8 +647,8 @@
     }
     [leftArrow setUserInteractionEnabled:NO];
     [rightArrow setUserInteractionEnabled:NO];
-
-
+    
+    
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
@@ -636,16 +665,16 @@
     else{
         rightArrow.hidden=NO;
     }
-    NSLog(@"content offset is %f",[sc contentOffset].x);
+    //NSLog(@"content offset is %f",[sc contentOffset].x);
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
-
+    
     [leftArrow setUserInteractionEnabled:YES];
     [rightArrow setUserInteractionEnabled:YES];
 }
 
- /*
+/*
  *-----------------------------------------------------------------------------
  *
  * UIPickerView Delegate  Methods  
@@ -672,12 +701,12 @@
 }
 // tell the picker the title for a given component
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-     if(pcView.tag==1){
-          return [montharray objectAtIndex:row];
-      }
-      else{
-          return [weakarray objectAtIndex:row];
-      }
+    if(pcView.tag==1){
+        return [montharray objectAtIndex:row];
+    }
+    else{
+        return [weakarray objectAtIndex:row];
+    }
 }
 
 - (void)viewDidUnload
@@ -691,7 +720,7 @@
 {
     return YES;
     // Return YES for supported orientations
-  //return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
+    //return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
 }
 
 @end
