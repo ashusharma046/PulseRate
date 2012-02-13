@@ -18,8 +18,8 @@ cCpHeader Source/CPTPathExtensions.h ../build/Debug-iphonesimulator/usr/local/in
 cCpHeader Source/CPTTextStyle.h ../build/Debug-iphonesimulator/usr/local/include/CPTTextStyle.h
 cCpHeader Source/CPTTheme.h ../build/Debug-iphonesimulator/usr/local/include/CPTTheme.h
 cCpHeader Source/_CPTPlainBlackTheme.h ../build/Debug-iphonesimulator/usr/local/include/_CPTPlainBlackTheme.h
-cCpHeader Source/_CPTStocksTheme.h ../build/Debug-iphonesimulator/usr/local/include/_CPTStocksTheme.h
 cCpHeader Source/_CPTPlainWhiteTheme.h ../build/Debug-iphonesimulator/usr/local/include/_CPTPlainWhiteTheme.h
+cCpHeader Source/_CPTStocksTheme.h ../build/Debug-iphonesimulator/usr/local/include/_CPTStocksTheme.h
 cCpHeader Source/CPTTimeFormatter.h ../build/Debug-iphonesimulator/usr/local/include/CPTTimeFormatter.h
 cCpHeader Source/CPTTextLayer.h ../build/Debug-iphonesimulator/usr/local/include/CPTTextLayer.h
 cCpHeader Source/CPTPlotGroup.h ../build/Debug-iphonesimulator/usr/local/include/CPTPlotGroup.h
@@ -1885,7 +1885,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesc3486fe32be9b441^973872e32be9b441^---0#1#0#--18"Check dependencies36"BCC9C6CA-432A-494D-805A-905AE71A2E36-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies7827f70e2fe9b441^65c2fb0e2fe9b441^---0#1#0#--18"Check dependencies36"74469DB0-00F8-4AAF-B328-B4569D667335-
 
 CCompileC ../build/CorePlot-CocoaTouch.build/Debug-iphonesimulator/CorePlot-CocoaTouch.build/Objects-normal/i386/CPTAnnotation.o /Users/aneesh/Documents/PulseRate/PulseRate/framework/Source/CPTAnnotation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s350211600.426609

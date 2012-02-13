@@ -220,16 +220,7 @@
     }
     else{
     [pcview reloadAllComponents];
-    pcview.hidden=NO;
-//    xaxis.hidden=YES;
-//    yaxis.hidden=YES;
-//    graphtype.hidden=YES;
-//    monthType.hidden=YES;
-//    weakType.hidden=YES;
-//    lb1.hidden=YES;
-//    lb2.hidden=YES;    
-   
-  
+    pcview.hidden=NO;  
     bar=[[UIToolbar alloc] initWithFrame:CGRectMake(0, 454,320, 26)];
     [self.view addSubview:bar];
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone  target:self action:@selector(setGraphAxis)];
@@ -239,7 +230,7 @@
     showGraph.hidden=YES;
         
     [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:2];
+    [UIView setAnimationDuration:0.5];
         NSLog(@"hi");    
     pcview.frame = CGRectMake(0, 286, 320,40); 
     bar.frame = CGRectMake(0, 266, 320,26);
