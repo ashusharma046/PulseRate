@@ -41,14 +41,10 @@
     
    [buttons addObject:backButton];
    [buttons addObject:emptLb];
-   
    [buttons addObject:dayReords];
   
    [toolbar setItems:buttons animated:NO];
    [self.view addSubview:toolbar];
-    
-
-    
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
@@ -323,22 +319,14 @@
         lb1.frame=CGRectMake(96, 0, 59, 85);
         lb1.text=@"High";
         vw1.frame=CGRectMake(0, 0, 320, 85);
-        
-        
         lb2.text=@"Normal \n (100-160)";
         lb2.lineBreakMode=UILineBreakModeWordWrap;
         lb2.numberOfLines = 0;
         lb2.frame=CGRectMake(96, 0, 59, 85);// lb2.frame=CGRectMake(86, 85, 59, 85);
         vw2.frame=CGRectMake(0, 85, 320, 101);   
-        
-        
         lb3.text=@"Low";
         lb3.frame=CGRectMake(96, 0, 59, 85);//lb3.frame=CGRectMake(56, 186, 59, 85);
         vw4.frame=CGRectMake(0, 320, 264, 150);
-        
-        
-        
-        
         lb4.hidden=YES;
         vw3.hidden=YES;
     }
@@ -348,23 +336,14 @@
         lb1.frame=CGRectMake(96, 0, 59, 120);// lb1.frame=CGRectMake(56, 0, 59, 120);
         lb1.text=@"High";
         vw1.frame=CGRectMake(0, 0, 320, 120);
-        
-        
         lb2.text=@"Normal\n(60-140) ";
-        
         lb2.lineBreakMode=UILineBreakModeWordWrap;
         lb2.numberOfLines = 0;
         lb2.frame=CGRectMake(96, 0, 59, 126);//CGRectMake(56, 120, 59, 126);
         vw2.frame=CGRectMake(0, 120, 320, 126);   
-        
-        
         lb3.text=@"Low";
         lb3.frame=CGRectMake(96, 0, 59, 90);//(56, 246, 59, 90);
         vw4.frame=CGRectMake(0, 246, 320, 90);
-        
-        
-        
-        
         lb4.hidden=YES;
         vw3.hidden=YES;
     }
@@ -374,22 +353,14 @@
         lb1.frame=CGRectMake(86, 0, 59, 98);//CGRectMake(86, 0, 59, 98);
         lb1.text=@"High";
         vw1.frame=CGRectMake(0, 0, 320, 182);
-        
-        
         lb2.text=@"Normal\n(60-100)";
         lb2.lineBreakMode=UILineBreakModeWordWrap;
         lb2.numberOfLines = 0;
         lb2.frame=CGRectMake(96, 0, 59, 79);//CGRectMake(56, 182, 59, 79);
         vw2.frame=CGRectMake(0, 182, 320, 79);   
-        NSLog(@"age 11-17");
-        
         lb3.text=@"Low";
         lb3.frame=CGRectMake(96, 0, 59, 90);//lb3.frame=CGRectMake(56, 246, 59, 90);
         vw4.frame=CGRectMake(0, 246, 320, 90);
-        
-        
-        
-        
         lb4.hidden=YES;
         vw3.hidden=YES;
     }

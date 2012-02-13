@@ -84,7 +84,7 @@
         
     }
     else{
-    [arrow setImage:[UIImage imageNamed:@"carat.png"] forState:UIControlStateNormal];
+        [arrow setImage:[UIImage imageNamed:@"carat.png"] forState:UIControlStateNormal];
         [UIView beginAnimations:nil context:nil];
         [UIView setAnimationDuration:0.5];
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:monthView cache:YES];
