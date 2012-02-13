@@ -521,7 +521,7 @@
         
         
         [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationDuration:2];
+        [UIView setAnimationDuration:0.5];
         pcView.frame = CGRectMake(0, 296, 320,40); 
         bar2.frame = CGRectMake(0, 276, 320,26);
         [UIView commitAnimations];
@@ -543,7 +543,7 @@
         
         [self.view addSubview:bar1];
         [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationDuration:2];
+        [UIView setAnimationDuration:0.5];
         dpc.frame = CGRectMake(0,300,320 , 120); 
         bar1.frame = CGRectMake(0, 274, 320,26);
         [UIView commitAnimations];
@@ -562,7 +562,7 @@
         [self.view addSubview:pcView];  
         [self.view addSubview:bar2];  
         [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationDuration:2];
+        [UIView setAnimationDuration:0.5];
         pcView.frame = CGRectMake(0, 296, 320,40); 
         bar2.frame = CGRectMake(0, 276, 320,26);
         [UIView commitAnimations];
