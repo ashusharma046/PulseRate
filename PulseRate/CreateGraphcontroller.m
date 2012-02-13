@@ -17,6 +17,7 @@
 @synthesize lb1,lb2;
 @synthesize arrow,arrow1,arrow2;
 @synthesize monthView,dayView,weakView;
+@synthesize showGraph;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -43,10 +44,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-      arrrowSate=YES;
+    arrrowSate=YES;
     arrrowSate1=YES;
     arrrowSate2=YES;
-    pcview.hidden=YES;
+  //  pcview.hidden=YES;
     graphtype.tag=3;
     monthType.tag=4;
     weakType.tag=5;
@@ -61,6 +62,8 @@
     [monthView setBackgroundColor:[UIColor grayColor]];
     [weakView setBackgroundColor:[UIColor grayColor]];
     [dayView setBackgroundColor:[UIColor grayColor]];
+   // pcview.frame=CGRectMake(0, 480, 320, 40);
+    
     }
 - (void)viewDidUnload
 {
@@ -78,7 +81,7 @@
         [UIView setAnimationDuration:0.5];
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:monthView cache:YES];
         monthView.hidden=NO;
-       monthView.frame=CGRectMake(0, 216, 320,33);
+        monthView.frame=CGRectMake(0, 216, 320,33);
 
         [UIView commitAnimations];
         
@@ -91,7 +94,8 @@
         
         monthView.frame=CGRectMake(0, 216, 320, 0);
         monthView.hidden=YES;
-        [UIView commitAnimations];  
+        [UIView commitAnimations];
+        monthType.text=@"";
     }
     
      arrrowSate=!arrrowSate;
@@ -126,6 +130,8 @@
             monthView.hidden=YES;
             monthView.frame=CGRectMake(0, 216, 320, 0);
             [UIView commitAnimations];  
+            monthType.text=@"";
+            weakType.text=@"";
         }
         
         arrrowSate1=!arrrowSate1;
@@ -161,6 +167,7 @@
             dayView.frame=CGRectMake(0, 296, 320,36);
             dayView.hidden=YES;
             [UIView commitAnimations];  
+            selectDate.text=@"";
         }
         
         arrrowSate2=!arrrowSate2;
@@ -180,10 +187,9 @@
     return YES;
 }
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
-    NSLog(@"row number is %d",rownum);
+    //NSLog(@"row number is %d",rownum);
     tag=textField.tag;
     [textField resignFirstResponder];
-    // rownum=0;
     [pcview reloadAllComponents];
     
    
@@ -201,16 +207,13 @@
          
         
         bar2=[[UIToolbar alloc] initWithFrame:CGRectMake(0, 225, 325, 25)];
-      
         UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone  target:self action:@selector(setDate:)];
-        
         NSArray *myToolbarItems = [[NSArray alloc] initWithObjects: item, nil];                 
         bar2.items=myToolbarItems;
         
         [self.view addSubview:bar2];
         monthType.text=@"";
         weakType.text=@"";
-        
         return NO;
        
         
@@ -218,22 +221,34 @@
     else{
     [pcview reloadAllComponents];
     pcview.hidden=NO;
-    xaxis.hidden=YES;
-    yaxis.hidden=YES;
-    graphtype.hidden=YES;
-    monthType.hidden=YES;
-    weakType.hidden=YES;
-    lb1.hidden=YES;
-    lb2.hidden=YES;    
+//    xaxis.hidden=YES;
+//    yaxis.hidden=YES;
+//    graphtype.hidden=YES;
+//    monthType.hidden=YES;
+//    weakType.hidden=YES;
+//    lb1.hidden=YES;
+//    lb2.hidden=YES;    
    
   
-    bar=[[UIToolbar alloc] initWithFrame:CGRectMake(114, 20, 211, 25)];
+    bar=[[UIToolbar alloc] initWithFrame:CGRectMake(0, 454,320, 26)];
     [self.view addSubview:bar];
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone  target:self action:@selector(setGraphAxis)];
     
     NSArray *myToolbarItems = [[NSArray alloc] initWithObjects: item, nil];                 
     bar.items=myToolbarItems;
-   
+    showGraph.hidden=YES;
+        
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:2];
+        NSLog(@"hi");    
+    pcview.frame = CGRectMake(0, 286, 320,40); 
+    bar.frame = CGRectMake(0, 266, 320,26);
+        [UIView commitAnimations];
+    
+    monthType.userInteractionEnabled=NO;
+    weakType.userInteractionEnabled=NO;
+    selectDate.userInteractionEnabled=NO;
+    graphtype.userInteractionEnabled=NO;    
     return NO;
     }
 }
@@ -254,6 +269,7 @@
     weakType.hidden=NO;
     lb1.hidden=NO;
     lb2.hidden=NO;
+    showGraph.hidden=NO;
      if (tag==3) {
 
         if(rownum==0){
@@ -287,9 +303,13 @@
         
         
     }
-   
+    pcview.frame=CGRectMake(0, 480, 320, 216);
     pcview.hidden=YES;
     [bar removeFromSuperview];
+    monthType.userInteractionEnabled=YES;
+    weakType.userInteractionEnabled=YES;
+    selectDate.userInteractionEnabled=YES;
+    graphtype.userInteractionEnabled=YES;    
 
 }
 /*

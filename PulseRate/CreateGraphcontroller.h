@@ -34,6 +34,7 @@
     UIView *weakView;
     IBOutlet UIButton *arrow1; 
     IBOutlet UIButton *arrow2; 
+    IBOutlet UIButton *showGraph;
 }
 @property(strong,nonatomic) IBOutlet UITextField *xaxis;
 @property(strong,nonatomic) IBOutlet UITextField *yaxis;
@@ -51,6 +52,7 @@
 @property(strong,nonatomic) IBOutlet UIView *monthView;;
 @property(strong,nonatomic) IBOutlet UIView *dayView;
 @property(strong,nonatomic) IBOutlet UIView *weakView;
+@property(strong,nonatomic) IBOutlet UIButton *showGraph;
 -(IBAction)done:(id)sender;
 -(IBAction)arrowTapped:(UIButton *)sender;
 @end
