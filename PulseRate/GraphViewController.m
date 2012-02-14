@@ -274,6 +274,15 @@
     UIGraphicsEndPDFContext();
     [self mailReport];
     toolbar.hidden=NO;
+   
+    BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:pdfFilePath];
+    if (fileExists) {
+       [self mailReport];
+       
+    }
+    else{
+      NSLog(@"file not exist");
+    }
 }
 -(void)mailReport{
    
