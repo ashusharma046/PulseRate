@@ -37,7 +37,7 @@
 @property(nonatomic,strong) ViewRecordController *vc;
 -(void)layOutScroll:(NSArray *)recordsArray;
 -(IBAction)monthWiseListing:(id)sender;
--(IBAction)dayWiseListing:(id)sender;
+//-(IBAction)dayWiseListing:(id)sender;
 -(IBAction)weakWiseListing:(id)sender;
 - (IBAction)done:(id)sender;
 -(IBAction)scrollMeForeward:(id)sender;

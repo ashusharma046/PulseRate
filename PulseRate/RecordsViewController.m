@@ -374,7 +374,7 @@
 
 -(IBAction)showresultforDate:(id)sender{
     [vc.view removeFromSuperview];
-    int num=[montharray indexOfObject:tF.text];
+   // int num=[montharray indexOfObject:tF.text];
    // NSLog(@"month is%d",(num+1));
     NSString *predicatStr;
     

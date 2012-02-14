@@ -16,9 +16,9 @@
 }
 @property(nonatomic,strong) CustomCell *cell;
 -(IBAction)done:(id)sender;
--(IBAction)monthWiseListing:(id)sender;
--(IBAction)dayWiseListing:(id)sender;
--(IBAction)weakWiseListing:(id)sender;
+//-(IBAction)monthWiseListing:(id)sender;
+//-(IBAction)dayWiseListing:(id)sender;
+//-(IBAction)weakWiseListing:(id)sender;
 
 
 @end
