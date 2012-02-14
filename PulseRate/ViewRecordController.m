@@ -54,7 +54,10 @@
         
         NSLog(@" matches-----%d",[recordsArray count]);
     }
+    
+    i=0;
     self.view.backgroundColor=[UIColor grayColor];
+    
 }
 -(IBAction)done:(id)sender{
   
@@ -209,7 +212,19 @@
     }
     return cell;
 }
-
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (i==0) {
+        CGSize sz=[scrollView contentSize];
+        sz.height=sz.height+60;
+        [scrollView setContentSize:sz];
+        i=1;
+        NSLog(@"done");
+   
+    }
+    
+    
+    
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

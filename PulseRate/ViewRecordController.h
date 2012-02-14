@@ -12,6 +12,7 @@
 @interface ViewRecordController : UITableViewController{
     NSArray *recordsArray;
     CustomCell *cell;
+    int i;
 }
 @property(nonatomic,strong) CustomCell *cell;
 -(IBAction)done:(id)sender;

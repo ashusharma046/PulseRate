@@ -523,7 +523,7 @@
         [UIView beginAnimations:nil context:NULL];
         [UIView setAnimationDuration:0.5];
         pcView.frame = CGRectMake(0, 296, 320,40); 
-        bar2.frame = CGRectMake(0, 276, 320,26);
+        bar2.frame = CGRectMake(0, 274, 320,26);
         [UIView commitAnimations];
         
         
@@ -564,7 +564,7 @@
         [UIView beginAnimations:nil context:NULL];
         [UIView setAnimationDuration:0.5];
         pcView.frame = CGRectMake(0, 296, 320,40); 
-        bar2.frame = CGRectMake(0, 276, 320,26);
+        bar2.frame = CGRectMake(0, 274, 320,26);
         [UIView commitAnimations];
 
     }
