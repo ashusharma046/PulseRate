@@ -51,7 +51,20 @@
     graphtype.tag=3;
     monthType.tag=4;
     weakType.tag=5;
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(done:)];
+    self.title=@"Create Graph";
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(done:)];
+    
+    UIButton* backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 69, 30)];//[UIButton buttonWithType:101]
+    [backButton addTarget:self action:@selector(done:) forControlEvents:UIControlEventTouchUpInside];
+    [backButton setTitle:@"Back" forState:UIControlStateNormal];
+    backButton.imageView.image=[UIImage imageNamed:@"step-buttons.png"];
+    //[backButton setImage:[UIImage imageNamed:@"step-buttons.png"] forState:UIControlStateNormal];
+    [backButton setImage:[UIImage imageNamed:@"step-buttons.png"] forState:UIControlStateNormal];
+    UIBarButtonItem* backItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    
+    self.navigationItem.leftBarButtonItem=backItem;
+    
+    
     monthView.frame=CGRectMake(0, 216, 320, 0);
     weakView.frame=CGRectMake(0, 253, 356, 0);
     dayView.frame=CGRectMake(0, 296, 320, 0);
@@ -59,10 +72,11 @@
     weakView.hidden=YES;
     dayView.hidden=YES;
     [self.view setBackgroundColor:[UIColor grayColor]];
-    [monthView setBackgroundColor:[UIColor grayColor]];
-    [weakView setBackgroundColor:[UIColor grayColor]];
-    [dayView setBackgroundColor:[UIColor grayColor]];
-   // pcview.frame=CGRectMake(0, 480, 320, 40);
+    [monthView setBackgroundColor:[UIColor colorWithRed:(255.0/255.0) green:(239.0/255) blue:(213.0/255) alpha:1.0]];
+    [weakView setBackgroundColor:[UIColor colorWithRed:(255.0/255.0) green:(239.0/255) blue:(213.0/255) alpha:1.0]];
+    [dayView setBackgroundColor:[UIColor colorWithRed:(255.0/255.0) green:(239.0/255) blue:(213.0/255) alpha:1.0]];
+    self.view.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(239.0/255) blue:(213.0/255) alpha:1.0];
+    yaxis.text=@"Pulse";
     
     }
 - (void)viewDidUnload
@@ -231,7 +245,7 @@
         
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.5];
-        NSLog(@"hi");    
+     
     pcview.frame = CGRectMake(0, 286, 320,40); 
     bar.frame = CGRectMake(0, 266, 320,26);
         [UIView commitAnimations];
@@ -239,7 +253,13 @@
     monthType.userInteractionEnabled=NO;
     weakType.userInteractionEnabled=NO;
     selectDate.userInteractionEnabled=NO;
-    graphtype.userInteractionEnabled=NO;    
+    graphtype.userInteractionEnabled=NO; 
+        if(![dayView isHidden]){
+            dayViewHidden=1; 
+            dayView.hidden=YES;
+            
+        }
+        
     return NO;
     }
 }
@@ -261,6 +281,10 @@
     lb1.hidden=NO;
     lb2.hidden=NO;
     showGraph.hidden=NO;
+    if (dayViewHidden==1) {
+        dayView.hidden=NO;
+        dayViewHidden=0;
+    }
      if (tag==3) {
 
         if(rownum==0){

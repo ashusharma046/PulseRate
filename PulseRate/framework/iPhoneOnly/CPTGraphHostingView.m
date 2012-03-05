@@ -118,9 +118,10 @@
 
 #pragma mark -
 #pragma mark Touch handling
-
+/*
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    NSLog(@"toch begin");
 	// Ignore pinch or other multitouch gestures
 	if ( [[event allTouches] count] > 1 ) {
 		return;
@@ -165,7 +166,7 @@
 {
 	[hostedGraph pointingDeviceCancelledEvent:event];
 }
-
+*/
 #pragma mark -
 #pragma mark Gestures
 

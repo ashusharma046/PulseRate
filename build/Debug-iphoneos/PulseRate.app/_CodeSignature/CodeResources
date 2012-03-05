@@ -10,11 +10,11 @@
 		</data>
 		<key>PulseRate.momd/PulseRate.mom</key>
 		<data>
-		33LAcmhHbRFhglAmxwTaib36ZhQ=
+		2pjmtDM/KGQD8zWfuTwyWi5iGwQ=
 		</data>
 		<key>PulseRate.momd/PulseRate.omo</key>
 		<data>
-		xzJS52sV86gCR+Pbh0FAprrmvB8=
+		2YS3Hv4BQS0M9me/KQt6SoBwvrU=
 		</data>
 		<key>arrow-Previous.png</key>
 		<data>
@@ -23,6 +23,14 @@
 		<key>arrow-next.png</key>
 		<data>
 		d2sFpXb+L5bL6IE2XDeWwgxPuhg=
+		</data>
+		<key>background-paper.png</key>
+		<data>
+		oMK5RRp8z6Mkx/K9es4gYJwiQMQ=
+		</data>
+		<key>button_remove.png</key>
+		<data>
+		UDqRxWMFdENKkwY+2ffYWPRGWSM=
 		</data>
 		<key>carat-open.png</key>
 		<data>
@@ -54,67 +62,151 @@
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/2-view-3.nib</key>
 		<data>
-		CJrE8lKG7xEgd+/o27IAqfKdO/8=
+		RmzYhtelWfXUyrcEdiBzMrZsovg=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/5Qi-On-fTV-view-Iai-2N-HLT.nib</key>
 		<data>
-		YGpXQweRFBCi95A0KmamlJZBKfU=
+		VMjTLGZPDu8Ium3DEtut7kjXCWA=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/8EG-Hq-8Py-view-5VD-7a-XgI.nib</key>
+		<data>
+		X5QTqH38wxq3x65qaS5Ixu9sKfw=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/AddNotesViewController.nib</key>
+		<data>
+		QER3mAX0QfqAyeCnZPJ4t+5k+2c=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/BXJ-Z3-9R1-view-UlG-G6-e5w.nib</key>
 		<data>
-		EusWFv97087ypsXeXw0I6d428Ps=
+		48kUgTqwmzO3YvIh4pbdgzB8c+o=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/EditNoteViewController.nib</key>
+		<data>
+		sdHQ/iolbrc97MwztewCjVmmY4Y=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/EditReminderViewController.nib</key>
+		<data>
+		CBUjClGFmcLIHgaUJsjGRmYxac8=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/EventViewController.nib</key>
+		<data>
+		VrES6IzQvxbshk6A8OmGBBxF0Jc=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/Gd6-Zt-Ves-view-dmQ-AM-C6f.nib</key>
+		<data>
+		ghQy9rPQyO9MNdbnHnWnwbfjLQc=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/H5T-6d-2Vs-view-NIR-KA-ciw.nib</key>
+		<data>
+		WjI/LEXbeboul69DfLRJQ7QZDPY=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/KjO-0M-mJ0-view-VFp-Jl-Olt.nib</key>
+		<data>
+		Ul86RCfXHhMFLYKe8XskGGMItjc=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/MapLocationController.nib</key>
+		<data>
+		DDyPyhsWVboz/WWRmZSjYcHdoTE=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/NearByHospitalController.nib</key>
+		<data>
+		oJPBkRCZazV61Y4CHLHtbYwrGdY=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/NotificationController.nib</key>
+		<data>
+		vgTUb499QXxGcFLxTShZfkEzS3Y=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/PCC-T7-vTe-view-nJp-IF-EOJ.nib</key>
 		<data>
-		FJTHqLgqyb5m/IYLckVyKu+1u3c=
+		cORLtksPL9wAKHJsTLDbq2aN9Mg=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/SPc-iE-UvN-view-yZX-MR-scz.nib</key>
+		<data>
+		mZL+4WkchGuFzhfHoPl8vQYnwzM=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/ScheduleEventViewControler.nib</key>
+		<data>
+		8QKGQe7htSNDe2REXj03vnAWKus=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/Sif-hP-fQa-view-uZF-ef-Tnt.nib</key>
 		<data>
-		og/N/hoXz00nt6a4u+rytc4lFNQ=
+		Lx2MkO+o2SKuLV0kjzxvj1zLu3Y=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-5Qi-On-fTV.nib</key>
 		<data>
-		O2PYXccwqx2xC+73LT3B5tuYnEE=
+		csu9LuyO0Y7Sgx6OJ9NBHyu9XBg=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-8EG-Hq-8Py.nib</key>
+		<data>
+		BqTSrMdbHndJHtF/yEuh//yhwe8=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-Ltt-mV-Gkv.nib</key>
+		<data>
+		kgnEhUYNj2tXPGkp7H/llnkGTxE=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-S35-EW-tzJ.nib</key>
 		<data>
-		i8u40vLQCF6aNK3Mw2IZXRMjqG8=
+		ZoMHy1YSLJqyY0Sl8+OhJTGKiB4=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-Sif-hP-fQa.nib</key>
 		<data>
-		S2jdXaAI/EGUool5T/7wi+V8cis=
+		RZHjTQgy5gBAQ5/AWQpz8ys/zYs=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-W98-Ja-uuB.nib</key>
 		<data>
-		6ksUyWK+OVSNl5jdyMHwd67tNlo=
+		sA5h722inoeRMQSD4u4zRiFqzvw=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-Wd2-j6-3VM.nib</key>
 		<data>
-		zUgsWp1mwpKIkjDT9PCoOu+snKY=
+		SwEUZxj6ixBFOKFSUNi+94xe4Kk=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-hhD-gQ-Ibf.nib</key>
 		<data>
-		olzBTg0HOJXzlckZS4RHxpRiuXE=
+		4tZN53+puMTcxaJ3osOry6JFhqc=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-r0G-8C-JHf.nib</key>
 		<data>
-		eKoFEdjq+djB3QQ5if7mchUix3A=
+		Z+f06r+2Pv9Hg5uYHN3+uQ+yR8A=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/ViewNotesController.nib</key>
+		<data>
+		9asw/w9nF/nyzooXbsNa362/0aI=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/ViewRecordController.nib</key>
 		<data>
-		ic62lA1Aw7IaBz68kDiVGhfJnxI=
+		YmA6h8sPR7v5DSZT57jxtqBX/Bk=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/W98-Ja-uuB-view-P2A-HN-6Kb.nib</key>
 		<data>
-		biWPT5ZVmdhP8J4whnasCzEu8ZU=
+		a2f5AdYR8YkJM112kw5BVPWE1HY=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/YUt-2x-y9z-view-cSg-Sr-FEu.nib</key>
 		<data>
-		i0vPhUkUzQR/jEKzlMHkywmGCO0=
+		Q37nkgkYaBcFlKcxOyr0OsH7uGA=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/as8-ot-fyq-view-9ja-0X-4dY.nib</key>
+		<data>
+		JcEpv/0T5aY84o/c2zlSBY4MMDY=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/d3L-6k-6tF-view-kYL-mO-f4m.nib</key>
+		<data>
+		dBlR3JQ8C7pbUVL7u7jSZLe3Hw8=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/exc-7Y-BsC-view-7Cz-SI-Kag.nib</key>
 		<data>
-		yzrayu5Y8CuPnn5NLfRmHcr6Ua4=
+		qcQDDsS4lMgLRxTv109OMyrjRpk=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/jfl-M3-0ia-view-0al-Ro-HnZ.nib</key>
+		<data>
+		TxEUnAPM7wUXGFXTFOtsR9I47dg=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/jhY-ZE-fby-view-niD-1M-p9B.nib</key>
+		<data>
+		S6mFKmx1u/bXX7Dan+v+Uo5swNw=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/zYV-3R-Xuw-view-bdy-OV-0YR.nib</key>
+		<data>
+		tDpQeT8WW/7Oj4j8hnGuZKrCrR4=
 		</data>
 		<key>forwardArrowTrans.png</key>
 		<data>
@@ -123,6 +215,22 @@
 		<key>images (1).jpeg</key>
 		<data>
 		eEPa9skCweCMaxM7WyQfWfTrOOA=
+		</data>
+		<key>images (2).jpeg</key>
+		<data>
+		jVBC0dLKRgIBpj6oLdnXftiEAYM=
+		</data>
+		<key>images (3).jpeg</key>
+		<data>
+		KK/IWQLaqEeUE6h8OJZmL8VOFj0=
+		</data>
+		<key>refresh.jpeg</key>
+		<data>
+		KK/IWQLaqEeUE6h8OJZmL8VOFj0=
+		</data>
+		<key>step-buttons.png</key>
+		<data>
+		wnoewg9JLxRb6T6fu/NXPGBSmYU=
 		</data>
 		<key>topAndBottomRow.png</key>
 		<data>

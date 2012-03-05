@@ -7,10 +7,23 @@
 //
 
 #import "GraphViewController.h"
+#import "Graph2ViewControler.h"
 #import "AppDelegate.h"
 #import "PulseRecord.h"
+#import <QuartzCore/QuartzCore.h>
+
+CABasicAnimation *makeRotateAnimation(float fromValue, float toValue) {
+	CABasicAnimation *rotate = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+	rotate.fromValue = [NSNumber numberWithFloat:fromValue];
+	rotate.toValue = [NSNumber numberWithFloat:toValue];
+	rotate.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+	rotate.duration = 2.0;
+	return rotate;
+}
+
 @implementation GraphViewController
 @synthesize scatterPlot = _scatterPlot;
+@synthesize scatterPlot1 = _scatterPlot1;
 @synthesize xax,yax;
 @synthesize lb1,lb2,lb3,lb4;
 @synthesize vw1,vw2,vw3,vw4;
@@ -19,6 +32,7 @@
 @synthesize weaknum;
 @synthesize dateString;
 @synthesize isDayWiseReporting;
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -31,7 +45,12 @@
 {
     [super viewDidLoad];
     self.title=@"Graph";
-
+    
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(DeviceRotated:) name:@"UIDeviceOrientationDidChangeNotification" object:nil];
+    
+    
+    
     toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 360, 37)];
     NSMutableArray* buttons = [[NSMutableArray alloc] initWithCapacity:5];
     UIBarButtonItem *backButton =  [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(done:)];
@@ -56,12 +75,11 @@
     NSError *error;
     NSString *predicatestr;
     if (monthnum <10) {
-       // predicatestr=[NSString stringWithFormat:@"-0%d-",monthnum];
+
         predicatestr=[NSString stringWithFormat:@"????-0%d-*",monthnum];
-        NSLog(@"pster is --%@",predicatestr);
+      
     }
     else{
-        //predicatestr=[NSString stringWithFormat:@"-%d-",monthnum];
         predicatestr=[NSString stringWithFormat:@"????-0%d-*",monthnum];
     }
     
@@ -80,17 +98,11 @@
         request.predicate=myPred;    
         recordsArray = [context executeFetchRequest:request error:&error];
         [self setDatatForDayWiseReporting];
-        NSLog(@"  number of records are %d",[recordsArray count]);
-        NSLog(@" entrytime CONTAINS[cd] %@",[dateString substringToIndex:10]);
-        
+              
     }
-    
-    
-    
-    
-    
     if ([recordsArray count] == 0) {
         UIAlertView *al=[[UIAlertView alloc] initWithTitle:nil message:@"No Record Found" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        al.delegate=self;
         [al show];
     } 
     
@@ -181,7 +193,7 @@
         
         
         self.scatterPlot= [[CustomPlot alloc] initWithHostingView:_graphHostingView andData:data andXax:xax andYax :yax andGraphtype:self.graphtype];
-        ///self.scatterPlot.delegate=self;
+        self.scatterPlot.delegate=self;
         self.scatterPlot.xax=xax;
         self.scatterPlot.yax=yax;
         
@@ -200,19 +212,20 @@
         
         
     }
-  
+    _graphHostingView.userInteractionEnabled=YES;
     self.view.backgroundColor=[UIColor colorWithRed:(211.0/255.0) green:(211.0/255) blue:(211.0/255) alpha:1.0];
     vw1.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(239.0/255) blue:(213.0/255) alpha:1.0];
     lb1.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(239.0/255) blue:(213.0/255) alpha:1.0]; 
-    
     vw2.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(255.0/255) blue:(240.0/255) alpha:1.0];
     lb2.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(255.0/255) blue:(240.0/255) alpha:1.0]; 
-    
     vw3.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(228.0/255) blue:(225.0/255) alpha:1.0];
     lb4.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(228.0/255) blue:(225.0/255) alpha:1.0]; 
-    
     vw4.backgroundColor=[UIColor colorWithRed:(238.0/255.0) green:(238.0/255) blue:(224.0/255) alpha:1.0];
     lb3.backgroundColor=[UIColor colorWithRed:(235.0/255.0) green:(238.0/255) blue:(224.0/255) alpha:1.0]; 
+    vw1.hidden=YES;
+    vw2.hidden=YES;
+    vw3.hidden=YES;
+    vw4.hidden=YES;
 }
 
 - (void)viewDidUnload
@@ -289,11 +302,11 @@
     MFMailComposeViewController* mailComposer = [[MFMailComposeViewController alloc] init] ;
     mailComposer.mailComposeDelegate = self;
     NSString *path=[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0]stringByAppendingPathComponent:@"Report.pdf"];
-    NSLog(@"path is %@",path);
+    // NSLog(@"path is %@",path);
     [mailComposer addAttachmentData:[NSData dataWithContentsOfFile:path]
                            mimeType:@"application/pdf" fileName:@"Report.pdf"];
     [mailComposer setSubject:@"Reports"];
-    
+    [mailComposer setMessageBody:@"Please find your health report." isHTML:NO];
     [self presentModalViewController:mailComposer animated:YES];  
     
     
@@ -312,13 +325,19 @@
     lb4.frame=CGRectMake(129, 5, 129,20);
     lb2.text=@"HypoThermia";
     lb4.text=@"Fever";
-    //lb3.hidden=YES;
-    //lb4.hidden=YES;
     vw1.frame=CGRectMake(0, 250, 330,40);
     vw2.frame=CGRectMake(0, 340, 330,25);
     vw3.frame=CGRectMake(0, 220, 330,30);
     vw4.hidden=YES;;
     
+    
+    
+    
+    vw1.hidden=YES;
+    vw2.hidden=YES;
+    vw3.hidden=YES;
+    vw4.hidden=YES;
+
 }
 
 - (void)plotpulseBackground{
@@ -378,10 +397,17 @@
     }
     
     
-    
-    
+    vw1.hidden=YES;
+    vw2.hidden=YES;
+    vw3.hidden=YES;
+    vw4.hidden=YES;
     
 }
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 // Dismisses the email composition interface when users tap Cancel or Send. Proceeds to update the message field with the result of the operation.
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error 
 {	
@@ -408,6 +434,56 @@
 	[self dismissModalViewControllerAnimated:YES];
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	
+
+	UITouch *touch = [touches anyObject];
+		NSLog(@"begin");
+	// Only move the placard view if the touch was in the placard view
+	if ([touch view] != _graphHostingView) {
+		// In case of a double tap outside the placard view, update the placard's display string
+		
+	}
+	// Animate the first touch
+	 //CGPoint touchPoint = [touch locationInView:self];
+	//[self animateFirstTouchAtPoint:touchPoint];
+}
+
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+	NSLog(@"moved");
+	UITouch *touch = [touches anyObject];
+	
+	// If the touch was in the placardView, move the placardView to its location
+	if ([touch view] ==_graphHostingView) {
+		CGPoint location = [touch locationInView:self.view];
+		_graphHostingView.center = location;		
+		return;
+	}
+}
+
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	NSLog(@"ended");
+	UITouch *touch = [touches anyObject];
+	
+	// If the touch was in the placardView, bounce it back to the center
+	if ([touch view] == _graphHostingView) {
+		// Disable user interaction so subsequent touches don't interfere with animation
+				return;
+	}		
+}
+
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+	NSLog(@"cancelled");
+	
+//     To impose as little impact on the device as possible, simply set the placard view's center and transformation to the original values.
+    
+	_graphHostingView.center= self.view.center;
+	_graphHostingView.transform = CGAffineTransformIdentity;
+}
+
 
 
 - (void)viewWillAppear:(BOOL)animated
@@ -422,6 +498,7 @@
 -(IBAction)done:(id)sender{
     [self dismissModalViewControllerAnimated:YES];
 }
+
 - (void)viewWillDisappear:(BOOL)animated
 {
 	[super viewWillDisappear:animated];
@@ -434,8 +511,41 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
+    //[self.scatterPlot setAxisForRotation];
     return (interfaceOrientation == UIInterfaceOrientationPortrait); 
 	//return YES;
+}
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    NSLog(@"orientation is %@",fromInterfaceOrientation);
+}
+- (void) DeviceRotated:(NSNotification *)notification{
+	UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+ 	if( orientation == UIDeviceOrientationLandscapeLeft)
+	{   
+    NSLog(@"orientation is UIDeviceOrientationLandscapeLeft");
+        CABasicAnimation *rotate = makeRotateAnimation(0,M_PI/2);
+        [self->_graphHostingView.layer addAnimation:rotate forKey:nil];
+        self->_graphHostingView.transform = CGAffineTransformMakeRotation(M_PI/2);
+        angle=-M_PI/2;
+	}
+	else if ( orientation == UIDeviceOrientationLandscapeRight )
+	{
+    NSLog(@"orientation is UIDeviceOrientationLandscapeRight");
+        CABasicAnimation *rotate = makeRotateAnimation(0,-M_PI/2);
+        [self->_graphHostingView.layer addAnimation:rotate forKey:nil];
+        self->_graphHostingView.transform = CGAffineTransformMakeRotation(-M_PI/2);
+        angle=M_PI/2;
+	}
+	else if ( orientation == UIDeviceOrientationPortrait )
+	{
+        NSLog(@"orientation is UIDeviceOrientationLandscapePotrait");
+
+        CABasicAnimation *rotate = makeRotateAnimation(0,0);
+        [self->_graphHostingView.layer addAnimation:rotate forKey:nil];
+        self->_graphHostingView.transform = CGAffineTransformMakeRotation(0);
+	}
+    
+    
 }
 
 @end

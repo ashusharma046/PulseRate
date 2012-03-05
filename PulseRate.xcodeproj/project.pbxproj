@@ -15,19 +15,39 @@
 		9C715E8A14BB015B00FE7A91 /* EnterUserDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C715E8914BB015B00FE7A91 /* EnterUserDetailsViewController.m */; };
 		9C87A31F14C6DA5400F8EB9F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C87A31E14C6DA5400F8EB9F /* MessageUI.framework */; };
 		9C8AC72614C84C5400BA1392 /* EnterRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8AC72514C84C5400BA1392 /* EnterRecordViewController.m */; };
+		9C8CDBD214FB9FEF0080B844 /* images (3).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CDBD114FB9FEF0080B844 /* images (3).jpeg */; };
+		9C8CDBD414FBA0800080B844 /* refresh.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CDBD314FBA0800080B844 /* refresh.jpeg */; };
 		9C8E0F2A14DA785D007BFCEC /* download (2).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8E0F2914DA785D007BFCEC /* download (2).jpeg */; };
 		9C8E0F2C14DA7868007BFCEC /* download (1).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8E0F2B14DA7868007BFCEC /* download (1).jpeg */; };
 		9C8E0F2E14DA790B007BFCEC /* download (3).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C8E0F2D14DA790B007BFCEC /* download (3).jpeg */; };
+		9C90DFF914F356B3007F5633 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90DFF814F356B3007F5633 /* NotificationController.m */; };
+		9C90DFFC14F357A0007F5633 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90DFFB14F357A0007F5633 /* Event.m */; };
+		9C90DFFF14F3602C007F5633 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90DFFE14F3602C007F5633 /* EventViewController.m */; };
+		9C90E00214F360D5007F5633 /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90E00114F360D5007F5633 /* EventCell.m */; };
+		9C90E00514F36F21007F5633 /* ScheduleEventViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90E00414F36F21007F5633 /* ScheduleEventViewControler.m */; };
 		9C95718B14C7F5B700312DBF /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C95718A14C7F5B700312DBF /* InformationViewController.m */; };
 		9C9571A214C83C3500312DBF /* CustomPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9571A114C83C3500312DBF /* CustomPlot.m */; };
+		9C993A1F14FA1F67000FF00B /* MapLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C993A1E14FA1F67000FF00B /* MapLocationController.m */; };
+		9C993A2114FA2081000FF00B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C993A2014FA2081000FF00B /* MapKit.framework */; };
+		9C993A2314FA3BB0000FF00B /* images (2).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C993A2214FA3BAF000FF00B /* images (2).jpeg */; };
+		9C99689E14F9083F0065FA62 /* EditNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C99689D14F9083F0065FA62 /* EditNoteViewController.m */; };
 		9C9A340314B4597F00A59B5E /* PulseRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A340214B4597F00A59B5E /* PulseRecord.m */; };
 		9C9A341014B46B5B00A59B5E /* ViewRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A340E14B46B5B00A59B5E /* ViewRecordController.m */; };
 		9C9A341414B46D2500A59B5E /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A341314B46D2500A59B5E /* CustomCell.m */; };
 		9C9C646D14B73C3F001CF28C /* CreateGraphcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9C646C14B73C3F001CF28C /* CreateGraphcontroller.m */; };
+		9CA4218F14F2259C00FA7FA2 /* background-paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CA4218E14F2259C00FA7FA2 /* background-paper.png */; };
 		9CABE72F14B57B0300646E75 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CABE72E14B57B0300646E75 /* RootViewController.m */; };
+		9CAC0B4A14FC9CCD0028CBF6 /* CaloricCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC0B4914FC9CCD0028CBF6 /* CaloricCalculator.m */; };
 		9CADFF6314E105D000085F70 /* arrow-next.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CADFF6114E105D000085F70 /* arrow-next.png */; };
 		9CADFF6414E105D000085F70 /* arrow-Previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CADFF6214E105D000085F70 /* arrow-Previous.png */; };
 		9CADFF9B14E13C1D00085F70 /* topAndBottomRow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CADFF9A14E13C1D00085F70 /* topAndBottomRow.png */; };
+		9CB4F8F114FF417F003B94C2 /* button_remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CB4F8F014FF417F003B94C2 /* button_remove.png */; };
+		9CB4F8F314FF4721003B94C2 /* step-buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CB4F8F214FF4721003B94C2 /* step-buttons.png */; };
+		9CB583AE14F62F9600DDF41C /* HospitalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB583AD14F62F9600DDF41C /* HospitalCell.m */; };
+		9CB583B414F641C500DDF41C /* AddNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB583B314F641C500DDF41C /* AddNotesViewController.m */; };
+		9CB583B714F6526B00DDF41C /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB583B614F6526B00DDF41C /* Notes.m */; };
+		9CB583BA14F6572C00DDF41C /* ViewNotesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB583B914F6572B00DDF41C /* ViewNotesController.m */; };
+		9CB583BD14F6585400DDF41C /* NotesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB583BC14F6585400DDF41C /* NotesCell.m */; };
 		9CB6D41414D8337F00F0EC94 /* RecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6D41314D8337F00F0EC94 /* RecordsViewController.m */; };
 		9CB6D42A14D9465000F0EC94 /* forwardArrowTrans.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CB6D42914D9465000F0EC94 /* forwardArrowTrans.png */; };
 		9CB6D42C14D946A000F0EC94 /* images (1).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9CB6D42B14D946A000F0EC94 /* images (1).jpeg */; };
@@ -40,6 +60,11 @@
 		9CB83C2214B44B5700D2D4C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB83C2114B44B5700D2D4C4 /* AppDelegate.m */; };
 		9CB83C2514B44B5700D2D4C4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB83C2314B44B5700D2D4C4 /* MainStoryboard.storyboard */; };
 		9CB83C2814B44B5700D2D4C4 /* PulseRate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CB83C2614B44B5700D2D4C4 /* PulseRate.xcdatamodeld */; };
+		9CC36F3314F0E81E009150A0 /* CustomPlot2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC36F3214F0E81E009150A0 /* CustomPlot2.m */; };
+		9CC36F3A14F10E13009150A0 /* Graph2ViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC36F3914F10E13009150A0 /* Graph2ViewControler.m */; };
+		9CC55F5F14F4BFA200F61D5D /* EditReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC55F5E14F4BFA200F61D5D /* EditReminderViewController.m */; };
+		9CC55F6B14F50C9300F61D5D /* NearByHospitalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC55F6A14F50C9300F61D5D /* NearByHospitalController.m */; };
+		9CC55F6D14F50DDE00F61D5D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC55F6C14F50DDD00F61D5D /* CoreLocation.framework */; };
 		9CF888D214BEBF670023DD97 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8E763114BEBF32006DD219 /* libCorePlot-CocoaTouch.a */; };
 /* End PBXBuildFile section */
 
@@ -66,14 +91,32 @@
 		9C87A31E14C6DA5400F8EB9F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9C8AC72414C84C5300BA1392 /* EnterRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterRecordViewController.h; sourceTree = "<group>"; };
 		9C8AC72514C84C5400BA1392 /* EnterRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterRecordViewController.m; sourceTree = "<group>"; };
+		9C8CDBD114FB9FEF0080B844 /* images (3).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images (3).jpeg"; sourceTree = "<group>"; };
+		9C8CDBD314FBA0800080B844 /* refresh.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = refresh.jpeg; sourceTree = "<group>"; };
 		9C8E0F2914DA785D007BFCEC /* download (2).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "download (2).jpeg"; sourceTree = "<group>"; };
 		9C8E0F2B14DA7868007BFCEC /* download (1).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "download (1).jpeg"; sourceTree = "<group>"; };
 		9C8E0F2D14DA790B007BFCEC /* download (3).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "download (3).jpeg"; sourceTree = "<group>"; };
 		9C8E762714BEBF32006DD219 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
+		9C90DFF714F356B3007F5633 /* NotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		9C90DFF814F356B3007F5633 /* NotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		9C90DFFA14F35798007F5633 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		9C90DFFB14F357A0007F5633 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		9C90DFFD14F36026007F5633 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
+		9C90DFFE14F3602C007F5633 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
+		9C90E00014F360D1007F5633 /* EventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCell.h; sourceTree = "<group>"; };
+		9C90E00114F360D5007F5633 /* EventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCell.m; sourceTree = "<group>"; };
+		9C90E00314F36F20007F5633 /* ScheduleEventViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleEventViewControler.h; sourceTree = "<group>"; };
+		9C90E00414F36F21007F5633 /* ScheduleEventViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleEventViewControler.m; sourceTree = "<group>"; };
 		9C95718914C7F5AB00312DBF /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
 		9C95718A14C7F5B700312DBF /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
 		9C9571A014C83C3500312DBF /* CustomPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPlot.h; sourceTree = "<group>"; };
 		9C9571A114C83C3500312DBF /* CustomPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPlot.m; sourceTree = "<group>"; };
+		9C993A1D14FA1F67000FF00B /* MapLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocationController.h; sourceTree = "<group>"; };
+		9C993A1E14FA1F67000FF00B /* MapLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationController.m; sourceTree = "<group>"; };
+		9C993A2014FA2081000FF00B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9C993A2214FA3BAF000FF00B /* images (2).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images (2).jpeg"; sourceTree = "<group>"; };
+		9C99689C14F9083E0065FA62 /* EditNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditNoteViewController.h; sourceTree = "<group>"; };
+		9C99689D14F9083F0065FA62 /* EditNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditNoteViewController.m; sourceTree = "<group>"; };
 		9C9A340114B4597F00A59B5E /* PulseRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PulseRecord.h; path = ../PulseRecord.h; sourceTree = "<group>"; };
 		9C9A340214B4597F00A59B5E /* PulseRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PulseRecord.m; path = ../PulseRecord.m; sourceTree = "<group>"; };
 		9C9A340D14B46B5B00A59B5E /* ViewRecordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewRecordController.h; sourceTree = "<group>"; };
@@ -82,11 +125,26 @@
 		9C9A341314B46D2500A59B5E /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		9C9C646B14B73C3F001CF28C /* CreateGraphcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGraphcontroller.h; sourceTree = "<group>"; };
 		9C9C646C14B73C3F001CF28C /* CreateGraphcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGraphcontroller.m; sourceTree = "<group>"; };
+		9CA4218E14F2259C00FA7FA2 /* background-paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-paper.png"; sourceTree = "<group>"; };
 		9CABE72D14B57B0300646E75 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		9CABE72E14B57B0300646E75 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		9CAC0B4814FC9CCD0028CBF6 /* CaloricCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaloricCalculator.h; sourceTree = "<group>"; };
+		9CAC0B4914FC9CCD0028CBF6 /* CaloricCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaloricCalculator.m; sourceTree = "<group>"; };
 		9CADFF6114E105D000085F70 /* arrow-next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-next.png"; sourceTree = "<group>"; };
 		9CADFF6214E105D000085F70 /* arrow-Previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-Previous.png"; sourceTree = "<group>"; };
 		9CADFF9A14E13C1D00085F70 /* topAndBottomRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topAndBottomRow.png; sourceTree = "<group>"; };
+		9CB4F8F014FF417F003B94C2 /* button_remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_remove.png; sourceTree = "<group>"; };
+		9CB4F8F214FF4721003B94C2 /* step-buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step-buttons.png"; sourceTree = "<group>"; };
+		9CB583AC14F62F9600DDF41C /* HospitalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HospitalCell.h; sourceTree = "<group>"; };
+		9CB583AD14F62F9600DDF41C /* HospitalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalCell.m; sourceTree = "<group>"; };
+		9CB583B214F641C500DDF41C /* AddNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNotesViewController.h; sourceTree = "<group>"; };
+		9CB583B314F641C500DDF41C /* AddNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNotesViewController.m; sourceTree = "<group>"; };
+		9CB583B514F6526B00DDF41C /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notes.h; sourceTree = "<group>"; };
+		9CB583B614F6526B00DDF41C /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notes.m; sourceTree = "<group>"; };
+		9CB583B814F6572A00DDF41C /* ViewNotesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewNotesController.h; sourceTree = "<group>"; };
+		9CB583B914F6572B00DDF41C /* ViewNotesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewNotesController.m; sourceTree = "<group>"; };
+		9CB583BB14F6585400DDF41C /* NotesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesCell.h; sourceTree = "<group>"; };
+		9CB583BC14F6585400DDF41C /* NotesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesCell.m; sourceTree = "<group>"; };
 		9CB6D41214D8337F00F0EC94 /* RecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordsViewController.h; sourceTree = "<group>"; };
 		9CB6D41314D8337F00F0EC94 /* RecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordsViewController.m; sourceTree = "<group>"; };
 		9CB6D42914D9465000F0EC94 /* forwardArrowTrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forwardArrowTrans.png; sourceTree = "<group>"; };
@@ -104,6 +162,15 @@
 		9CB83C2114B44B5700D2D4C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9CB83C2414B44B5700D2D4C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9CB83C2714B44B5700D2D4C4 /* PulseRate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PulseRate.xcdatamodel; sourceTree = "<group>"; };
+		9CC36F3114F0E81E009150A0 /* CustomPlot2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPlot2.h; sourceTree = "<group>"; };
+		9CC36F3214F0E81E009150A0 /* CustomPlot2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPlot2.m; sourceTree = "<group>"; };
+		9CC36F3814F10E13009150A0 /* Graph2ViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph2ViewControler.h; sourceTree = "<group>"; };
+		9CC36F3914F10E13009150A0 /* Graph2ViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graph2ViewControler.m; sourceTree = "<group>"; };
+		9CC55F5D14F4BFA200F61D5D /* EditReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditReminderViewController.h; sourceTree = "<group>"; };
+		9CC55F5E14F4BFA200F61D5D /* EditReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditReminderViewController.m; sourceTree = "<group>"; };
+		9CC55F6914F50C9200F61D5D /* NearByHospitalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearByHospitalController.h; sourceTree = "<group>"; };
+		9CC55F6A14F50C9300F61D5D /* NearByHospitalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearByHospitalController.m; sourceTree = "<group>"; };
+		9CC55F6C14F50DDD00F61D5D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +178,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C993A2114FA2081000FF00B /* MapKit.framework in Frameworks */,
+				9CC55F6D14F50DDE00F61D5D /* CoreLocation.framework in Frameworks */,
 				9C87A31F14C6DA5400F8EB9F /* MessageUI.framework in Frameworks */,
 				9C4AFCFC14B6DCD900FDE4B8 /* QuartzCore.framework in Frameworks */,
 				9CB83C1014B44B5700D2D4C4 /* UIKit.framework in Frameworks */,
@@ -160,14 +229,26 @@
 		9CABE72B14B573CA00646E75 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9CB583B514F6526B00DDF41C /* Notes.h */,
+				9CB583B614F6526B00DDF41C /* Notes.m */,
 				9C715E8514BB005700FE7A91 /* UserInfo.h */,
 				9C715E8614BB005700FE7A91 /* UserInfo.m */,
 				9C9A340114B4597F00A59B5E /* PulseRecord.h */,
 				9C9A340214B4597F00A59B5E /* PulseRecord.m */,
+				9C90E00114F360D5007F5633 /* EventCell.m */,
+				9C90E00014F360D1007F5633 /* EventCell.h */,
 				9C9A341214B46D2500A59B5E /* CustomCell.h */,
 				9C9A341314B46D2500A59B5E /* CustomCell.m */,
 				9C9571A014C83C3500312DBF /* CustomPlot.h */,
+				9CB583BB14F6585400DDF41C /* NotesCell.h */,
+				9CB583BC14F6585400DDF41C /* NotesCell.m */,
+				9CB583AC14F62F9600DDF41C /* HospitalCell.h */,
+				9CB583AD14F62F9600DDF41C /* HospitalCell.m */,
+				9C90DFFA14F35798007F5633 /* Event.h */,
+				9C90DFFB14F357A0007F5633 /* Event.m */,
 				9C9571A114C83C3500312DBF /* CustomPlot.m */,
+				9CC36F3114F0E81E009150A0 /* CustomPlot2.h */,
+				9CC36F3214F0E81E009150A0 /* CustomPlot2.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -175,8 +256,30 @@
 		9CABE72C14B573F000646E75 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9CAC0B4814FC9CCD0028CBF6 /* CaloricCalculator.h */,
+				9CAC0B4914FC9CCD0028CBF6 /* CaloricCalculator.m */,
+				9CB583B214F641C500DDF41C /* AddNotesViewController.h */,
+				9CB583B314F641C500DDF41C /* AddNotesViewController.m */,
+				9CB583B814F6572A00DDF41C /* ViewNotesController.h */,
+				9CB583B914F6572B00DDF41C /* ViewNotesController.m */,
+				9C99689C14F9083E0065FA62 /* EditNoteViewController.h */,
+				9C99689D14F9083F0065FA62 /* EditNoteViewController.m */,
+				9CC55F6914F50C9200F61D5D /* NearByHospitalController.h */,
+				9CC55F6A14F50C9300F61D5D /* NearByHospitalController.m */,
+				9C993A1D14FA1F67000FF00B /* MapLocationController.h */,
+				9C993A1E14FA1F67000FF00B /* MapLocationController.m */,
+				9C90E00314F36F20007F5633 /* ScheduleEventViewControler.h */,
+				9C90E00414F36F21007F5633 /* ScheduleEventViewControler.m */,
+				9CC55F5D14F4BFA200F61D5D /* EditReminderViewController.h */,
+				9CC55F5E14F4BFA200F61D5D /* EditReminderViewController.m */,
+				9C90DFFD14F36026007F5633 /* EventViewController.h */,
+				9C90DFFE14F3602C007F5633 /* EventViewController.m */,
 				9C9C646B14B73C3F001CF28C /* CreateGraphcontroller.h */,
 				9C9C646C14B73C3F001CF28C /* CreateGraphcontroller.m */,
+				9C90DFF714F356B3007F5633 /* NotificationController.h */,
+				9C90DFF814F356B3007F5633 /* NotificationController.m */,
+				9CC36F3814F10E13009150A0 /* Graph2ViewControler.h */,
+				9CC36F3914F10E13009150A0 /* Graph2ViewControler.m */,
 				9C95718914C7F5AB00312DBF /* InformationViewController.h */,
 				9C95718A14C7F5B700312DBF /* InformationViewController.m */,
 				9C8AC72414C84C5300BA1392 /* EnterRecordViewController.h */,
@@ -198,6 +301,8 @@
 		9CB83C0014B44B5700D2D4C4 = {
 			isa = PBXGroup;
 			children = (
+				9C993A2014FA2081000FF00B /* MapKit.framework */,
+				9CC55F6C14F50DDD00F61D5D /* CoreLocation.framework */,
 				9C87A31E14C6DA5400F8EB9F /* MessageUI.framework */,
 				9C4AFCFB14B6DCD900FDE4B8 /* QuartzCore.framework */,
 				9CB83C1714B44B5700D2D4C4 /* PulseRate */,
@@ -247,9 +352,15 @@
 				9C1A95E314E3A9D1000D2CFE /* carat.png */,
 				9CB6D42B14D946A000F0EC94 /* images (1).jpeg */,
 				9CADFF9A14E13C1D00085F70 /* topAndBottomRow.png */,
+				9CA4218E14F2259C00FA7FA2 /* background-paper.png */,
 				9C1A95E114E3A9C2000D2CFE /* carat-open.png */,
+				9CB4F8F214FF4721003B94C2 /* step-buttons.png */,
 				9CADFF6114E105D000085F70 /* arrow-next.png */,
+				9C8CDBD114FB9FEF0080B844 /* images (3).jpeg */,
+				9CB4F8F014FF417F003B94C2 /* button_remove.png */,
 				9CADFF6214E105D000085F70 /* arrow-Previous.png */,
+				9C993A2214FA3BAF000FF00B /* images (2).jpeg */,
+				9C8CDBD314FBA0800080B844 /* refresh.jpeg */,
 				9C8E0F2D14DA790B007BFCEC /* download (3).jpeg */,
 				9C8E0F2B14DA7868007BFCEC /* download (1).jpeg */,
 				9CB6D42914D9465000F0EC94 /* forwardArrowTrans.png */,
@@ -338,6 +449,12 @@
 				9CADFF9B14E13C1D00085F70 /* topAndBottomRow.png in Resources */,
 				9C1A95E214E3A9C2000D2CFE /* carat-open.png in Resources */,
 				9C1A95E414E3A9D1000D2CFE /* carat.png in Resources */,
+				9CA4218F14F2259C00FA7FA2 /* background-paper.png in Resources */,
+				9C993A2314FA3BB0000FF00B /* images (2).jpeg in Resources */,
+				9C8CDBD214FB9FEF0080B844 /* images (3).jpeg in Resources */,
+				9C8CDBD414FBA0800080B844 /* refresh.jpeg in Resources */,
+				9CB4F8F114FF417F003B94C2 /* button_remove.png in Resources */,
+				9CB4F8F314FF4721003B94C2 /* step-buttons.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +480,23 @@
 				9C9571A214C83C3500312DBF /* CustomPlot.m in Sources */,
 				9C8AC72614C84C5400BA1392 /* EnterRecordViewController.m in Sources */,
 				9CB6D41414D8337F00F0EC94 /* RecordsViewController.m in Sources */,
+				9CC36F3314F0E81E009150A0 /* CustomPlot2.m in Sources */,
+				9CC36F3A14F10E13009150A0 /* Graph2ViewControler.m in Sources */,
+				9C90DFF914F356B3007F5633 /* NotificationController.m in Sources */,
+				9C90DFFC14F357A0007F5633 /* Event.m in Sources */,
+				9C90DFFF14F3602C007F5633 /* EventViewController.m in Sources */,
+				9C90E00214F360D5007F5633 /* EventCell.m in Sources */,
+				9C90E00514F36F21007F5633 /* ScheduleEventViewControler.m in Sources */,
+				9CC55F5F14F4BFA200F61D5D /* EditReminderViewController.m in Sources */,
+				9CC55F6B14F50C9300F61D5D /* NearByHospitalController.m in Sources */,
+				9CB583AE14F62F9600DDF41C /* HospitalCell.m in Sources */,
+				9CB583B414F641C500DDF41C /* AddNotesViewController.m in Sources */,
+				9CB583B714F6526B00DDF41C /* Notes.m in Sources */,
+				9CB583BA14F6572C00DDF41C /* ViewNotesController.m in Sources */,
+				9CB583BD14F6585400DDF41C /* NotesCell.m in Sources */,
+				9C99689E14F9083F0065FA62 /* EditNoteViewController.m in Sources */,
+				9C993A1F14FA1F67000FF00B /* MapLocationController.m in Sources */,
+				9CAC0B4A14FC9CCD0028CBF6 /* CaloricCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

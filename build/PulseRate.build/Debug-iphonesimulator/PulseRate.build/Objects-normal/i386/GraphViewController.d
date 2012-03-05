@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/aneesh/Documents/PulseRate/PulseRate/GraphViewController.m \
-  /Users/aneesh/Documents/PulseRate/PulseRate/GraphViewController.h \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/GraphViewController.m \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/GraphViewController.h \
   PulseRate/framework/CorePlot-CocoaTouch.h \
   PulseRate/framework/Source/CPTAnnotation.h \
   PulseRate/framework/Source/CPTDefinitions.h \
@@ -62,6 +62,8 @@ dependencies: \
   PulseRate/framework/Source/CPTXYAxisSet.h \
   PulseRate/framework/Source/CPTXYGraph.h \
   PulseRate/framework/Source/CPTXYPlotSpace.h \
-  /Users/aneesh/Documents/PulseRate/PulseRate/CustomPlot.h \
-  /Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.h \
-  /Users/aneesh/Documents/PulseRate/PulseRate/../PulseRecord.h
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/CustomPlot.h \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/CustomPlot2.h \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/Graph2ViewControler.h \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/AppDelegate.h \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/../PulseRecord.h

@@ -1,2 +1,2 @@
-dependencies: /Users/aneesh/Documents/PulseRate/PulseRate/CustomCell.m \
-  /Users/aneesh/Documents/PulseRate/PulseRate/CustomCell.h
+dependencies: /Users/aneesh/MyHealth/PulseRate/PulseRate/CustomCell.m \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/CustomCell.h

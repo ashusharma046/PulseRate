@@ -37,7 +37,12 @@
 	//self.view.backgroundColor=[UIColor purpleColor];
     self.title=@"Enter Records";
     scView.contentSize=CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(done:)];
+    UIButton* backButton1 = [UIButton buttonWithType:101];
+    [backButton1 addTarget:self action:@selector(done:) forControlEvents:UIControlEventTouchUpInside];
+    [backButton1 setTitle:@"Back" forState:UIControlStateNormal];
+    UIBarButtonItem* backButton = [[UIBarButtonItem alloc] initWithCustomView:backButton1];
+
+    self.navigationItem.leftBarButtonItem=backButton;
     lb1.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
     lb2.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
     lb3.textColor = [UIColor colorWithRed:0.25 green:0.0 blue:0.0 alpha:1.0];
@@ -162,8 +167,25 @@
  */
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [textField resignFirstResponder];
-    return YES;
+
+    if (textField==pulse) {
+        scView.frame = CGRectMake( scView.frame.origin.x,  scView.frame.origin.y-30, 
+                                  scView.frame.size.width,  scView.frame.size.height); 
+        [temprature becomeFirstResponder];
+        return NO;
+    }
+    else if (textField==temprature) {
+        scView.frame = CGRectMake( scView.frame.origin.x,  scView.frame.origin.y-10, 
+                                  scView.frame.size.width,  scView.frame.size.height); 
+        [bloodPressure becomeFirstResponder];
+        return NO;
+    }
+    else{
+        [textField resignFirstResponder];
+        scView.frame=CGRectMake(0,49,327,256);
+        return YES;
+    }
+
 }
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField { 

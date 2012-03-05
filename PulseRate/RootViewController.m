@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "ScheduleEventViewControler.h"
 
 @implementation RootViewController
 @synthesize managedObjectContext = _managedObjectContext;
@@ -26,7 +27,12 @@
     
     // Release any cached data, images, etc that aren't in use.
 }
+-(IBAction)scheduleReminders:(id)sender{
+    NSLog(@"schedulereminders pushed");
+    ScheduleEventViewControler *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ScheduleEventViewControler"];
+    [self.navigationController pushViewController:controller animated:YES];
 
+}
 #pragma mark - View lifecycle
 
 /*

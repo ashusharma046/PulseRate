@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/aneesh/Documents/PulseRate/PulseRate/EnterRecordViewController.m \
-  /Users/aneesh/Documents/PulseRate/PulseRate/EnterRecordViewController.h \
-  /Users/aneesh/Documents/PulseRate/PulseRate/ViewRecordController.h \
-  /Users/aneesh/Documents/PulseRate/PulseRate/CustomCell.h \
-  /Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.h \
-  /Users/aneesh/Documents/PulseRate/PulseRate/../PulseRecord.h
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/EnterRecordViewController.m \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/EnterRecordViewController.h \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/ViewRecordController.h \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/CustomCell.h \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/AppDelegate.h \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/../PulseRecord.h

@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Event" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Notes" representedClassName="Notes" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="PulseRecord" representedClassName="PulseRecord" syncable="YES">
         <attribute name="bloodPresssure" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="entrytime" optional="YES" attributeType="String" syncable="YES"/>
@@ -13,6 +24,8 @@
         <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Event" positionX="270" positionY="36" width="128" height="105"/>
+        <element name="Notes" positionX="250" positionY="-108" width="128" height="90"/>
         <element name="PulseRecord" positionX="115" positionY="-12" width="128" height="120"/>
         <element name="UserInfo" positionX="421" positionY="45" width="128" height="90"/>
     </elements>

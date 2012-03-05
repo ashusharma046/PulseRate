@@ -11,6 +11,6 @@
 @interface RootViewController : UIViewController{
 }
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-
+-(IBAction)scheduleReminders:(id)sender;
 
 @end

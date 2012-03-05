@@ -35,6 +35,7 @@
     IBOutlet UIButton *arrow1; 
     IBOutlet UIButton *arrow2; 
     IBOutlet UIButton *showGraph;
+    int dayViewHidden;
 }
 @property(strong,nonatomic) IBOutlet UITextField *xaxis;
 @property(strong,nonatomic) IBOutlet UITextField *yaxis;

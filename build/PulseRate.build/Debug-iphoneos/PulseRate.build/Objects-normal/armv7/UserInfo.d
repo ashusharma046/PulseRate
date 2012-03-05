@@ -1,2 +1,2 @@
-dependencies: /Users/aneesh/Documents/PulseRate/PulseRate/UserInfo.m \
-  /Users/aneesh/Documents/PulseRate/PulseRate/UserInfo.h
+dependencies: /Users/aneesh/MyHealth/PulseRate/PulseRate/UserInfo.m \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/UserInfo.h

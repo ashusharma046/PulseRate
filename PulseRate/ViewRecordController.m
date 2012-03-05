@@ -56,7 +56,8 @@
     }
     
     i=0;
-    self.view.backgroundColor=[UIColor grayColor];
+    self.view.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(239.0/255) blue:(213.0/255) alpha:1.0];
+;
     
 }
 -(IBAction)done:(id)sender{
@@ -161,7 +162,7 @@
      cell.lb2.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
      cell.lb3.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
      cell.lb4.font = [UIFont systemFontOfSize:[UIFont labelFontSize] - 2];
-    cell.contentView.backgroundColor=[UIColor grayColor];
+     cell.contentView.backgroundColor=[UIColor colorWithRed:(255.0/255.0) green:(239.0/255) blue:(213.0/255) alpha:1.0];
 
     if (tmp > 99.5) {
         [cell.tmp setBackgroundColor:[UIColor redColor]];

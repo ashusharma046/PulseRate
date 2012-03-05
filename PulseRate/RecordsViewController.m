@@ -41,9 +41,15 @@
     
     toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 420, 45)];
     NSMutableArray* buttons = [[NSMutableArray alloc] initWithCapacity:5];
+    UIButton* backButton1 = [UIButton buttonWithType:101];
+    [backButton1 addTarget:self action:@selector(done:) forControlEvents:UIControlEventTouchUpInside];
+    [backButton1 setTitle:@"Back" forState:UIControlStateNormal];
+    UIBarButtonItem* backButton = [[UIBarButtonItem alloc] initWithCustomView:backButton1];
+    /*
     UIBarButtonItem *backButton =  [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered  target:self action:@selector(done:)];
+    */ 
     UIBarButtonItem *monthrecords = [[UIBarButtonItem alloc] initWithTitle:@"Monthly" style:UIBarButtonItemStyleBordered target:self action:@selector(monthWiseListing:)];
-    UIBarButtonItem *weakrecords = [[UIBarButtonItem alloc] initWithTitle:@"Weakly" style:UIBarButtonItemStyleBordered target:self action:@selector(weakWiseListing:)];
+    UIBarButtonItem *weakrecords = [[UIBarButtonItem alloc] initWithTitle:@"Weekly" style:UIBarButtonItemStyleBordered target:self action:@selector(weakWiseListing:)];
     UIBarButtonItem *dayReords = [[UIBarButtonItem alloc] initWithTitle:@"Daily" style:UIBarButtonItemStyleBordered  target:self action:@selector(dateListing:)];//(dayWiseListing:)];
     UIBarButtonItem *allReords = [[UIBarButtonItem alloc] initWithTitle:@"All" style:UIBarButtonItemStyleBordered  target:self action:@selector(showAllRecords)];
     
@@ -63,6 +69,7 @@
     vc= [self.storyboard instantiateViewControllerWithIdentifier:@"ViewRecordController"];
     vc.view.frame=CGRectMake(0, 45, 320, 470);
     [self.view addSubview:vc.view];
+    sc.backgroundColor=[UIColor clearColor];
     
 }
 -(void)showAllRecords{
@@ -90,20 +97,29 @@
     
     
     int i;
+    
     for (i=0; i<[recordsArray count]; i++) {
         PulseRecord *pulseRecord=[recordsArray objectAtIndex:i];
         UIView  *uv1;  
-        UIView  *uv2;      
+        UIView  *uv2;     
         if (i==0) {
             uv2=[[UIView alloc]  initWithFrame:CGRectMake(0,0, 267, 190)];    
             uv1=[[UIView alloc]  initWithFrame:CGRectMake(0,0, 257, 190)];
+            [uv2 setBackgroundColor:[UIColor grayColor]]; 
+            [uv1 setBackgroundColor:[UIColor grayColor]]; 
         }
         else{
             uv1=[[UIView alloc]  initWithFrame:CGRectMake(10,0, 257, 190)];
             uv2=[[UIView alloc]  initWithFrame:CGRectMake(i*(267),0, 267, 190)]; 
+            [uv2 setBackgroundColor:[UIColor grayColor]]; 
+            [uv1 setBackgroundColor:[UIColor grayColor]]; 
         }
-        uv1.layer.cornerRadius = 12;    
+        uv1.layer.cornerRadius = 12; 
+        uv2.layer.cornerRadius = 12; 
+        //[uv2 setBackgroundColor:[UIColor clearColor]];
         [uv2 addSubview:uv1]; 
+      
+
         
         UILabel *lb1=[[UILabel alloc] initWithFrame:CGRectMake(10,10, 140, 40)];
         UILabel *lb2=[[UILabel alloc] initWithFrame:CGRectMake(10,50, 140, 40)];
@@ -130,7 +146,8 @@
         uv1.tag=i+1;
         
         [sc addSubview:uv2];
-        [uv1 setBackgroundColor:[UIColor grayColor]]; 
+      
+        
         [lb1 setBackgroundColor:[UIColor grayColor]]; 
         [lb2 setBackgroundColor:[UIColor grayColor]]; 
         [lb3 setBackgroundColor:[UIColor grayColor]];     
@@ -141,6 +158,8 @@
     } 
     [sc setContentSize:CGSizeMake(([recordsArray count])*(267), 190)];
     sc.pagingEnabled=YES;
+    [sc setBackgroundColor:[UIColor clearColor]];
+//    [uv2 setBackgroundColor:[UIColor clearColor]];
     //sc.frame=CGRectMake(25, 170, 267, 286);
     
 }
@@ -536,12 +555,16 @@
         dpc=[[UIDatePicker alloc] initWithFrame:CGRectMake(0,480,320 , 26)];
         [self.view addSubview:dpc];
         dpc.datePickerMode=UIDatePickerModeDate;
+        if (!bar1) {
+            
+        
         bar1=[[UIToolbar alloc] initWithFrame:CGRectMake(0, 454, 320,26)];
+        }     
         UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone  target:self action:@selector(setDateFiled)];
         NSArray *myToolbarItems = [[NSArray alloc] initWithObjects: item, nil];                 
         bar1.items=myToolbarItems;
-        
         [self.view addSubview:bar1];
+           
         [UIView beginAnimations:nil context:NULL];
         [UIView setAnimationDuration:0.5];
         dpc.frame = CGRectMake(0,300,320 , 120); 
@@ -555,16 +578,19 @@
     else{
         pcView.tag=1;
         [pcView reloadAllComponents];
-        bar2=[[UIToolbar alloc] initWithFrame:CGRectMake(0, 454, 320,26)];
+        if (!bar2) {
+               
+        bar2=[[UIToolbar alloc] initWithFrame:CGRectMake(0, 456, 320,26)];
         UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone  target:self action:@selector(setDate:)];
         NSArray *myToolbarItems = [[NSArray alloc] initWithObjects: item, nil];                 
         bar2.items=myToolbarItems;
-        [self.view addSubview:pcView];  
-        [self.view addSubview:bar2];  
+        [self.view addSubview:bar2]; 
+    }
+        [self.view addSubview:pcView];         
         [UIView beginAnimations:nil context:NULL];
         [UIView setAnimationDuration:0.5];
-        pcView.frame = CGRectMake(0, 296, 320,40); 
-        bar2.frame = CGRectMake(0, 274, 320,26);
+        pcView.frame = CGRectMake(0, 298, 320,40); 
+        bar2.frame = CGRectMake(0, 276, 320,26);
         [UIView commitAnimations];
 
     }
@@ -584,21 +610,29 @@
     [dateField setText:dateString];
     [dpc removeFromSuperview];
     [bar1 removeFromSuperview];
+    bar1.frame=CGRectMake(0, 454, 320,26);
 }
 -(IBAction)setDate:(id)sender{
     if (pcView.tag==1) {
+        NSLog(@"remove picker");
         [tF setText:[montharray objectAtIndex:tag]];
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:0.5];
+        
+        [bar2 removeFromSuperview];
+        [pcView removeFromSuperview];
+        [UIView commitAnimations];
     }
     else if(pcView.tag==2){
         [weakField setText:[weakarray objectAtIndex:tag]];
     }
     sc.userInteractionEnabled=YES;
-    pcView.frame = CGRectMake(0, 296, 320,40); 
-    bar2.frame = CGRectMake(0, 276, 320,26);
+    pcView.frame = CGRectMake(0, 298, 320,162); 
+    bar2.frame = CGRectMake(0, 278, 320,26);
     
     [bar2 removeFromSuperview];
     [pcView removeFromSuperview];
-    
+        
     
 }
 /*

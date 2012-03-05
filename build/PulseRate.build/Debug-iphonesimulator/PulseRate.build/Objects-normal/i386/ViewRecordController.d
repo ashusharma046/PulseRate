@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/aneesh/Documents/PulseRate/PulseRate/ViewRecordController.m \
-  /Users/aneesh/Documents/PulseRate/PulseRate/ViewRecordController.h \
-  /Users/aneesh/Documents/PulseRate/PulseRate/CustomCell.h \
-  /Users/aneesh/Documents/PulseRate/PulseRate/AppDelegate.h \
-  /Users/aneesh/Documents/PulseRate/PulseRate/../PulseRecord.h
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/ViewRecordController.m \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/ViewRecordController.h \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/CustomCell.h \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/AppDelegate.h \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/../PulseRecord.h

@@ -1,5 +1,5 @@
-dependencies: /Users/aneesh/Documents/PulseRate/PulseRate/CustomPlot.m \
-  /Users/aneesh/Documents/PulseRate/PulseRate/CustomPlot.h \
+dependencies: /Users/aneesh/MyHealth/PulseRate/PulseRate/CustomPlot.m \
+  /Users/aneesh/MyHealth/PulseRate/PulseRate/CustomPlot.h \
   PulseRate/framework/CorePlot-CocoaTouch.h \
   PulseRate/framework/Source/CPTAnnotation.h \
   PulseRate/framework/Source/CPTDefinitions.h \

@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "CorePlot-CocoaTouch.h"
 #import "CustomPlot.h"
+#import "CustomPlot2.h"
 #import <MessageUI/MessageUI.h>
 
-@interface GraphViewController : UIViewController<MFMailComposeViewControllerDelegate> {
+
+@interface GraphViewController : UIViewController<MFMailComposeViewControllerDelegate,CustomPlotDelegate> {
     IBOutlet CPTGraphHostingView *_graphHostingView;
     CustomPlot *_scatterPlot;
     NSArray *recordsArray;
@@ -33,6 +35,8 @@
     BOOL isDayWiseReporting;
     NSMutableArray *timeStampArray;
     UIToolbar* toolbar;
+    CustomPlot2 *_scatterPlot1;
+    float angle;
 }
 @property (copy)  NSString *xax;
 @property (copy)  NSString *yax;
@@ -54,12 +58,13 @@
 @property(nonatomic,retain) IBOutlet UIView *vw4;
 
 @property (nonatomic, retain) CustomPlot *scatterPlot;
+@property (nonatomic, retain) CustomPlot2 *scatterPlot1;
 - (IBAction)done:(id)sender;
 - (void)setDatatForDayWiseReporting;
 - (void)plotTempratureBackground;
 - (void)plotpulseBackground;
 - (void)drawPdf;
 - (void)mailReport;
-
+CABasicAnimation *makeRotateAnimation(float fromValue, float toValue);
 
 @end
