@@ -66,6 +66,7 @@
 		9CC55F6B14F50C9300F61D5D /* NearByHospitalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC55F6A14F50C9300F61D5D /* NearByHospitalController.m */; };
 		9CC55F6D14F50DDE00F61D5D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC55F6C14F50DDD00F61D5D /* CoreLocation.framework */; };
 		9CF888D214BEBF670023DD97 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8E763114BEBF32006DD219 /* libCorePlot-CocoaTouch.a */; };
+		FFFEC99F1EF6777B00980980 /* Quotes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFFEC99E1EF6777B00980980 /* Quotes.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +172,7 @@
 		9CC55F6914F50C9200F61D5D /* NearByHospitalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearByHospitalController.h; sourceTree = "<group>"; };
 		9CC55F6A14F50C9300F61D5D /* NearByHospitalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearByHospitalController.m; sourceTree = "<group>"; };
 		9CC55F6C14F50DDD00F61D5D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FFFEC99E1EF6777B00980980 /* Quotes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Quotes.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,6 +352,7 @@
 				9CB83C1914B44B5700D2D4C4 /* PulseRate-Info.plist */,
 				9CB83C1A14B44B5700D2D4C4 /* InfoPlist.strings */,
 				9C1A95E314E3A9D1000D2CFE /* carat.png */,
+				FFFEC99E1EF6777B00980980 /* Quotes.jpg */,
 				9CB6D42B14D946A000F0EC94 /* images (1).jpeg */,
 				9CADFF9A14E13C1D00085F70 /* topAndBottomRow.png */,
 				9CA4218E14F2259C00FA7FA2 /* background-paper.png */,
@@ -444,6 +447,7 @@
 				9C8E0F2A14DA785D007BFCEC /* download (2).jpeg in Resources */,
 				9C8E0F2C14DA7868007BFCEC /* download (1).jpeg in Resources */,
 				9C8E0F2E14DA790B007BFCEC /* download (3).jpeg in Resources */,
+				FFFEC99F1EF6777B00980980 /* Quotes.jpg in Resources */,
 				9CADFF6314E105D000085F70 /* arrow-next.png in Resources */,
 				9CADFF6414E105D000085F70 /* arrow-Previous.png in Resources */,
 				9CADFF9B14E13C1D00085F70 /* topAndBottomRow.png in Resources */,
